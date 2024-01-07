@@ -1,0 +1,53 @@
+@charset 'UTF-8';
+@use "../inc/" as inc;
+
+/*
+c-related
+-----------------------------------------------------*/
+.c-related {
+	max-width: 992px;
+	margin: 0 auto;
+	// @include inc.sizing(padding-top, tab, 80px, sp, 40px);
+	@include inc.sizing(padding-bottom, tab, 144px, sp, 72px);
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@include inc.sizing(margin-bottom, tab, 40px, sp, 20px);
+		h3 {
+			@include inc.sizing(font-size, tab, 28px, sp, 20px);
+			font-weight: inc.$Bold;
+		}
+	}
+	&__slide {
+		margin: 0;
+		padding: 0;
+		a {
+			display: block;
+		}
+		.image {
+			width: 23%;
+			padding: 0 1%;
+			&:not(:first-child) {
+				
+			}
+			img {
+				display: block;
+				@include inc.sizing(padding-bottom, tab, 16px, sp, 10px);
+			}
+			h3 {
+				@include inc.sizing(padding-bottom, tab, 20px, sp, 18px);
+				font-weight: inc.$Bold;
+			}
+		}
+	}
+	&__tag {
+		margin: 0;
+		padding: 0;
+		li {
+			display: inline-block;
+			@include inc.sizing(font-size, tab, 14px, sp, 12px);
+			margin-right: 1em;
+		}
+	}
+}

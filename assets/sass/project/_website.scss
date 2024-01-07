@@ -1,0 +1,49 @@
+@charset 'UTF-8';
+@use "../inc/" as inc;
+/*
+p-tour
+-----------------------------------------------------*/
+.p-website {
+	&__wrap {
+		margin-top: -1px;
+		border-top: 1px solid inc.$color-line;
+		border-bottom: 1px solid inc.$color-line;
+		@include inc.sizing(padding-top, tab, 53px, sp, 23px);
+		@include inc.sizing(padding-bottom, tab, 53px, sp, 23px);
+	}
+	figure {
+		img {
+			display: block;
+			margin-bottom: .5em;
+		}
+		figcaption {
+			@include inc.sizing(padding-bottom, tab, 14px, sp, 11px);
+		}
+	}
+	p {
+		@include inc.sizing(padding-bottom, tab, 16px, sp, 14px);
+	}
+
+	&__box {
+		@include inc.mq(tabs) {
+			display: flex;
+			justify-content: space-between;
+		}
+		&__txt {
+			@include inc.mq(tabs) {
+				width: 65.8%;
+			}
+		}
+		&__img {
+			@include inc.mq(tabs) {
+				width: 25.7%;
+			}
+		}
+	}
+	&__img {
+		display: flex;
+		gap: 2%;
+		max-width: 80%;
+		@include inc.sizing(padding-bottom, tab, 53px, sp, 23px);
+	}
+}
