@@ -10,6 +10,7 @@
 /* =====================================================
   2.0 - Layout
 ===================================================== */
+@use "layout/l-loading";
 @use "layout/l-wrapper";
 @use "layout/l-section";
 @use "layout/l-main";
@@ -30,6 +31,7 @@
 @use "component/section";
 @use "component/accordion";
 @use "component/tab";
+@use "component/map";
 
 @use "component/related";
 @use "component/lst";
@@ -49,6 +51,8 @@
 @use "project/story";
 @use "project/digital";
 @use "project/tour";
+@use "project/ar";
+@use "project/vr";
 @use "project/website";
 
 /*

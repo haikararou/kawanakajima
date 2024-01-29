@@ -1,5 +1,6 @@
 @charset 'UTF-8';
 @use "../inc/" as inc;
+
 /*
 l-header
 -----------------------------------------------------*/
@@ -9,16 +10,17 @@ l-header
 	justify-content: space-between;
 	align-items: center;
 	padding: 33px 1em;
+	z-index: 1000;
 	@include inc.sizingRem(font-size, tab, 32px, sp, 16px);
 	&__logo {
 		max-width: 102px;
-		@include inc.mq(tabs) {
+		@include inc.mq(tab) {
 			max-width: 162px;
 		}
 	}
 	&__nagano {
 		display: none;
-		@include inc.mq(tabs) {
+		@include inc.mq(tab) {
 			display: block;
 			white-space: nowrap;
 			a {
@@ -35,6 +37,22 @@ l-header
 }
 body.home .l-header {
 	position: absolute;
+	// アニメーション
+	opacity: 0;
+	//transform: translateY(-100px);
+	animation-name: header-fadeIn;
+	animation-delay: 2.5s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	/* フェードインアニメーション */
+	@keyframes header-fadeIn {
+		0% {
+		}
+		100% {
+			opacity: 1;
+			//transform: translateY(0);
+		}
+	}
 }
 
 .l-hamburger {
@@ -47,7 +65,7 @@ body.home .l-header {
 	background: inc.$color-main;
 	border-radius: 48px;
 	z-index: 99;
-	@include inc.mq(tabs) {
+	@include inc.mq(tab) {
 		display: none;
 	}
 	&__line {
@@ -57,7 +75,7 @@ body.home .l-header {
 		height: 1px;
 		position: absolute;
 		left: 14px;
-		transition:transform .3s;
+		transition: transform .3s;
 		// width: 100%;
 		&__top {
 			top: 18px;
@@ -100,7 +118,7 @@ body.home .l-header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: calc(100% - 112px);
 	height: 100vh;
 	padding: 28px 56px;
 	z-index: 98;
@@ -108,7 +126,7 @@ body.home .l-header {
 	background-repeat: no-repeat;
 	background-position: left -7px bottom 10px, right -61px bottom 52px;
 	background-size: 112px 119px, 153px 142px;
-	@include inc.mq(tabs) {
+	@include inc.mq(tab) {
 		background: transparent;
 		display: block;
 		position: static;
@@ -122,7 +140,7 @@ body.home .l-header {
 		width: 100%;
 		height: 100%;
 		margin: auto;
-		@include inc.mq(tabs) {
+		@include inc.mq(tab) {
 			position: static;
 			width: auto;
 			height: auto;
@@ -130,7 +148,7 @@ body.home .l-header {
 		ul {
 			margin: 0;
 			padding: 0;
-			@include inc.mq(tabs) {
+			@include inc.mq(tab) {
 				display: flex;
 				width: 100%;
 				justify-content: center;
@@ -138,20 +156,22 @@ body.home .l-header {
 			& > li {
 				margin: 0;
 				padding: 0;
-				// @include inc.mq(tabs) {
+				// @include inc.mq(tab) {
 				// 	margin: 0 1.1em;
 				// }
 				& > a {
 					position: relative;
 					display: block;
 					color: inc.$color-wht;
-					@include inc.sizingRem(font-size, tab, 20px, sp, 20px);
+					font-size: 20px;
+					//@include inc.sizingRem(font-size, tab, 20px, sp, 14px);
 					font-weight: inc.$Extrabold;
 					transition: .2s;
 					padding: .5em 0;
-					@include inc.mq(tabs) {
+					@include inc.mq(tab) {
 						color: inc.$color-main;
-						padding: .5em 1em 1.75em 1em;
+						font-size: 15px;
+						padding: .5em .4em 1.75em;
 						transition: all .3s;
 						&:hover {
 							ul {
@@ -159,10 +179,14 @@ body.home .l-header {
 							}
 						}
 					}
+					@include inc.mq(lap) {
+						font-size: 20px;
+						padding: .5em .8em 1.75em;
+					}
 					&:before,
 					&:after {
 						display: none;
-						@include inc.mq(tabs) {
+						@include inc.mq(tab) {
 							display: block;
 							content: "";
 							position: absolute;
@@ -190,12 +214,12 @@ body.home .l-header {
 					display: block;
 					margin: 0;
 					margin-bottom: .3em;
-					@include inc.mq(tabs) {
-						margin-left: 1em;
+					@include inc.mq(tab) {
+						margin-left: 0;
 					}
 					dl {
 						display: block;
-						@include inc.mq(tabs) {
+						@include inc.mq(tab) {
 							display: none;
 							visibility: hidden;
 							opacity: 0;
@@ -226,7 +250,7 @@ body.home .l-header {
 					}
 				}
 				dl {
-					@include inc.mq(tabs) {
+					@include inc.mq(tab) {
 						position: absolute;
 						left: 5%;
 						top: 100%;
@@ -244,7 +268,7 @@ body.home .l-header {
 						transition: .2s;
 						padding: .5em 0 .5em 2.142em;
 						color: inc.$color-wht;
-						@include inc.mq(tabs) {
+						@include inc.mq(tab) {
 							display: flex;
 							justify-content: space-between;
 							align-items: center;
@@ -258,7 +282,7 @@ body.home .l-header {
 						}
 						&:hover {
 						// background: inc.$color-line;
-							@include inc.mq(tabs) {
+							@include inc.mq(tab) {
 								color: inc.$color-hover;
 							}
 						}
@@ -270,7 +294,7 @@ body.home .l-header {
 					}
 					dt {
 						display: none;
-						@include inc.mq(tabs) {
+						@include inc.mq(tab) {
 							display: block;
 							overflow: hidden;
 							width: 17.25%;
@@ -278,7 +302,7 @@ body.home .l-header {
 						}
 					}
 					dd {
-						@include inc.mq(tabs) {
+						@include inc.mq(tab) {
 							width: 78%;
 						}
 					}
@@ -318,7 +342,10 @@ body.home {
 		}
 	}
 }
-body.tour {
+body.single-walk,
+body.single-tour,
+body.post-type-archive-tour,
+body.tax-tour_cat {
 	.l-header {
 		ul li:nth-child(3) a:after {
 			background: inc.$color-main;
@@ -335,7 +362,9 @@ body.tax-digital_cat {
 			opacity: 1;
 		}
 	}
-}
+}body.single-events,
+body.post-type-archive-events,
+body.tax-events_cat,
 body.events {
 	.l-header {
 		ul li:nth-child(5) a:after {

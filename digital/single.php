@@ -12,7 +12,11 @@ get_header(); ?>
 	<article class="c-article p-digital__post">
 		<div class="p-digital__post__text">
 			<h2 class="c-heading__l"><?php the_title(); ?></h2>
-			<div class="p-digital__post__cat"><span>分類</span>：本</div>
+			<div class="p-digital__post__cat"><span>分類：</span>
+<?php $terms = get_the_terms($post->ID,'digital_cat'); foreach( $terms as $term ):
+				echo '<a href="'.get_term_link($term->slug, 'digital_cat').'">'.$term->name.'</a>';
+endforeach; ?>
+			</div>
 			<div class="p-digital__post__body">
 				<?php the_content(''); ?>
 			</div>

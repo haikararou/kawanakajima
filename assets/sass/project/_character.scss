@@ -34,7 +34,8 @@ p-character
 		h4 {
 			display: inline-block;
 		}
-		&__lifetime {
+		&__lifetime,
+		&__txt {
 			@include inc.sizing(font-size, tab, 14px, sp, 12px);
 			color: inc.$color-blk;
 			@include inc.sizing(margin-bottom, tab, 35px, sp, 23px);

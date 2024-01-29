@@ -5,6 +5,11 @@
 	nav
 ----------*/
 .c-nav {
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
 	&__local {
 		position: relative;
 		display: flex;

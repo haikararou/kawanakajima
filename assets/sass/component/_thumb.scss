@@ -25,18 +25,18 @@
 			@include inc.mq(tabs) {
 				width: 23.5%;
 			}
+			img {
+				aspect-ratio: 4 / 3;
+				object-fit: cover;
+			}
 		}
 	}
 
 
 	&__events {
-		body.home &,
-		body.page-tour &,
-		body.single-tour & {
-			background: inc.$color-back;
-			@include inc.sizing(padding-top, tab, 90px, sp, 50px);
-			@include inc.sizing(padding-bottom, tab, 90px, sp, 50px);
-		}
+		background: inc.$color-back;
+		@include inc.sizing(padding-top, tab, 90px, sp, 50px);
+		@include inc.sizing(padding-bottom, tab, 90px, sp, 50px);
 		.l-wrapper {
 			max-width: 1344px;
 		}
@@ -44,6 +44,10 @@
 		figure,
 		img {
 			display: block;
+		}
+		img {
+			aspect-ratio: 4 / 3;
+			object-fit: cover;
 		}
 		figcaption {
 			@include inc.sizing(margin-top, tab, 24px, sp, 10px);

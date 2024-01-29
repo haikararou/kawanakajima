@@ -22,13 +22,18 @@ endif;
 <?php if ( is_page('three-d') ) : ?>
 <?php endif; ?>
 
-	<!--google Analytics -->
-	<!--google Analyticsのタグをここに張り付ける -->
 </head>
 
 <body <?php body_class('l-body'); ?> id="js-body">
 
-<header class="l-header" id="js-header">
+<?php if (is_front_page() || is_home()) : ?>
+<!-- ローディング画面 -->
+<div class="loader-bg">
+	<div class="loader"></div>
+</div>
+<?php endif; ?>
+
+<header class="l-header">
 	<div class="l-header__logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo.svg" alt="<?php bloginfo('name'); ?>"></a></div>
 
 	<a class="l-hamburger">
@@ -58,11 +63,18 @@ endif;
 	<div class="l-header__nagano"><a href="https://www.city.nagano.nagano.jp/" target="_blank" rel="nofllow"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/naganocity.svg"><span>長野市</span></a></div>
 </header>
 
+<?php if (!is_front_page() || !is_home()) : ?>
 <nav class="l-breadcrumb">
 	<ul>
+<?php if ( is_singular('walk') ): ?>
+		<li><a href="<?php echo home_url(); ?>">川中島の戦いトップ</a></li>
+		<li><a href="<?php echo home_url('/tour'); ?>">史跡をめぐる</a></li>
+		<li><?php the_title(); ?></li>
+<?php else: ?>
 <?php if(function_exists('bcn_display')){ bcn_display(); }?>
+<?php endif; ?>
 	</ul>
 </nav>
+<?php endif; ?>
 
-<main class="l-main">
-	<div class="l-wrapper">
+<main class="l-main"><?php if (!is_front_page() || !is_home()) : ?><div class="l-wrapper"><?php endif; ?>

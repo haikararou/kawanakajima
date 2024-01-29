@@ -11,168 +11,120 @@
 	</nav>
 </div>
 
-<?php
-// tour_name_kana
-
-	$jp_a = "あ";
-	$jp_i = "い";
-	$jp_u = "う";
-	$jp_e = "え";
-	$jp_o = "お";
-	$jp_ka = "かが";
-	$jp_ki = "きぎ";
-	$jp_ku = "くぐ";
-	$jp_ke = "けげ";
-	$jp_ko = "こご";
-	$jp_sa = "さざ";
-	$jp_si = "しじじゃじゅじょ";
-	$jp_su = "すず";
-	$jp_se = "せぜ";
-	$jp_so = "そぞ";
-	$jp_ta = "ただ";
-	$jp_ti = "ちぢ";
-	$jp_tu = "つづ";
-	$jp_te = "てで";
-	$jp_to = "とど";
-	$jp_na = "な";
-	$jp_ni = "に";
-	$jp_nu = "ぬ";
-	$jp_ne = "ね";
-	$jp_no = "の";
-	$jp_ha = "はばぱ";
-	$jp_hi = "ひびぴびゅ";
-	$jp_hu = "ふぶぷ";
-	$jp_he = "へべぺ";
-	$jp_ho = "ほぼぽ";
-	$jp_ma = "ま";
-	$jp_mi = "み";
-	$jp_mu = "む";
-	$jp_me = "め";
-	$jp_mo = "も";
-	$jp_ya = "や";
-	$jp_yu = "ゆ";
-	$jp_yo = "よ";
-	$jp_ra = "ら";
-	$jp_ri = "り";
-	$jp_ru = "る";
-	$jp_re = "れ";
-	$jp_ro = "ろ";
-	$jp_wa = "わ";
-	$jp_wo = "を";
-	$jp_nn = "ん";
-	$mojilist2 = array($jp_a,$jp_i,$jp_u,$jp_e,$jp_o,$jp_ka,$jp_ki,$jp_ku,$jp_ke,$jp_ko,$jp_sa,$jp_si,$jp_su,$jp_se,$jp_so,$jp_na,$jp_ni,$jp_nu,$jp_ne,$jp_no,$jp_ha,$jp_hi,$jp_hu,$jp_he,$jp_ho,$jp_ma,$jp_mi,$jp_mu,$jp_me,$jp_mo,$jp_ya,$jp_yu,$jp_yo,$jp_ra,$jp_ri,$jp_ru,$jp_re,$jp_ro,$jp_wa,$jp_wo,$jp_nn);
-	$mojilabel2 = array("あ","い","う","え","お","か","き","く","け","こ","さ","し","す","せ","そ","た","ち","つ","て","と","な","に","ぬ","ね","の","は","ひ","ふ","へ","ほ","ま","み","む","め","も","や","ゆ","よ","ら","り","る","れ","ろ","わ","を","ん");
-
-
-?>
-
-（まだ静的）
 <section id="order" class="c-section p-tour__order">
 	<h2 class="c-heading__l">五十音別史跡一覧</h2>
-	<!-- タブ切り替え -->
-	<div class="c-tab">
-		<ul class="c-tab__list">
-			<li><a href="" class="active">あ行</a></li>
-			<li><a href="">か行</a></li>
-			<li><a href="">さ行</a></li>
-			<li><a href="">た行</a></li>
-			<li><a href="">な行</a></li>
-			<li><a href="">は行</a></li>
-			<li><a href="">ま行</a></li>
-			<li><a href="">や行</a></li>
-			<li><a href="">ら行</a></li>
-			<li><a href="">わ行</a></li>
-		</ul>
-		<div class="c-tab__content">
-			<!--あ行-->
-			<div class="active">
-				<dl class="c-tab__vowels">
-					<div class="c-tab__vowel">
-						<dt>あ</dt>
-						<dd><ul>
-							<li><a href="./post.html">青木神社</a></li>
-							<li><a href="./post.html">青柳城跡</a></li>
-							<li><a href="./post.html">青柳城跡</a></li>
-							<li><a href="./post.html">赤川の歌碑</a></li>
-							<li><a href="./post.html">赤旭山城跡</a></li>
-							<li><a href="./post.html">尼巌城跡</a></li>
-							<li><a href="./post.html">雨宮刑部正利の墓</a></li>
-							<li><a href="./post.html">雨宮の渡し</a></li>
-							<li><a href="./post.html">荒砥城跡〈城山史跡公園〉</a></li>
-							<li><a href="./post.html">安養寺</a></li>
-						</ul></dd>
-					</div>
-					<div class="c-tab__vowel">
-						<dt>い</dt>
-						<dd><ul>
-							<li><a href="./post.html">飯縄大明神（飯縄権現、飯縄山、飯綱山）</a></li>
-							<li><a href="./post.html">飯縄山里宮（皇足穂命神社）</a></li>
-							<li><a href="./post.html">飯山城跡</a></li>
-							<li><a href="./post.html">生島足島神社</a></li>
-							<li><a href="./post.html">板垣信方（板垣駿河守信方）の墓</a></li>
-							<li><a href="./post.html">市村の渡し</a></li>
-							<li><a href="./post.html">一杯清水（霊山寺）</a></li>
-							<li><a href="./post.html">戌ヶ瀬（狗ヶ瀬）</a></li>
-						</ul></dd>
-					</div>
-					<div class="c-tab__vowel">
-						<dt>う</dt>
-						<dd><ul>
-							<li><a href="./post.html">上田原古戦場</a></li>
-						</ul></dd>
-					</div>
-					<div class="c-tab__vowel">
-						<dt>お</dt>
-						<dd><ul>
-							<li><a href="./post.html">大岡城跡</a></li>
-							<li><a href="./post.html">大倉城跡</a></li>
-							<li><a href="./post.html">大里山風雲庵</a></li>
-							<li><a href="./post.html">大堀館跡</a></li>
-							<li><a href="./post.html">小田切駿河守の墓（円光寺）</a></li>
-							<li><a href="./post.html">大日方佐渡守直長の墓（晶龍寺）</a></li>
-						</ul></dd>
-					</div>
-				</dl>
-			</div>
-			<!--か行-->
-			<div>
-				<p>か行の内容が入ります</p>
-			</div>
-			<!--さ行-->
-			<div>
-				<p>さ行の内容が入ります</p>
-			</div>
-			<!--た行-->
-			<div>
-				<p>た行の内容が入ります</p>
-			</div>
-			<!--な行-->
-			<div>
-				<p>な行の内容が入ります</p>
-			</div>
-			<!--は行-->
-			<div>
-				<p>は行の内容が入ります</p>
-			</div>
-			<!--ま行-->
-			<div>
-				<p>ま行の内容が入ります</p>
-			</div>
-			<!--や行-->
-			<div>
-				<p>や行-の内容が入ります</p>
-			</div>
-			<!--ら行-->
-			<div>
-				<p>ら行の内容が入ります</p>
-			</div>
-			<!--わ行-->
-			<div>
-				<p>わ行の内容が入ります</p>
-			</div>
-		</div>
-	</div>
+
+<?php
+// 行ごとに投稿を区切るための行リスト
+$rows2 = array(
+	array('あ', 'か', 'さ','た', 'な', 'は','ま', 'や', 'ら','わ')
+);
+foreach ($rows2 as $row) :
+	$count=1;
+	echo "<ul class='c-tab__list'>"; // 行ごとのコンテナ開始
+	foreach ($row as $section) :
+		$args = array(
+			'post_type' => 'tour',
+			'posts_per_page' => -1,
+			'meta_key' => 'tour_name_kana', // ふりがなのカスタムフィールドを指定
+			'orderby' => 'meta_value', // メタデータの値でソート
+			'order' => 'ASC', // 昇順でソート
+			'meta_query' => array(
+				array(
+					'key' => 'tour_name_kana',
+					'value' => $section . '*', // 特定の行の文字で始まるものを取得するためのワイルドカード
+					'compare' => 'RLIKE' // 正規表現を使用した比較
+				),
+			),
+		);
+		$posts_query = new WP_Query($args);
+		if ($posts_query->have_posts()) :
+			//echo "<ul class='tab-container'>"; // セクションごとのコンテナ開始
+			echo "<li><a href='' class='tab_";
+			echo $count;
+			if($count==1) {
+				echo " active";
+			}
+			echo "'>$section 行</a></li>"; // セクションの見出しを表示
+			//echo "</ul>"; // セクションごとのコンテナ終了
+			wp_reset_postdata();
+		endif;
+	$count++;
+	endforeach;
+	echo "</ul>"; // 行ごとのコンテナ終了
+endforeach;
+?>
+
+<div class="c-tab__content">
+
+<?php
+// 行ごとに投稿を区切るための行リスト
+$rows = array(
+	array('あ', 'い', 'う', 'え', 'お'),
+	array('か', 'き', 'く', 'け', 'こ'),
+	array('さ', 'し', 'す', 'せ', 'そ'),
+	array('た', 'ち', 'つ', 'て', 'と'),
+	array('な', 'に', 'ぬ', 'ね', 'の'),
+	array('は', 'ひ', 'ふ', 'へ', 'ほ'),
+	array('ま', 'み', 'む', 'め', 'も'),
+	array('や', 'ゆ', 'よ'),
+	array('ら', 'り', 'る', 'れ', 'ろ'),
+	array('わ', 'を', 'ん'),
+);
+$count=1;
+foreach ($rows as $row) :
+	echo "<div class='tab_";
+	echo $count;
+		if($count==1) {
+			echo " active";
+		}
+	echo "'><dl class='c-tab__vowels'>"; // 行ごとのコンテナ開始
+	foreach ($row as $section) :
+		echo "<div class='c-tab__vowel'>"; // セクションごとのコンテナ開始
+		echo "<dt>$section</dt>"; // セクションの見出しを表示
+
+		$args = array(
+			'post_type' => 'tour',
+			'posts_per_page' => -1,
+			'meta_key' => 'tour_name_kana', // ふりがなのカスタムフィールドを指定
+			'orderby' => 'meta_value', // メタデータの値でソート
+			'order' => 'ASC', // 昇順でソート
+			'meta_query' => array(
+				array(
+					'key' => 'tour_name_kana',
+					'value' => '^' . $section, // 特定の行の文字で始まるものを取得する正規表現
+					'compare' => 'REGEXP' // 正規表現を使用した比較
+				),
+			),
+		);
+
+		$posts_query = new WP_Query($args);
+
+		if ($posts_query->have_posts()) :
+			echo "<dd><ul>";
+			while ($posts_query->have_posts()) : $posts_query->the_post();
+				// 投稿のタイトルをリストアイテムとして表示
+				?>
+				<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+				<?php
+			endwhile;
+			echo "</ul></dd>";
+			wp_reset_postdata();
+		else :
+			// 投稿が見つからなかった場合の表示
+			echo '投稿がありません。';
+		endif;
+
+		echo "</div>"; // セクションごとのコンテナ終了
+	endforeach;
+	echo "</dl></div>"; // 行ごとのコンテナ終了
+	$count++;
+endforeach;
+?>
+
+</div>
 </section>
+
 
 <?php
 $tax_name = 'tour_cat';
@@ -193,7 +145,7 @@ $terms = get_terms( $tax_name, array('parent' => 0));
 	<h3 class="c-heading__m">主な史跡</h3>
 	<ul class="c-thumb04">
 <?php if(have_posts()): while (have_posts()) : the_post(); ?>
-		<li><a href="<?php the_permalink(); ?>"><figure><?php if (has_post_thumbnail()) : ?><?php the_post_thumbnail('full'); ?><?php else: ?><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/noimage.png" alt="該当画像はありません"><?php endif; ?>
+		<li><a href="<?php the_permalink(); ?>"><figure><?php if (has_post_thumbnail()) : ?><?php the_post_thumbnail(); ?><?php else: ?><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/noimage.png" alt="該当画像はありません"><?php endif; ?>
 			<figcaption>
 				<h4 class="c-heading__ss"><?php the_title(); ?></h4>
 				<?php if(get_field('tour_lead')): ?><p><?php the_field('tour_lead'); ?></p><?php endif; ?>
@@ -203,32 +155,43 @@ $terms = get_terms( $tax_name, array('parent' => 0));
 	</ul>
 </section>
 
-（まだ静的）
+
 <section id="map" class="c-section p-tour__map">
 	<h2 class="c-heading__l">地図で見る</h2>
-	<div class="">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/tour/map.jpg">
+	<div class="c-map">
+		<iframe src="https://www.google.com/maps/d/embed?mid=10WpTujWae4jLSRbw20_mFzHp6f2jVGQ&ehbc=2E312F" width="640" height="480"></iframe>
 	</div>
-</section>
-
-（まだ静的）
-<section id="walk" class="c-section">
-	<h2 class="c-heading__l">歩いてめぐる</h2>
-	<ul class="c-lst">
-		<li><a href="#"><span class="km"><em>3.1</em>km</span><figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tour/dummy13.jpg">
-			<figcaption>
-				<h4 class="c-heading__m">川中島古戦場周辺周遊コース</h4>
-				<p>川中島古戦場から始まり、長野市立博物館や典厩寺、赤川の碑など川中島の戦いにまつわる史跡をめぐるコースです。</p>
-			</figcaption>
-		</figure><span class="c-anchor__detail">詳しく見る</span></a></li>
-		<li><a href="#"><span class="km"><em>4.6</em>km</span><figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tour/dummy14.jpg">
-			<figcaption>
-				<h4 class="c-heading__m">川中島古戦場周辺周遊コース</h4>
-				<p>川中島古戦場から始まり、長野市立博物館や典厩寺、赤川の碑など川中島の戦いにまつわる史跡をめぐるコースです。</p>
-			</figcaption>
-		</figure><span class="c-anchor__detail">詳しく見る</span></a></li>
+	<ul class="p-tour__map__icn">
+		<li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tour/icn01.png" alt=""><span>城</span></li>
+		<li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tour/icn02.png" alt=""><span>寺</span></li>
+		<li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tour/icn03.png" alt=""><span>神社</span></li>
+		<li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tour/icn04.png" alt=""><span>碑・像</span></li>
+		<li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tour/icn05.png" alt=""><span>供養塔・墓</span></li>
+		<li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tour/icn06.png" alt=""><span>戦場跡</span></li>
+		<li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tour/icn07.png" alt=""><span>その他</span></li>
 	</ul>
 </section>
 
+<?php
+	$args = array(
+		'posts_per_page' => -1, // 表示する投稿数
+		'post_type' => array('walk'), // 取得する投稿タイプのスラッグ
+	);
+	$my_posts = get_posts($args);
+?>
+<section id="walk" class="c-section">
+	<h2 class="c-heading__l">歩いてめぐる</h2>
+	<ul class="c-lst">
+<?php foreach ($my_posts as $post) : setup_postdata($post); ?>
+		<li><a href="<?php the_permalink(); ?>"><span class="hours"><span>目安時間</span><em><?php the_field('walk_hours'); ?></em>時間</span><figure><?php if (has_post_thumbnail()) : ?><?php the_post_thumbnail('full'); ?><?php else: ?><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/noimage.png" alt="該当画像はありません"><?php endif; ?>
+			<figcaption>
+				<h4 class="c-heading__m"><?php the_title(); ?></h4>
+				<?php if(get_field('walk_lead')): ?><p><?php the_field('walk_lead'); ?></p><?php endif; ?>
+			</figcaption>
+		</figure><span class="c-anchor__detail">詳しく見る</span></a></li>
+<?php endforeach; ?>
+	</ul>
+</section>
+<?php wp_reset_postdata(); ?>
 
 <?php get_footer(); ?>

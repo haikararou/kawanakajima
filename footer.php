@@ -3,18 +3,23 @@
  * フッターテンプレート
  */
 ?>
-	</div>
+<?php if ( !is_front_page() || !is_home()) : ?></div><?php endif; ?>
+
+<?php if ( is_singular('tour') | is_singular('walk') ): ?>
+<?php get_template_part('inc/events'); ?>
+<?php endif; ?>
+
 </main>
 
 <footer class="l-footer">
 	<div class="l-footer__inner">
 		<nav class="l-footer__nav">
 			<ul>
-				<li><a href="./battles">戦いを知る</a></li>
-				<li><a href="./three-d">史跡をめぐる</a></li>
-				<li><a href="./digital">デジタル博物館</a></li>
-				<li><a href="./events">イベント情報</a></li>
-				<!--li><a href="./tourism">周辺観光情報</a></li-->
+				<li><a href="<?php echo home_url('/battles'); ?>">戦いを知る</a></li>
+				<li><a href="<?php echo home_url('/tour'); ?>">史跡をめぐる</a></li>
+				<li><a href="<?php echo home_url('/digital'); ?>">デジタル博物館</a></li>
+				<li><a href="<?php echo home_url('/events'); ?>">イベント情報</a></li>
+				<!--li><a href="<?php echo home_url('/tourism'); ?>">周辺観光情報</a></li-->
 			</ul>
 		</nav>
 		<div class="l-footer__logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo.svg" alt="<?php bloginfo('name'); ?>"></a></div>
@@ -33,7 +38,7 @@
 </footer>
 
 <nav class="l-footer__chat">
-	<a href="#"><span>AI<br>チャット<br>ボット</span><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/chatbot.png"></a>
+	<a target="_blank" rel="nofllow" href="https://ksm01l210101.japaneast.cloudapp.azure.com/wise/webchat/default/?t=OJsqP9tnVpn9ki353J1kgw%3D%3D"><span>AI<br>チャット<br>ボット</span><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/chatbot.png"></a>
 </nav>
 
 <?php wp_footer(); ?>

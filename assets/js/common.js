@@ -1,3 +1,14 @@
+///ローディング
+$(function(){
+	$(window).on('load',function(){
+		$('.loader').delay(500).fadeOut(500);
+		$('.loader-bg').delay(800).fadeOut(700);
+	});
+	setTimeout(function(){
+		$('.loader-bg').fadeOut(500);
+	},5000);
+});
+
 //ハンバーガー
 jQuery(function($){
 	$('.l-hamburger').on('click',function(){
@@ -151,32 +162,32 @@ if (windowWidth <= windowSm) {
 
 // タブ
 $(function(){
-  $('.c-tab__list li a').click(function (e) {
-    e.preventDefault();
-    $('.c-tab__list li a').removeClass('active');
-    $('.c-tab__content > div').removeClass('active');
-    $(this).addClass('active');
-    const array = $('.c-tab__list li a').index(this);
-    $('.c-tab__content > div').eq(array).fadeIn(300).addClass('active');
-    $('.c-tab__content > div').not('.active').hide();
-  });
+	$('.c-tab__list li a').click(function (e) {
+		e.preventDefault();
+		$('.c-tab__list li a').removeClass('active');
+		$('.c-tab__content > div').removeClass('active');
+		$(this).addClass('active');
+		const array = $('.c-tab__list li a').index(this);
+		$('.c-tab__content > div').eq(array).fadeIn(300).addClass('active');
+		$('.c-tab__content > div').not('.active').hide();
+	});
 });
 
 // スムーススクロール
 window.addEventListener('DOMContentLoaded', function () {
-  const anchorLinks = document.querySelectorAll('a[href^="#"]');
-  const anchorLinksArr = Array.prototype.slice.call(anchorLinks);
+	const anchorLinks = document.querySelectorAll('a[href^="#"]');
+	const anchorLinksArr = Array.prototype.slice.call(anchorLinks);
 
-  anchorLinksArr.forEach(function (link) {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-      const targetId = link.hash;
-      const targetElement = document.querySelector(targetId);
-      const targetOffsetTop = window.pageYOffset + targetElement.getBoundingClientRect().top; //ここに- 50 などと数値を入れるとヘッダー固定のスクロールが実現できる
-      window.scrollTo({
-        top: targetOffsetTop,
-        behavior: "smooth"
-      });
-    });
-  });
+	anchorLinksArr.forEach(function (link) {
+		link.addEventListener('click', function (e) {
+			e.preventDefault();
+			const targetId = link.hash;
+			const targetElement = document.querySelector(targetId);
+			const targetOffsetTop = window.pageYOffset + targetElement.getBoundingClientRect().top; //ここに- 50 などと数値を入れるとヘッダー固定のスクロールが実現できる
+			window.scrollTo({
+				top: targetOffsetTop,
+				behavior: "smooth"
+			});
+		});
+	});
 });

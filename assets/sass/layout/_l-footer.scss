@@ -192,5 +192,20 @@ l-footer
 	}
 }
 
-
+body.home .l-footer__chat {
+	// アニメーション
+	opacity: 0;
+	animation-name: header-fadeIn;
+	animation-delay: 6s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	/* フェードインアニメーション */
+	@keyframes header-fadeIn {
+		0% {
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+}
 

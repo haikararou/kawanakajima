@@ -9,22 +9,38 @@ p-home
 		position: relative;
 		overflow: hidden;
 		width: 100vw;
-		height: 100vh;
+		height: 100svh;
 		top: 0;
 		padding: 0;
-		@include inc.mq(tabs) {
-			height: 113.63vh;
+		@include inc.mq(lap) {
+			height: 113.63svh;
 		}
 
 		&__logo {
 			position: absolute;
 			width: 77.28%;
-			top: 32%;
+			top: 37.63svh;
 			left: 50%;
 			transform: translateX(-50%);
-			@include inc.mq(tabs) {
+			@include inc.mq(lap) {
 				width: 44.451%;
-				top: 175px;
+				top: 20svh;
+			}
+			// アニメーション
+			opacity: 0;
+			// transform: translate(0);
+			animation-name: logo-fadeIn;
+			animation-delay: 1s;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			/* フェードインアニメーション */
+			@keyframes logo-fadeIn {
+				0% {
+				}
+				100% {
+					opacity: 1;
+					// transform: translate(0);
+				}
 			}
 		}
 		&__takedabak {
@@ -34,11 +50,27 @@ p-home
 			left: 2.133%;
 			transform: rotate(11deg);
 			filter: blur(1px);
-			@include inc.mq(tabs) {
+			@include inc.mq(lap) {
 				width: 10.813%;
 				bottom: 480px;
 				left: .7480%;
 				filter: blur(2px);
+			}
+			// アニメーション
+			opacity: 0;
+			transform: translateX(-50px);
+			animation-name: takeda-fadeIn;
+			animation-delay: 3.5s;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			/* フェードインアニメーション */
+			@keyframes takeda-fadeIn {
+				0% {
+				}
+				100% {
+					opacity: 1;
+					transform: translate(0);
+				}
 			}
 		}
 		&__uesugibak {
@@ -48,11 +80,27 @@ p-home
 			right: 30.4%;
 			transform: rotate(-16deg);
 			filter: blur(1px);
-			@include inc.mq(tabs) {
+			@include inc.mq(lap) {
 				width: 9.401%;
 				top: 20px;
 				right: 6.951%;
 				filter: blur(2px);
+			}
+			// アニメーション
+			opacity: 0;
+			transform: translateX(50px);
+			animation-name: uesugi-fadeIn;
+			animation-delay: 3.5s;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			/* フェードインアニメーション */
+			@keyframes uesugi-fadeIn {
+				0% {
+				}
+				100% {
+					opacity: 1;
+					transform: translate(0);
+				}
 			}
 		}
 		&__takeda {
@@ -60,10 +108,26 @@ p-home
 			width: 43.26%;
 			bottom: 0;
 			left: -1.86%;
-			@include inc.mq(tabs) {
+			@include inc.mq(lap) {
 				width: 38.77%;
 				bottom: 0;
 				left: -5.86%;
+			}
+			// アニメーション
+			opacity: 0;
+			transform: translateX(-100px);
+			animation-name: takeda-fadeIn;
+			animation-delay: 3s;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			/* フェードインアニメーション */
+			@keyframes takeda-fadeIn {
+				0% {
+				}
+				100% {
+					opacity: 1;
+					transform: translate(0);
+				}
 			}
 		}
 		&__uesugi {
@@ -71,23 +135,54 @@ p-home
 			width: 56.50%;
 			top: 6.5%;
 			right: -5.33%;
-			@include inc.mq(tabs) {
+			@include inc.mq(lap) {
 				width: 60.459%;
 				top: 119px;
 				right: -29.655vw;
+			}
+			// アニメーション
+			opacity: 0;
+			transform: translateX(100px);
+			animation-name: takeda-fadeIn;
+			animation-delay: 3s;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			/* フェードインアニメーション */
+			@keyframes takeda-fadeIn {
+				0% {
+				}
+				100% {
+					opacity: 1;
+					transform: translate(0);
+				}
 			}
 		}
 		&__movie {
 			position: absolute;
 			width: 54.90%;
-			top: 44%;
+			top: 51.91svh;
 			left: 50%;
 			transform: translateX(-50%);
-			@include inc.mq(tabs) {
+			@include inc.mq(lap) {
 				width: 27.423%;
-				top: 423px;
+				top: 48.18svh;
 			}
-
+			// アニメーション
+			opacity: 0;
+			// transform: translateX(100px);
+			animation-name: movie-fadeIn;
+			animation-delay: 4.5s;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			/* フェードインアニメーション */
+			@keyframes movie-fadeIn {
+				0% {
+				}
+				100% {
+					opacity: 1;
+					// transform: translate(0);
+				}
+			}
 			a {
 				display: block;
 				position: relative;
@@ -101,7 +196,7 @@ p-home
 					top: 42%;
 					left: 45%;
 					transition: all 0.3s ease;
-					@include inc.mq(tabs) {
+					@include inc.mq(lap) {
 						border: 1.6em solid transparent;
 						border-left: 3em solid inc.$color-wht;
 						left: 47%;
@@ -117,33 +212,38 @@ p-home
 				display: block;
 				border: 2px solid #000;
 				border-radius: 15px;
-				@include inc.mq(tabs) {
+				@include inc.mq(lap) {
 					border: 6px solid #000;
 				}
 			}
 		}
 		&__kawanakajima {
 			position: absolute;
-			width: 163.389vw;
+			width: 100vw;
 			bottom: 0;
 			left: 0;
-			animation: kawanakajima 20s 1s linear infinite;
-			@include inc.mq(tabs) {
+			@include inc.mq(lap) {
 				bottom: 13.63vh;
+			}
+			// アニメーション
+			animation-name: movie-fadeIn;
+			animation-delay: 4s;
+			animation-duration: 1s;
+			animation: kawanakajima 20s 1s linear infinite;
+			/* フェードインアニメーション */
+			@keyframes kawanakajima {
+				0% {
+					transform: translateX(100%);
+				}
+				100% {
+					transform: translateX(-75.9632%);
+				}
 			}
 		}
 	}
-@keyframes kawanakajima {
-	0% {
-		transform: translateX(100%);
-	}
-	100% {
-		transform: translateX(-75.9632%);
-	}
-}
 
 	&__battles {
-		@include inc.sizing(padding-top, tab, 155px, sp, 105px);
+		@include inc.sizing(padding-top, lap, 155px, sp, 105px);
 		background: url("../img/home/wave01.png") no-repeat right -24.8% top 10%;
 		background-size: 174px 42px;
 		background-blend-mode: multiply;
@@ -151,8 +251,8 @@ p-home
 			max-width: 1344px;
 			h2 {
 				text-align: center;
-				@include inc.sizing(margin-bottom, tab, 15px, sp, 10px);
-				@include inc.sizing(font-size, tab, 70px, sp, 28px);
+				@include inc.sizing(margin-bottom, lap, 15px, sp, 10px);
+				@include inc.sizing(font-size, lap, 70px, sp, 28px);
 				font-weight: inc.$Bold;
 				color: inc.$color-main;
 			}
@@ -164,26 +264,26 @@ p-home
 					border-bottom: 1px solid inc.$color-line;
 					a {
 						display: block;
-						@include inc.mq(tabs) {
+						@include inc.mq(lap) {
 							text-align: center;
 						}
 						padding: 1rem 0;
 						img {
 							vertical-align: middle;
-							@include inc.sizing(width, tab, 150px, sp, 55px);
-							@include inc.sizing(border-radius, tab, 20px, sp, 6px);
+							@include inc.sizing(width, lap, 150px, sp, 55px);
+							@include inc.sizing(border-radius, lap, 20px, sp, 6px);
 							font-weight: inc.$Semibold;
 							&.l-sp {
 								display: inline-block;
 								margin-right: 10px;
-								@include inc.mq(tabs) {
+								@include inc.mq(lap) {
 									display: none;
 									margin-right: 0;
 								}
 							}
 							&.l-pc {
 								display: none;
-								@include inc.mq(tabs) {
+								@include inc.mq(lap) {
 									display: inline-block;
 									margin: 0 21px;
 								}
@@ -192,16 +292,16 @@ p-home
 						span {
 							display: inline-block;
 							vertical-align: middle;
-							@include inc.sizing(font-size, tab, 45px, sp, 19px);
+							@include inc.sizing(font-size, lap, 45px, sp, 19px);
 							&.l-sp {
 								display: inline-block;
-								@include inc.mq(tabs) {
+								@include inc.mq(lap) {
 									display: none;
 								}
 							}
 							&.l-pc {
 								display: none;
-								@include inc.mq(tabs) {
+								@include inc.mq(lap) {
 									display: inline-block;
 								}
 							}
@@ -254,6 +354,10 @@ p-home
 				padding: 0;
 				li {
 					display: inline-block;
+					margin-bottom: 3px;
+					span {
+						@include inc.sizing(font-size, tabs, 16px, sp, 10px);
+					}
 				}
 			}
 		}
@@ -362,20 +466,30 @@ p-home
 		@include inc.sizing(padding-top, tab, 60px, sp, 30px);
 		@include inc.sizing(padding-bottom, tab, 70px, sp, 35px);
 		.l-wrapper {
-			max-width: 970px;
+			max-width: 800px;
 			h2 {
 				text-align: center;
 			}
 			ul {
+				margin: 0;
+				padding: 0;
+				@include inc.mq(tab) {
+					display: flex;
+					flex-wrap: wrap;
+					gap: 20px 2.5%;
+				}
 				li {
+					margin-bottom: 20px;
+					@include inc.mq(tab) {
+						width: calc( 95% / 3);
+						margin-bottom: 0;
+					}
 					a {
 						display: block;
-						@include inc.sizing(font-size, tab, 16px, sp, 13px);
-						font-weight: inc.$Bold;
-						background: inc.$color-wht url("../img/common/icn_link.svg") no-repeat 95% 50%;
-						padding: 1.5em;
-						&:hover {
-							opacity: .75;
+						img {
+							display: block;
+							max-width: 100%;
+							margin: 0 auto;
 						}
 					}
 				}

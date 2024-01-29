@@ -33,7 +33,7 @@
 	<div class="c-single__back"><a class="c-anchor__back" href="<?php echo home_url('/illusts'); ?>"><span>川中島の戦い一覧へ戻る</span></a></div>
 </section>
 
-<?php get_template_part('inc/tour'); ?>
+<!--?php get_template_part('inc/tour'); ?-->
 
 <div class="c-nav__footnav">
 	<div class="c-nav__footnav__prev"><a href="<?php echo home_url('/illusts/2nd'); ?>"><span><i>第2次川中島の戦い</i></span></a></div>

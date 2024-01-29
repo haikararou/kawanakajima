@@ -14,5 +14,24 @@ p-tour
 			}
 		}
 	}
+	&__map {
+		&__icn {
+			margin-top: 1em;
+			li {
+				display: inline-block;
+				@include inc.sizing(font-size, tab, 20px, sp, 14px);
+				font-weight: inc.$Bold;
+				margin-right: 2em;
+
+				img {
+					display: inline-block;
+					@include inc.sizing(width, tab, 40px, sp, 24px);
+				}
+				span {
+					margin-left: 1em;
+				}
+			}
+		}
+	}
 
 }

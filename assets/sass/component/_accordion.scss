@@ -59,6 +59,13 @@
 				cursor: auto;
 				pointer-events: none;
 			}
+			a {
+				pointer-events: all;
+				font-weight: inc.$Bold;
+				text-decoration: underline;
+				text-decoration-skip-ink: none;
+				text-underline-offset: .4em;
+			}
 		}
 		&.is-active {
 			dt:before {

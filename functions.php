@@ -41,6 +41,7 @@ function register_files() {
 	wp_enqueue_script( 'modaal', '//cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js');
 	wp_register_script( 'slick', get_template_directory_uri() . '/assets/slick/slick.min.js');
 	wp_register_script( 'slick-slide', get_template_directory_uri() . '/assets/slick/slide.js');
+	// wp_enqueue_script( 'progressbar', get_template_directory_uri() . '/assets/js/progressbar.min.js');
 	wp_register_script( 'function', get_template_directory_uri() . '/assets/js/common.js', array(), filemtime( get_template_directory().'/assets/js/common.js') );
 }
 function my_enqueue_files() {
@@ -55,9 +56,12 @@ function my_enqueue_files() {
 	wp_enqueue_style( 'modaal-theme' );
 	wp_enqueue_style( 'wpadminbar' );
 	wp_enqueue_style( 'theme-common' );
+
 	// wp_enqueue_script( 'swiper' );
+	wp_enqueue_script( 'modaal' );
 	wp_enqueue_script( 'slick' );
 	wp_enqueue_script( 'slick-slide' );
+	// wp_enqueue_script( 'progressbar' );
 	wp_enqueue_script( 'function' );
 }
 add_action( 'wp_enqueue_scripts', 'my_enqueue_files' );

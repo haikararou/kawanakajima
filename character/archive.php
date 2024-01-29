@@ -34,7 +34,8 @@ $terms = get_terms( $tax_name, array('parent' => 0));
 		</div>
 		<div class="c-section__column2__w65 p-character__box">
 			<h3 class="c-heading__l"><?php the_title(); ?><span><?php if(get_field('character_kana')): ?>（<?php the_field('character_kana'); ?>）<?php endif; ?></span></h3>
-			<div class="p-character__box__lifetime"><?php if(get_field('character_lived')): ?>［<?php the_field('character_lived'); ?>］<?php endif; ?></div>
+			<?php if(get_field('character_lived')): ?><div class="p-character__box__lifetime">［<?php the_field('character_lived'); ?>］</div><?php endif; ?>
+			<?php if(get_field('character_txt')): ?><div class="p-character__box__txt"><?php the_field('character_txt'); ?></div><?php endif; ?>
 			<div class="p-character__box__body">
 				<dl class="c-accordion">
 					<?php the_content(''); ?>

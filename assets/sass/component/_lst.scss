@@ -38,9 +38,13 @@
 						align-items: center;
 					}
 				}
-				& > .km {
+				& > .km,
+				& > .hours {
 					@include inc.sizing(font-size, tab, 24px, sp, 14px);
 					font-family: inc.$font-Vollkorn;
+				}
+				span {
+					font-size: 11px;
 				}
 				em {
 					@include inc.sizing(font-size, tab, 35px, sp, 32px);

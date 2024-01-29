@@ -9,6 +9,10 @@ p-timeline
 		padding-bottom: 10%;
 		margin-bottom: 10%;
 		clear: both;
+		background: url("../img/common/timeline.svg") no-repeat 50% 40%;
+		background-size: contain;
+		background-attachment: fixed;
+		background-position: center;
 		&:before {
 			position: absolute;
 			content: "";
@@ -27,6 +31,7 @@ p-timeline
 		}
 	}
 	&__head {
+		background-color: inc.$color-bg;
 		&::after {
 			content: "";
 			display: block;
@@ -47,8 +52,8 @@ p-timeline
 			// margin-bottom: 1em;
 			padding-top: 1em;
 			img {
-				height: 40px;
-				margin: 0 auto 1em;
+				height: 80px;
+				margin: 0 auto .5em;
 			}
 		}
 	}

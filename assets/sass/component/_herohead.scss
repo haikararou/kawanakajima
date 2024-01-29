@@ -21,12 +21,17 @@ c-herohead
 		margin-top: 1em;
 		padding: 0;
 	}
-	span.km {
+	span.km,
+	span.hours {
 		display: block;
 		@include inc.sizing(font-size, tab, 24px, sp, 14px);
 		font-weight: inc.$Bold;
 		line-height: 2;
 		font-family: inc.$font-Vollkorn;
+		span {
+			font-size: 12px;
+			margin-right: 1.5em;
+		}
 		em {
 			@include inc.sizing(font-size, tab, 35px, sp, 32px);
 			font-family: inc.$font-Cochin;

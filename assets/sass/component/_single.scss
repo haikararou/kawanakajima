@@ -18,6 +18,11 @@ c-single
 	&__coursemap {
 		// @include inc.sizing(padding-bottom, tab, 96px, sp, 48px);
 		@include inc.sizing(margin-bottom, tab, 80px, sp, 40px);
+		figure,
+		figcaption {
+			position: static !important;
+		}
+
 	}
 	&__block {
 		h2 {
@@ -25,6 +30,7 @@ c-single
 		}
 		img {
 			max-width: 100%;
+			margin: 0 auto;
 			@include inc.sizing(margin-top, tab, 32px, sp, 16px);
 			@include inc.sizing(margin-bottom, tab, 32px, sp, 16px);
 		}
@@ -54,6 +60,7 @@ c-single
 	&__box {
 		padding: 5%;
 		background: inc.$color-back;
+		margin-top: 5rem;
 	}
 	&__detail {
 		dl {
@@ -139,3 +146,25 @@ c-single
 		}
 	}
 }
+
+
+
+
+
+
+
+.wp-block-gallery {
+	margin: 1.5rem 0 !important;
+	img {
+		// object-fit: contain !important;
+		// aspect-ratio: 4 / 3;
+		margin: 0 auto !important;
+	}
+}
+.wp-block-image {
+	figcaption {
+		background: none !important;
+		color: inc.$color-blk !important;
+	}
+}
+

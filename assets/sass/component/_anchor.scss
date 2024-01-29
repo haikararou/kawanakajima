@@ -24,6 +24,18 @@
 .c-anchor
 ----------*/
 .c-anchor {
+	&__txt {
+		li {
+			margin-bottom: .5em;
+		}
+		a {
+			font-weight: inc.$Bold;
+			&[target="_blank"] {
+				padding-right: 1.3em;
+				background: url("../img/common/icn_link.svg") no-repeat 100% .4em;
+			}
+		}
+	}
 	&__btn {
 		line-height: 1;
 		display: inline-block;
@@ -50,6 +62,7 @@
 		&:hover {
 			background: inc.$color-hover;
 			opacity: 1;
+			color: inc.$color-wht;
 		}
 	}
 	&__back {
@@ -77,7 +90,7 @@
 		display: flex;
 		justify-content: flex-end;
 		position: relative;
-		color: inc.$color-blk;
+		// color: inc.$color-blk;
 		@include inc.sizing(font-size, tab, 15px, sp, 12px);
 		font-weight: inc.$Bold;
 		padding-right: .6em;
@@ -90,6 +103,9 @@
 			@extend %arw;
 			border-color: inc.$color-main;
 			transform: rotate(45deg);
+		}
+		&:hover:after {
+			border-color: inc.$color-hover;
 		}
 	}
 	&__list {

@@ -5,7 +5,12 @@
 </div>
 
 <section class="c-section">
-	<p class="c-heading__s">長野市立博物館の収蔵品データベースの川中島の戦いに関する文化財と真田宝物館の文化財を元に作成しております。</p>
+	<p class="c-heading__s">長野市立博物館と真田宝物館の収蔵品のうち、川中島の戦いに関する文化財を掲載しております。</p>
+	<br>
+	<ul class="c-anchor__txt">
+		<li><a target="_blank" rel="nofllow" href="https://jmapps.ne.jp/nagamuse/">長野市立博物館　収蔵品データベース</a></li>
+		<li><a target="_blank" rel="nofllow" href="https://www.sanadahoumotsukan.com/">真田宝物館</a></li>
+	</ul>
 </section>
 
 <section class="c-section">
