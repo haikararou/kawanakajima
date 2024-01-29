@@ -903,6 +903,10 @@ c-herohead
   font-size: clamp(19px, 8.44vw - 19.8px, 45px);
   font-weight: 700;
 }
+.c-herohead__heading span {
+  font-size: clamp(12px, 4.55vw - 8.9px, 26px);
+  display: block;
+}
 .c-herohead .c-nav__anchor {
   margin: 0;
   margin-top: 1em;
@@ -1962,13 +1966,49 @@ c-single
   position: static !important;
 }
 .c-single__block h2 {
-  margin-bottom: clamp(16px, 5.19vw - 7.9px, 32px);
+  font-weight: bold;
+  margin-bottom: clamp(20px, 3.9vw + 2px, 32px);
+}
+.c-single__block h3 {
+  line-height: 1.8;
+  font-weight: bold;
+  margin-bottom: clamp(18px, 3.25vw + 3px, 28px);
+}
+.c-single__block h4 {
+  line-height: 1.8;
+  font-weight: bold;
+  margin-bottom: clamp(16px, 2.6vw + 4px, 24px);
 }
 .c-single__block img {
   max-width: 100%;
   margin: 0 auto;
   margin-top: clamp(16px, 5.19vw - 7.9px, 32px);
   margin-bottom: clamp(16px, 5.19vw - 7.9px, 32px);
+}
+.c-single__block ul {
+  padding-left: 1.2rem;
+}
+.c-single__block ul li {
+  list-style-type: disc;
+  line-height: 1.8;
+}
+.c-single__block ul li + li {
+  margin-top: 1rem;
+}
+.c-single__block p + h2,
+.c-single__block img + h2,
+.c-single__block ul + h2 {
+  margin-top: 4rem;
+}
+.c-single__block p + h3,
+.c-single__block img + h3,
+.c-single__block ul + h3 {
+  margin-top: 3rem;
+}
+.c-single__block p + h4,
+.c-single__block img + h4,
+.c-single__block ul + h4 {
+  margin-top: 2rem;
 }
 .c-single__thumb {
   display: -webkit-box;

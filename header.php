@@ -21,7 +21,7 @@ endif;
 
 <?php if ( is_page('three-d') ) : ?>
 <?php endif; ?>
-
+<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.ico">
 </head>
 
 <body <?php body_class('l-body'); ?> id="js-body">

@@ -15,6 +15,10 @@ c-herohead
 	&__heading {
 		@include inc.sizing(font-size, tab, 45px, sp, 19px);
 		font-weight: inc.$Bold;
+		span {
+			@include inc.sizing(font-size, tab, 26px, sp, 12px);
+			display: block;
+		}
 	}
 	.c-nav__anchor {
 		margin: 0;

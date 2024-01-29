@@ -26,13 +26,49 @@ c-single
 	}
 	&__block {
 		h2 {
-			@include inc.sizing(margin-bottom, tab, 32px, sp, 16px);
+			font-weight: bold;
+			@include inc.sizing(margin-bottom, tab, 32px, sp, 20px);
+		}
+		h3 {
+			line-height: 1.8;
+			font-weight: bold;
+			@include inc.sizing(margin-bottom, tab, 28px, sp, 18px);
+		}
+		h4 {
+			line-height: 1.8;
+			font-weight: bold;
+			@include inc.sizing(margin-bottom, tab, 24px, sp, 16px);
 		}
 		img {
 			max-width: 100%;
 			margin: 0 auto;
 			@include inc.sizing(margin-top, tab, 32px, sp, 16px);
 			@include inc.sizing(margin-bottom, tab, 32px, sp, 16px);
+		}
+		ul {
+			padding-left: 1.2rem;
+			li {
+				list-style-type: disc;
+				line-height: 1.8;
+				& + li {
+					margin-top: 1rem;
+				}
+			}
+		}
+		p + h2,
+		img + h2,
+		ul + h2 {
+			margin-top: 4rem;
+		}
+		p + h3,
+		img + h3,
+		ul + h3 {
+			margin-top: 3rem;
+		}
+		p + h4,
+		img + h4,
+		ul + h4 {
+			margin-top: 2rem;
 		}
 	}
 	&__thumb {
