@@ -1,7 +1,5 @@
 <?php
 
-
-
 /*-----------------------------------------------------------------------------------
 カスタム投稿タイプの追加
 -----------------------------------------------------------------------------------*/
@@ -232,9 +230,9 @@ add_rewrite_rule('tour/category/([^/]+)/page/([0-9]+)/?$', 'index.php?tour_cat=$
 add_action('pre_get_posts', 'my_pre_get_posts');
 function my_pre_get_posts($query) {
 	if(!is_admin() && $query->is_main_query()) {
-		// if (is_tax('digital_cat') || is_post_type_archive('digital')) {
-		// 	$query->set('posts_per_page', '12');
-		// }
+		if (is_tax('character_cat') || is_post_type_archive('character')) {
+			$query->set('posts_per_page', '999');
+		}
 	}
 }
 
@@ -248,3 +246,4 @@ function SearchFilter($query) {
 	$query->set('post_type', array('post', 'page')); // arrayの中にカスタム投稿タイプ名を追加する。
 	}
 }
+

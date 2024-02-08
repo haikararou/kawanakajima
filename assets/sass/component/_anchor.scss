@@ -42,6 +42,7 @@
 		background: inc.$color-main;
 		color: inc.$color-wht;
 		padding: .5em 1em .9em;
+		text-decoration: none !important;
 		@include inc.mq(tabs) {
 			padding: 1em 2em;
 		}

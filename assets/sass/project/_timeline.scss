@@ -9,10 +9,58 @@ p-timeline
 		padding-bottom: 10%;
 		margin-bottom: 10%;
 		clear: both;
-		background: url("../img/common/timeline.svg") no-repeat 50% 40%;
+		z-index: 0;
+		dl {
+			line-height: 2;
+			dt {
+				@include inc.sizing(font-size, tab, 18px, sp, 10px);
+				font-weight: inc.$Bold;
+			}
+			dd {
+				@include inc.sizing(font-size, tab, 16px, sp, 11px);
+				margin-bottom: 1em;
+			}
+		}
+	}
+	&__inner {
+		// position: absolute;
+		// top: 0;
+		// left: 0;
+		// width: 100%;
+		// height: 100%;
+		clip-path: inset(0);
+	}
+	&__bg {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100vh;
 		background-size: contain;
-		background-attachment: fixed;
+		//background-attachment: fixed;
 		background-position: center;
+		background-repeat: no-repeat;
+		background-image: url("../img/common/timeline.svg");
+		//opacity: 0;
+		transition: all 0.5s ease 0s;
+		z-index: 0;
+		@include inc.mq(tabs) {
+			//position: absolute;
+			height: 100%;
+		}
+		@include inc.mq(wide) {
+			//position: absolute;
+			background-size: 1210px;
+		}
+	}
+	&__box {
+		position: relative;
+		z-index: 1;
+		background: linear-gradient(180deg, rgba(235, 223, 188, 1) 10%, rgba(235, 223, 188, 0) 20% 90%, rgba(235, 223, 188, 1) 100%);
+		@include inc.mq(tabs) {
+			background: linear-gradient(180deg, rgba(235, 223, 188, 1) 20%, rgba(235, 223, 188, 0) 30% 90%, rgba(235, 223, 188, 1) 100%);
+		}
 		&:before {
 			position: absolute;
 			content: "";
@@ -23,15 +71,30 @@ p-timeline
 			height: 100%;
 			margin-left: -1.5px;
 			background-image: linear-gradient(0deg, transparent, inc.$color-line2 5% 95%, transparent);
-			z-index: -1;
+			z-index: 2;
 			@include inc.mq(tabs) {
 				width: 8px;
 				margin-left: -4px;
 			}
 		}
 	}
+	&__head,
+	&__lst,
+	&__lst2,
+	&__cmn,
+	&__cmn2 {
+		position: relative;
+		z-index: 3;
+		a {
+			pointer-events: all;
+			font-weight: inc.$Bold;
+			text-decoration: underline;
+			text-decoration-skip-ink: none;
+			text-underline-offset: .4em;
+		}
+	}
 	&__head {
-		background-color: inc.$color-bg;
+		//background-color: inc.$color-bg;
 		&::after {
 			content: "";
 			display: block;
@@ -57,18 +120,21 @@ p-timeline
 			}
 		}
 	}
-	&__lst {
-		@include inc.sizing(padding-bottom, tab, 85px, sp, 24px);
-		background-image : linear-gradient(to right, inc.$color-line2 4px, transparent 4px);
-		background-size: 8px 2px;
-		background-repeat: repeat-x;
-		background-position: left 30px;
+	&__lst,
+	&__lst2 {
+		@include inc.sizing(padding-bottom, tab, 70px, sp, 10px);
 		clear: both;
 		&::after {
 			content: "";
 			display: block;
 			clear: both;
 		}
+	}
+	&__lst {
+		background-image : linear-gradient(to right, inc.$color-line2 4px, transparent 4px);
+		background-size: 8px 2px;
+		background-repeat: repeat-x;
+		background-position: left 30px;
 		@include inc.mq(tabs) {
 			background-image : linear-gradient(to right, inc.$color-line2 8px, transparent 8px);
 			background-size: 16px 4px;
@@ -114,30 +180,36 @@ p-timeline
 			span {
 				display: none;
 			}
-			dl {
-				line-height: 2;
-				dt {
-					@include inc.sizing(font-size, tab, 18px, sp, 10px);
-					font-weight: inc.$Bold;
-				}
-				dd {
-					@include inc.sizing(font-size, tab, 16px, sp, 11px);
-				}
-			}
+			// dl {
+			// 	line-height: 2;
+			// 	dt {
+			// 		@include inc.sizing(font-size, tab, 18px, sp, 10px);
+			// 		font-weight: inc.$Bold;
+			// 	}
+			// 	dd {
+			// 		@include inc.sizing(font-size, tab, 16px, sp, 11px);
+			// 	}
+			// }
 		}
 	}
-	&__cmn {
+	&__cmn,
+	&__cmn2 {
 		background: #F1E8D0;
 		@include inc.sizing(padding-top, tab, 40px, sp, 21px);
 		@include inc.sizing(padding-right, tab, 65px, sp, 20px);
 		@include inc.sizing(padding-bottom, tab, 40px, sp, 21px);
 		@include inc.sizing(padding-left, tab, 65px, sp, 20px);
+	}
+	&__cmn2 {
+		margin-bottom: 1em;
+	}
+	&__cmn {
 		@include inc.sizing(margin-bottom, tab, 160px, sp, 20px);
 		&__head {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			@include inc.sizing(margin-bottom, tab, 50px, sp, 24px);
+			@include inc.sizing(padding-bottom, tab, 50px, sp, 24px);
 			h3 {
 				color: inc.$color-red;
 				@include inc.sizing(font-size, tab, 25px, sp, 14px);
@@ -149,16 +221,16 @@ p-timeline
 				}
 			}
 		}
-		dl {
-			line-height: 2;
-			dt {
-				@include inc.sizing(font-size, tab, 18px, sp, 10px);
-				font-weight: inc.$Bold;
-			}
-			dd {
-				@include inc.sizing(font-size, tab, 16px, sp, 11px);
-				margin-bottom: 1em;
-			}
+	}
+	dl {
+		line-height: 2;
+		dt {
+			@include inc.sizing(font-size, tab, 18px, sp, 10px);
+			font-weight: inc.$Bold;
+		}
+		dd {
+			@include inc.sizing(font-size, tab, 16px, sp, 11px);
+			margin-bottom: 1em;
 		}
 	}
 	&__note {

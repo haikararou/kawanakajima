@@ -1,16 +1,10 @@
-<!-- ?php
-if(!is_home()):
-		if(is_post_type_archive('opening') || is_singular('opening') || is_tax('opening_cat')):
-				$userArray = array("elle" => "qwerasdf"
-			);
-			basic_auth($userArray);
-		endif;
-endif;
-? -->
 <?php
 /**
  * ヘッダーテンプレート
  */
+if(!is_user_logged_in()){
+	wp_redirect('https://kawanakajima.nagano.jp/');
+}
 ?>
 <!DOCTYPE html>
 <html dir="ltr" lang="ja" prefix="og: https://ogp.me/ns#" class="no-js">
@@ -26,7 +20,7 @@ endif;
 
 <body <?php body_class('l-body'); ?> id="js-body">
 
-<?php if (is_front_page() || is_home()) : ?>
+<?php if (is_front_page() || is_home() || is_page('top')) : ?>
 <!-- ローディング画面 -->
 <div class="loader-bg">
 	<div class="loader"></div>
@@ -34,7 +28,7 @@ endif;
 <?php endif; ?>
 
 <header class="l-header">
-	<div class="l-header__logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo.svg" alt="<?php bloginfo('name'); ?>"></a></div>
+	<div class="l-header__logo"><a href="/top"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo.svg" alt="<?php bloginfo('name'); ?>"></a></div>
 
 	<a class="l-hamburger">
 		<span class="l-hamburger__line l-hamburger__line__top"></span>
@@ -45,7 +39,7 @@ endif;
 	<nav class="l-nav">
 		<div class="l-nav__wrap">
 			<ul>
-				<li><a href="<?php echo home_url(); ?>">ホーム</a></li>
+				<li><a href="/top">ホーム</a></li>
 				<li class="has-child"><a href="#">戦いを知る</a><dl>
 					<a href="<?php echo home_url('/three-d'); ?>"><dt><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/nav01.jpg" alt=""></dt><dd>川中島の戦い 3D絵巻</dd></a>
 					<a href="<?php echo home_url('/timeline'); ?>"><dt><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/nav02.jpg" alt=""></dt><dd>年表で見る川中島の戦い</dd></a>
@@ -63,11 +57,11 @@ endif;
 	<div class="l-header__nagano"><a href="https://www.city.nagano.nagano.jp/" target="_blank" rel="nofllow"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/naganocity.svg"><span>長野市</span></a></div>
 </header>
 
-<?php if (!is_front_page() || !is_home()) : ?>
+<?php if (!is_front_page() || !is_home() || !is_page('top')) : ?>
 <nav class="l-breadcrumb">
 	<ul>
 <?php if ( is_singular('walk') ): ?>
-		<li><a href="<?php echo home_url(); ?>">川中島の戦いトップ</a></li>
+		<li><a href="/top">川中島の戦いトップ</a></li>
 		<li><a href="<?php echo home_url('/tour'); ?>">史跡をめぐる</a></li>
 		<li><?php the_title(); ?></li>
 <?php else: ?>
@@ -77,4 +71,4 @@ endif;
 </nav>
 <?php endif; ?>
 
-<main class="l-main"><?php if (!is_front_page() || !is_home()) : ?><div class="l-wrapper"><?php endif; ?>
+<main class="l-main"><?php if (!is_front_page() || !is_home() || !is_page('top')) : ?><div class="l-wrapper"><?php endif; ?>

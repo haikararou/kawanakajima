@@ -55,7 +55,7 @@ $breakpoints: (
 $color-bg: #EBDFBC;
 
 $color-wht: #fff;
-$color-blk: #333;
+$color-blk: #2A3454;
 $color-red: #B64B5B;
 $color-back: #F1E8D0;
 
@@ -110,5 +110,9 @@ a {
 	&:hover {
 		color: #3C508E;
 	}
+	// &[target="_blank"] {
+	// 	padding-right: 1.3em;
+	// 	background: url("../img/common/icn_link.svg") no-repeat 100% .4em;
+	// }
 }
 

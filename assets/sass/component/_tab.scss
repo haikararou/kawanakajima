@@ -51,7 +51,7 @@
 	&__content {
 		& > div {
 			background-color: #F1E8D0;
-			padding: 1.9em 5% .9em;
+			padding: 0 5%;
 			display: none;
 			&.active {
 				display: block;
@@ -64,10 +64,10 @@
 	}
 	&__vowel {
 		display: flex;
-		padding-bottom: .9em;
+		padding: 1.9em 0;
 		&:not(:last-of-type) {
 			border-bottom: 1px solid inc.$color-line2;
-			margin-bottom: 1.9em;
+			//margin-bottom: 1.9em;
 		}
 		dt {
 			width: 5em;
@@ -77,11 +77,14 @@
 			ul {
 				margin: 0;
 				padding: 0;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: flex-start;
+				gap: .8em 2em;
 				li {
-					display: inline-block;
-					@include inc.sizing(margin-right, tab, 48px, sp, 26px);
-					@include inc.sizing(margin-bottom, tab, 20px, sp, 13px);
-
+					//display: inline-block;
+					//@include inc.sizing(margin-right, tab, 48px, sp, 26px);
+					//@include inc.sizing(margin-bottom, tab, 20px, sp, 13px);
 				}
 			}
 		}

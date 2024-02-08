@@ -8,8 +8,10 @@
 </div>
 
 <section class="c-section">
-	<div class="p-illusts__post__kv">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/battles/01.jpg" alt="川中島合戦">
+	<div class="p-illusts__post__movie">
+		<div>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/oSETMI3j7p4?si=4I1OyU_66CSWn6xs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
 	</div>
 	<article class="c-article c-single p-illusts__post">
 		<div class="c-single__block">

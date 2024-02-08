@@ -4,6 +4,7 @@
 	<h1 class="c-herohead__heading"><?php echo esc_html(get_post_type_object(get_post_type())->label); ?></h1>
 </div>
 
+<?php query_posts('posts_per_page=1'); ?>
 <?php
 $tax_name = 'character_cat';
 $terms = get_terms( $tax_name, array('parent' => 0));
@@ -20,12 +21,14 @@ $terms = get_terms( $tax_name, array('parent' => 0));
 
 <nav class="c-nav__anchor">
 	<ul>
+<?php query_posts('posts_per_page=1'); ?>
 <?php if(have_posts()): while (have_posts()) : the_post(); ?>
 		<li><a href="#<?php $page = get_page(get_the_ID()); $slug = $page->post_name; echo $slug; ?>"><?php the_title(); ?></a></li>
 <?php endwhile; endif; ?>
 	</ul>
 </nav>
 
+<?php query_posts('posts_per_page=1'); ?>
 <?php if(have_posts()): while (have_posts()) : the_post(); ?>
 <section id="<?php $slug = $post->post_name; echo $slug; ?>" class="c-section p-character__box">
 	<div class="c-section__column2">

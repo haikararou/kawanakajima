@@ -9,7 +9,7 @@
 
 <section class="c-section">
 	<div class="p-illusts__post__kv">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/battles/01.jpg" alt="川中島合戦">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/illusts/03_01.jpg" alt="川中島合戦">
 	</div>
 	<article class="c-article c-single p-illusts__post">
 		<div class="c-single__block">
@@ -31,13 +31,27 @@
 			<ul>
 				<li>④2月に高梨一族の山田左京亮[やまだ·さきょうのすけ]と木島出雲守[きじま·いずものかみ]を調略し、北へ北へと勢力を拡大する武田軍に対して、⑤飯山城の高梨政頼は、縁戚関係にある上杉謙信を頼った。信玄の行状に立腹し、更級郡八幡宮に戦勝祈願をしていた謙信は、3月24日に春日山城から信濃へ出陣する。</li>
 			</ul>
+		</div>
+	</article>
 
+	<div class="p-illusts__post__kv">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/illusts/03_02.jpg" alt="川中島合戦">
+	</div>
+	<article class="c-article c-single p-illusts__post">
+		<div class="c-single__block">
 			<h2 class="wp-block-heading">第3次川中島の戦い（弐）<br>攻める謙信、守りの信玄。 正面衝突を避けながら武田軍は勢力をじわじわと浸透させる</h2>
 			<ul>
 				<li>①信濃に入ると②武田方に落ちた高井郡山田要害(高山村)、福島[ふくじま·須坂市福島]城を奪い返し、③4月21日、善光寺横山城に着陣。4月25月には敵陣数カ所と麓の集落に放火し、④旭山城を再興して本営を移す。<br>⑤謙信の出兵に応じて島津月下斎[しまづ·げっかさい]は戸屋城[とやじょう·長野市七二会]に入り、小川·鬼無里方面に圧力を加えた。</li>
 				<li>⑥上杉軍は、5月12日、築城中の香坂城(海津城の前身の説あり。図ではその位置に表記)を攻め、⑦13日には埴科郡·小県郡境坂木の岩鼻[いわはな]にまで進軍。謙信は信玄と対決しようとするが、武田信玄は出陣せず、そのまま謙信は飯山城へと兵を返す。</li>
 			</ul>
+		</div>
+	</article>
 
+	<div class="p-illusts__post__kv">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/illusts/03_02.jpg" alt="川中島合戦">
+	</div>
+	<article class="c-article c-single p-illusts__post">
+		<div class="c-single__block">
 			<h2 class="wp-block-heading">第3次川中島の戦い（参）<br>攻める謙信、守りの信玄。 正面衝突を避けながら武田軍は勢力をじわじわと浸透させる</h2>
 			<h3 class="wp-block-heading">信玄、山本勘助を奥信濃の市河氏に遣わす<br>上野原で交戦後、越後勢は兵をひき、善光寺平の大半は武田方の勢力下となる</h3>
 			<ul>

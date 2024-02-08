@@ -92,8 +92,20 @@ p-illusts
 		}
 	}
 	&__post {
-		&__kv {
+		&__kv,
+		&__movie {
 			@include inc.sizing(margin-bottom, tab, 112px, sp, 56px);
+			div {
+				width: 100%;
+				aspect-ratio: 16 / 9;
+				iframe {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			img {
+				width: 100%;
+			}
 		}
 	}
 }

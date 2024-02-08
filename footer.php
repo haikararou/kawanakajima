@@ -3,7 +3,7 @@
  * フッターテンプレート
  */
 ?>
-<?php if ( !is_front_page() || !is_home()) : ?></div><?php endif; ?>
+<?php if ( !is_front_page() || !is_home() || !is_page('top')) : ?></div><?php endif; ?>
 
 <?php if ( is_singular('tour') | is_singular('walk') ): ?>
 <?php get_template_part('inc/events'); ?>
@@ -22,7 +22,7 @@
 				<!--li><a href="<?php echo home_url('/tourism'); ?>">周辺観光情報</a></li-->
 			</ul>
 		</nav>
-		<div class="l-footer__logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo.svg" alt="<?php bloginfo('name'); ?>"></a></div>
+		<div class="l-footer__logo"><a href="/top"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo.svg" alt="<?php bloginfo('name'); ?>"></a></div>
 		<div class="l-footer__nagano"><a href="https://www.city.nagano.nagano.jp/" target="_blank" rel="nofllow"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/naganocity.svg"><span>長野市</span></a></div>
 		<address>長野市（法人番号3000020202011）<br>〒380-8512　長野市大字鶴賀緑町1613番地電話（代表）026-226-4911<br>業務時間 午前8時30分から午後5時15分まで<br>休日 土曜日、日曜日、祝休日、年末年始（12月29日から1月3日）</address>
 		<nav class="l-footer__naganonav">

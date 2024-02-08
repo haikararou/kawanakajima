@@ -8,7 +8,7 @@
 </div>
 
 <section class="c-section">
-	<p class="c-heading__s"> このサイトは、2007年に（公財）ながの観光コンベンションビューローにて作成した、<br class="l-pc">『長野市「信州・風林火山」特設サイト』を一部修正したものです。</p>
+	<p class="c-heading__s">このサイトは、2007年に（公財）ながの観光コンベンションビューローにて作成した、<br class="l-pc">『長野市「信州・風林火山」特設サイト』を一部修正し移設したものです。<br class="l-pc">長野郷土史研究家 岡澤由往氏監修のもと、『甲越信戦録』の内容を中心に構成しています。</p>
 </section>
 
 <section class="c-section">
@@ -43,7 +43,7 @@
 			<div class="p-website__box__img">
 				<figure>
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/website/02.jpg">
-					<figcaption>八幡原史跡公園（川中島古戦場）</figcaption>
+					<figcaption>川中島古戦場史跡公園</figcaption>
 				</figure>
 			</div>
 		</div>

@@ -9,7 +9,7 @@
 
 <section class="c-section">
 	<div class="p-illusts__post__kv">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/battles/01.jpg" alt="川中島合戦">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/illusts/02.jpg" alt="川中島合戦">
 	</div>
 	<article class="c-article c-single p-illusts__post">
 		<div class="c-single__block">

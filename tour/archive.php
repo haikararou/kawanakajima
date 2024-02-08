@@ -112,7 +112,7 @@ foreach ($rows as $row) :
 			wp_reset_postdata();
 		else :
 			// 投稿が見つからなかった場合の表示
-			echo '投稿がありません。';
+			echo '<br>';
 		endif;
 
 		echo "</div>"; // セクションごとのコンテナ終了

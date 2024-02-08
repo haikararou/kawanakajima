@@ -61,7 +61,7 @@ descriptionを出力
 -----------------------------------------------------------*/
 function print_description() {
   
-  if  (is_front_page() || is_home()) {
+  if  (is_front_page() || is_home() || is_page('top')) {
 		echo 'トップページのデスクリプションが入ります';
   } else if(is_page()) { // 固定ページ
     if(is_page('sample-page')){
@@ -93,7 +93,7 @@ function print_description() {
 -----------------------------------------------------------*/
 	function print_ogp_title() {
 		
-    if(is_home() || is_front_page()) {
+    if(is_home() || is_front_page() || is_page('top')) {
       echo bloginfo('name');
     } else {
       //ページのタイトルを出力

@@ -1,0 +1,11 @@
+@charset 'UTF-8';
+@use '../../global' as *;
+
+
+.c-icn {
+	&__pdf {
+		background: url("../img/common/icn_pdf.svg") no-repeat 95% 50%;
+		background-size: 1em;
+
+	}
+}
