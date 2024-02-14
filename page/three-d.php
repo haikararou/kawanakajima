@@ -4,7 +4,7 @@
 <?php get_header(); ?>
 
 <div class="c-herohead">
-	<h1 class="c-herohead__heading"><?php the_title(); ?></h1>
+	<h1 class="c-herohead__heading"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/three-d/title.png" alt="<?php the_title(); ?>"></h1>
 </div>
 
 <section class="p-threed-d__lst">

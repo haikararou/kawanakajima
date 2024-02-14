@@ -1,6 +1,18 @@
 @charset 'UTF-8';
 @use "../inc/" as inc;
 
+
+body.page-template-top {
+	.l-breadcrumb {
+		display: none;
+	}
+	.l-main > .l-wrapper {
+		max-width: 100% !important;
+		width: 100% !important;
+	}
+}
+
+
 /*
 p-home
 -----------------------------------------------------*/

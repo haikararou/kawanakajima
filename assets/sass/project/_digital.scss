@@ -99,5 +99,9 @@ p-digital
 			text-decoration: underline;
 			text-underline-offset: 0.4em;
 		}
+		&__note {
+			@include inc.sizing(margin-bottom, tab, 30px, sp, 20px);
+		}
 	}
 }
+

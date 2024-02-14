@@ -44,8 +44,8 @@ if(!is_user_logged_in()){
 					<a href="<?php echo home_url('/three-d'); ?>"><dt><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/nav01.jpg" alt=""></dt><dd>川中島の戦い 3D絵巻</dd></a>
 					<a href="<?php echo home_url('/timeline'); ?>"><dt><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/nav02.jpg" alt=""></dt><dd>年表で見る川中島の戦い</dd></a>
 					<a href="<?php echo home_url('/illusts'); ?>"><dt><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/nav03.jpg" alt=""></dt><dd>第1次〜第5次川中島の戦いの図</dd></a>
-					<a href="<?php echo home_url('/character'); ?>"><dt><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/nav04.jpg" alt=""></dt><dd>川中島の戦い・主要人物</dd></a>
-					<a href="<?php echo home_url('/story'); ?>"><dt><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/nav05.jpg" alt=""></dt><dd>戦記「甲信越戦録」</dd></a>
+					<a href="<?php echo home_url('/character/category/main'); ?>"><dt><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/nav04.jpg" alt=""></dt><dd>川中島の戦い・主要人物</dd></a>
+					<a href="<?php echo home_url('/story'); ?>"><dt><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/nav05.jpg" alt=""></dt><dd>戦記「甲越信戦録」</dd></a>
 				</dl></li>
 				<li><a href="<?php echo home_url('/tour'); ?>">史跡をめぐる</a></li>
 				<li><a href="<?php echo home_url('/digital'); ?>">デジタル博物館</a></li>

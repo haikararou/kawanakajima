@@ -17,9 +17,20 @@ endforeach; ?>
 
 	<article class="c-article c-single p-tour__post">
 		<div class="c-single__body">
-			<div class="c-single__block">
-				<?php if (has_post_thumbnail()) : ?><?php the_post_thumbnail('full'); ?><?php else: ?><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/noimage.png" alt="該当画像はありません"><?php endif; ?>
-			</div>
+			<div class="c-single__block -visual"><figure>
+				<?php if (has_post_thumbnail()) : ?>
+					<?php the_post_thumbnail('full'); ?>
+				<?php else: ?><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/noimage.png" alt="該当画像はありません">
+				<?php endif; ?>
+				<?php $value = get_post_meta($post->ID, 'tour_caption', true);?>
+				<?php if(empty($value)):?>
+				<?php else:?>
+					<figcaption>
+						<p><?php echo post_custom('tour_caption');?></p>
+					</figcaption>
+				<?php endif;?>
+
+			</figure></div>
 			<div class="c-single__block">
 				<?php the_content(''); ?>
 			</div>

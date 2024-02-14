@@ -70,8 +70,22 @@ c-single
 		ul + h4 {
 			margin-top: 2rem;
 		}
-		& > img {
-			width: 100%;
+		// & > img {
+		// 	width: 100%;
+		// }
+		&.-visual {
+			figure {
+				img {
+					width: 100%;
+					margin-bottom: 0 !important;
+				}
+				figcaption > p {
+					@include inc.sizing(font-size, tab, 13px, sp, 13px);
+					line-height: 1.5 !important;
+					padding: 8px;
+					text-align: center;
+				}
+			}
 		}
 	}
 	&__thumb {
@@ -85,14 +99,15 @@ c-single
 			img {
 				display: block;
 				max-width: 236px;
-				@include inc.sizing(margin-bottom, tab, 16px, sp, 6px);
+				//@include inc.sizing(margin-bottom, tab, 16px, sp, 6px);
 				@include inc.mq(tabs) {
 					max-width: 100%;
 				}
 			}
 			figcaption > p {
-				@include inc.sizing(font-size, tab, 16px, sp, 13px);
+				@include inc.sizing(font-size, tab, 13px, sp, 13px);
 				line-height: 1.5 !important;
+				padding: 8px;
 			}
 		}
 	}

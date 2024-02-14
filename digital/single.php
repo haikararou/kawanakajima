@@ -24,7 +24,16 @@ endforeach; ?>
 				<?php the_field('digital_note'); ?>
 			</div>
 		</div>
-		<div class="p-digital__post__img"><figure><span><?php if (has_post_thumbnail()) : ?><?php the_post_thumbnail('full'); ?><?php else: ?><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/noimage.png" alt="該当画像はありません"><?php endif; ?></span></figure></div>
+		<div class="p-digital__post__img">
+			<div class="slider" id="js-slick">
+				<figure><span><?php if (has_post_thumbnail()) : ?><?php the_post_thumbnail('full'); ?><?php else: ?><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/noimage.png" alt="該当画像はありません"><?php endif; ?></span></figure>
+<?php if( have_rows( 'digital_slide' ) ): ?>
+	<?php while( have_rows( 'digital_slide' ) ): the_row(); $image = get_sub_field('digital_slide_img'); ?>
+				<figure><span><?php echo wp_get_attachment_image( $image, 'full' ); ?></span></figure>
+	<?php endwhile; ?>
+<?php endif; ?>
+			</div>
+		</div>
 	</article>
 
 	<div class="wp-pagenavi" role="navigation">

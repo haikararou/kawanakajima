@@ -22,7 +22,7 @@
 					<span>武田関連</span>
 					<dl>
 						<dt>11月3日</dt>
-						<dd>甲斐国主 甲斐国主 <a href="<?php echo home_url('/character/category/takeda#takeda-nobutora'); ?>">武田信虎</a>［たけだ・のぶとら］の嫡男として武田信玄（幼名・太郎［たろう］）、甲斐の積翠寺要害城［せきすいじ・ようがいじょう］に生まれる。</dd>
+						<dd>甲斐国主 甲斐国主 <a href="<?php echo home_url('/character/category/takeda#takeda-nobutora'); ?>">武田信虎</a>［たけだ・のぶとら］の嫡男として<a href="<?php echo home_url('/character/category/main#takeda-shingen'); ?>">武田信玄（幼名・太郎［たろう］）</a>、甲斐の積翠寺要害城［せきすいじ・ようがいじょう］に生まれる。</dd>
 					</dl>
 				</div>
 				<!--div class="p-timeline__lst__uesugi">
@@ -66,7 +66,7 @@
 						<dt>3月</dt>
 						<dd><a href="<?php echo home_url('/character/category/main/#takeda-shingen'); ?>">武田太郎（信玄）</a>、元服して晴信［はるのぶ］と名乗り、従五位下左京大夫［だいぶ］に任ぜられる。</dd>
 						<dt>5月</dt>
-						<dd><a href="<?php echo home_url('/character/category/takeda#takeda-nobutora'); ?>">武田信虎、</a>、佐久に侵攻。晴信 、佐久郡 海ノ口城［うんのくちじょう］の戦いに初陣。</dd>
+						<dd><a href="<?php echo home_url('/character/category/takeda#takeda-nobutora'); ?>">武田信虎</a>、佐久に侵攻。晴信 、佐久郡 海ノ口城［うんのくちじょう］の戦いに初陣。</dd>
 					</dl>
 				</div>
 				<div class="p-timeline__lst__uesugi">
@@ -163,7 +163,7 @@
 					<span>武田関連</span>
 					<dl>
 						<dt>2月</dt>
-						<dd><a href="<?php echo home_url('/character/category/main#takeda-shingen'); ?>">武田晴信（信玄）</a>、<a href="<?php echo home_url('/character/category/other#murakami-yoshikiyo'); ?>">村上義清</a>と小県郡<a href="#uedahara">上田原</a>［ちいさがたぐん・うえだはら］で戦い大敗。<a href="<?php echo home_url('/character/category/co-takeda#itagaki-nobukata'); ?>">板垣信方</a>・<a href="<?php echo home_url('/character/category/co-takeda#amari-torayasu'); ?>">甘利虎泰</a>［あまり・とらやす］らが討死する。【上田原の戦い】<br>
+						<dd><a href="<?php echo home_url('/character/category/main#takeda-shingen'); ?>">武田晴信（信玄）</a>、<a href="<?php echo home_url('/character/category/other#murakami-yoshikiyo'); ?>">村上義清</a>と小県郡上田原［ちいさがたぐん・うえだはら］で戦い大敗。<a href="<?php echo home_url('/character/category/co-takeda#itagaki-nobukata'); ?>">板垣信方</a>・<a href="<?php echo home_url('/character/category/co-takeda#amari-torayasu'); ?>">甘利虎泰</a>［あまり・とらやす］らが討死する。【上田原の戦い】<br>
 							<span class="kanren">【関連】→<a href="#itagaki-nobukata">板垣信方の墓</a>、<a href="#mumeisenshi">無名戦士の墓</a></span></dd>
 						<dt>7月</dt>
 						<dd><a href="<?php echo home_url('/character/category/main#takeda-shingen'); ?>">武田晴信（信玄）</a>、筑摩郡塩尻峠［ちくまぐん・しおじりとうげ］で小笠原長時［おがさわら・ながとき］を大破。【塩尻峠の戦い】</dd>
@@ -186,7 +186,7 @@
 						<dt>7月</dt>
 						<dd>武田軍、小笠原長時軍をイヌイ城に破り、信濃経営の拠点として深志城［ふかしじょう］（現松本城）を修築。</dd>
 						<dt>10月</dt>
-						<dd><a href="<?php echo home_url('/character/category/main#takeda-shingen'); ?>">武田晴信（信玄）</a>、<a href="<?php echo home_url('/character/category/other#murakami-yoshikiyo'); ?>">村上義清</a>［むらかみ・よしきよ］の小県郡<a href="#toishijo">砥石城</a>（といしじょう）を攻めるが、敗退。【砥石崩れ】</dd>
+						<dd><a href="<?php echo home_url('/character/category/main#takeda-shingen'); ?>">武田晴信（信玄）</a>、<a href="<?php echo home_url('/character/category/other#murakami-yoshikiyo'); ?>">村上義清</a>［むらかみ・よしきよ］の小県郡砥石城（といしじょう）を攻めるが、敗退。【砥石崩れ】</dd>
 					</dl>
 				</div>
 				<div class="p-timeline__lst__uesugi">
@@ -204,7 +204,7 @@
 					<span>武田関連</span>
 					<dl>
 						<dt>5月</dt>
-						<dd>武田方の<a href="<?php echo home_url('/character/category/co-takeda#sanada-yukitaka'); ?>">真田幸隆</a>が<a href="#toishijo">砥石城</a>を攻略。</dd>
+						<dd>武田方の<a href="<?php echo home_url('/character/category/co-takeda#sanada-yukitaka'); ?>">真田幸隆</a>が砥石城を攻略。</dd>
 						<dt>10月</dt>
 						<dd>武田軍、安曇郡 平瀬城［あずみぐんひらせじょう］を攻略。</dd>
 					</dl>
@@ -273,7 +273,7 @@
 					<dt>8月</dt>
 					<dd>長尾（上杉）軍、信濃に出陣し、武田軍と更級郡布施［ふせ］で交戦。【布施の戦い】</dd>
 					<dt>9月1日</dt>
-					<dd>長尾（上杉）軍、更級郡八幡［やわた］で武田軍を破る。武田方の<a href="#aratojo">荒砥城</a>［あらとじょう］自落。</dd>
+					<dd>長尾（上杉）軍、更級郡八幡［やわた］で武田軍を破る。武田方の荒砥城［あらとじょう］自落。</dd>
 					<dt>10月</dt>
 					<dd>小県郡・筑摩郡で攻防を繰り広げた後、甲越両軍とも信濃から兵を引き上げる。</dd>
 				</dl>
@@ -383,7 +383,7 @@
 						<dt>（日付不詳）</dt>
 						<dd><a href="<?php echo home_url('/character/category/main#uesugi-kenshin'); ?>">長尾（上杉）</a>方・島津月下斎［しまづ・げっかさい］、<a href="<?php echo home_url('/tour/tour-381'); ?>">長沼城</a>［ながぬまじょう］から<a href="<?php echo home_url('/tour/tour-195'); ?>">大倉城</a>［おおくらじょう］へ退却。</dd>
 						<dt>3月23日</dt>
-						<dd><a href="<?php echo home_url('/character/category/main#uesugi-kenshin'); ?>">長尾景虎（上杉謙信）</a>飯山城［いいやまじょう］の高梨政頼、<a href="<?php echo home_url('/character/category/main#uesugi-kenshin'); ?>">長尾景虎（上杉謙信）</a>を頼る。</dd>
+						<dd>飯山城［いいやまじょう］の高梨政頼、<a href="<?php echo home_url('/character/category/main#uesugi-kenshin'); ?>">長尾景虎（上杉謙信）</a>を頼る。</dd>
 						<dt>4月18日</dt>
 						<dd><a href="<?php echo home_url('/character/category/main#uesugi-kenshin'); ?>">長尾景虎（上杉謙信）</a>、武田軍の再侵攻により信濃へ出兵。<br>つづいて長尾（上杉）軍、武田方の高井郡山田城、福島［ふくじま］城を攻略。</dd>
 						<dt>4月21日</dt>
@@ -505,12 +505,14 @@
 						<dd><a href="<?php echo home_url('/character/category/main#uesugi-kenshin'); ?>">長尾政虎（上杉謙信）</a>、<a href="<?php echo home_url('/tour/tour-453'); ?>">善光寺横山城</a>から<a href="<?php echo home_url('/tour/tour-304'); ?>">妻女山</a>［さいじょさん、さいじょざん］へ着陣。</dd>
 						<dt>9月9日</dt>
 						<dd><a href="<?php echo home_url('/character/category/main#uesugi-kenshin'); ?>">長尾政虎（上杉謙信）</a>、「啄木鳥の戦法」を見破り、午後11時頃、<a href="<?php echo home_url('/tour/tour-304'); ?>">妻女山</a>を発つ。<a href="../siseki/entry/000163.html">雨宮渡</a>［あめみやのわたし］から千曲川左岸へ向かう。</dd>
+						<dt>9月10日</dt>
+						<dd><a href="<?php echo home_url('/character/category/main#takeda-shingen'); ?>">武田信玄</a>本陣を急襲。</dd>
 					</dl>
 				</div><br clear="all"><br>
 				<dl class="p-timeline__cmn__body">
 					<dt>午前6時過ぎ、八幡原で甲越両軍が激突。【川中島八幡原の戦い】</dt>
-					<dd>激戦の末、<a href="<?php echo home_url('/character/category/main#takeda-shingen'); ?>">武田信玄</a>の弟 <a href="jinbutsu2.php.html#a2">典厩信繁</a>［てんきゅう・のぶしげ］、<a href="<?php echo home_url('/character/category/main#yamamoto-kansuke'); ?>">山本勘助</a>、<a href="<?php echo home_url('/character/category/co-takeda#morozumi-torasada'); ?>">諸角豊後守</a>［もろずみぶんごのかみ］ 等、多くの勇将が討死。両軍あわせた戦死者は8千人以上を数えた。<br>
-						<span class="kanren">【関連】→<a href="<?php echo home_url('/tour/tour-306'); ?>">逆槐</a>、<a href="#juunigase">十二ヶ瀬</a>、<a href="../siseki/entry/000222.html">猫ヶ瀬</a>、<a href="<?php echo home_url('/tour/tour-188'); ?>">戌ヶ瀬</a>、<a href="<?php echo home_url('/tour/tour-320'); ?>">信玄・謙信一騎討ちの像</a>、<a href="<?php echo home_url('/tour/tour-422'); ?>">三太刀七太刀の碑</a>、<a href="<?php echo home_url('/tour/tour-316'); ?>">執念の石</a>、<a href="<?php echo home_url('/tour/tour-257'); ?>">首塚</a>、
+					<dd>激戦の末、<a href="<?php echo home_url('/character/category/main#takeda-shingen'); ?>">武田信玄</a>の弟 <a href='/character/category/takeda#takeda-nobushige'>典厩信繁</a>［てんきゅう・のぶしげ］、<a href="<?php echo home_url('/character/category/main#yamamoto-kansuke'); ?>">山本勘助</a>、<a href="<?php echo home_url('/character/category/co-takeda#morozumi-torasada'); ?>">諸角豊後守</a>［もろずみぶんごのかみ］ 等、多くの勇将が討死。両軍あわせた戦死者は8千人以上を数えた。<br>
+						<span class="kanren">【関連】→<a href="<?php echo home_url('/tour/tour-306'); ?>">逆槐</a>、十二ヶ瀬、猫ヶ瀬、<a href="<?php echo home_url('/tour/tour-188'); ?>">戌ヶ瀬</a>、<a href="<?php echo home_url('/tour/tour-320'); ?>">信玄・謙信一騎討ちの像</a>、<a href="<?php echo home_url('/tour/tour-422'); ?>">三太刀七太刀の碑</a>、<a href="<?php echo home_url('/tour/tour-316'); ?>">執念の石</a>、<a href="<?php echo home_url('/tour/tour-257'); ?>">首塚</a>、
 					<a href="<?php echo home_url('/tour/tour-245'); ?>">勘助宮</a>、<a href="<?php echo home_url('/tour/tour-370'); ?>">胴合橋</a>、<a href="<?php echo home_url('/tour/tour-447'); ?>">山本勘助の墓</a>、<a href="<?php echo home_url('/tour/tour-333'); ?>">武田典厩信繁の墓</a> ほか</span></dd>
 					<dd>飯山・野尻城付近を除き、武田軍がほぼ信濃を制圧。</dd>
 				</dl>
@@ -712,7 +714,7 @@
 						<dt>4月</dt>
 						<dd><a href="<?php echo home_url('/character/category/main#uesugi-kenshin'); ?>">上杉輝虎（謙信）</a>、北条氏康［ほうじょう・うじやす］の子氏秀［うじひで］を養子とし、景虎［かげとら］と命名（相越同盟）。</dd>
 						<dt>9月頃</dt>
-						<dd><a href="<?php echo home_url('/character/category/main#uesugi-kenshin'); ?>">上杉輝虎、上杉謙信</a>［うえすぎ・けんしん］に改名。</dd>
+						<dd><a href="<?php echo home_url('/character/category/main#uesugi-kenshin'); ?>">上杉輝虎</a>、上杉謙信［うえすぎ・けんしん］に改名。</dd>
 					</dl>
 				</div>
 			</div>

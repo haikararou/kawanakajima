@@ -1,5 +1,5 @@
 <?php
-/*Template Name: 戦記「甲信越戦録」 */
+/*Template Name: 戦記「甲越信戦録」 */
 ?>
 <?php get_header(); ?>
 
@@ -7,14 +7,14 @@
 	<h1 class="c-herohead__heading"><?php the_title(); ?></h1>
 	<nav class="c-nav__anchor">
 		<ul class="">
-			<li><a href="#about">甲信越戦録とは？</a></li>
-			<li><a href="#aramashi">現代語で読む「甲信越戦録」あらまし</a></li>
+			<li><a href="#about">甲越信戦録とは？</a></li>
+			<li><a href="#aramashi">現代語で読む「甲越信戦録」あらまし</a></li>
 		</ul>
 	</nav>
 </div>
 
 <section id="about" class="c-section">
-	<h2 class="c-heading__l">甲信越戦録とは？</h2>
+	<h2 class="c-heading__l">甲越信戦録とは？</h2>
 	<div class="c-section__column2">
 		<div class="c-section__column2__w28">
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/story/about.png" alt="">
@@ -60,7 +60,7 @@
 <h2 id="aramashi" class="c-heading__l">現代語で読む「甲越信戦録」あらまし</h2>
 <nav class="c-nav__local">
 	<ul class="">
-		<li class="c-nav__local__vol01"><a href="/story" class="active">巻の一</a></li>
+		<li class="c-nav__local__vol01"><a href="/story#aramashi" class="active">巻の一</a></li>
 		<li class="c-nav__local__vol02"><a href="/story/vol02">巻の二</a></li>
 		<li class="c-nav__local__vol03"><a href="/story/vol03">巻の三</a></li>
 		<li class="c-nav__local__vol04"><a href="/story/vol04">巻の四</a></li>

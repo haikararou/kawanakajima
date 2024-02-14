@@ -121,6 +121,12 @@
 				}
 			}
 		}
+		&.-child {
+			@include inc.sizing(padding, tab, 20px, sp, 12px);
+			background: #F1E8D0;
+			@include inc.sizing(margin-left, tab, 28px, sp, 20px);
+			@include inc.sizing(margin-bottom, tab, 34px, sp, 20px);
+		}
 	}
 	&__footnav {
 		position: relative;

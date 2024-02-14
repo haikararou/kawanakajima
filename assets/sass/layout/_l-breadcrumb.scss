@@ -13,7 +13,7 @@ l-breadcrumb
 	ul {
 		margin: 0;
 		padding: 0;
-		@include inc.sizingRem(font-size, tab, 11px, sp, 10px);
+		@include inc.sizingRem(font-size, tab, 14px, sp, 13px);
 		font-weight: inc.$Medium;
 		li {
 			display: inline-block;
