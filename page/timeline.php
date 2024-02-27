@@ -12,8 +12,8 @@
 		<div class="p-timeline__bg"></div>
 		<div class="p-timeline__box">
 			<div class="p-timeline__head">
-				<div class="p-timeline__head__takeda"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo_takeda.svg">武田関連年表</div>
-				<div class="p-timeline__head__uesugi"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo_uesugi.svg">上杉関連年表</div>
+				<div class="p-timeline__head__takeda"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo_takeda.svg">武田方関連年表</div>
+				<div class="p-timeline__head__uesugi"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo_uesugi.svg">上杉方関連年表</div>
 			</div>
 
 			<div class="p-timeline__lst">

@@ -11,7 +11,10 @@ p-timeline
 		clear: both;
 		z-index: 0;
 		dl {
-			line-height: 2;
+			line-height: 1.8;
+			@include inc.mq(tabs) {
+				line-height: 2;
+			}
 			dt {
 				@include inc.sizing(font-size, tab, 18px, sp, 10px);
 				font-weight: inc.$Bold;
@@ -223,7 +226,10 @@ p-timeline
 		}
 	}
 	dl {
-		line-height: 2;
+		line-height: 1.8;
+		@include inc.mq(tabs) {
+			line-height: 2;
+		}
 		dt {
 			@include inc.sizing(font-size, tab, 18px, sp, 10px);
 			font-weight: inc.$Bold;

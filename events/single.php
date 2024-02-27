@@ -5,7 +5,7 @@
 get_header(); ?>
 
 <div class="c-herohead">
-	<h1 class="c-herohead__heading"><?php echo esc_html(get_post_type_object(get_post_type())->label); ?></h1>
+	<h1 class="c-herohead__heading"><span><?php echo esc_html(get_post_type_object(get_post_type())->label); ?></span><?php the_title(); ?></h1>
 	<date><span>実施期間：</span><?php the_field('event-date'); ?></date>
 </div>
 

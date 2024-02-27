@@ -81,7 +81,7 @@ foreach($terms as $term):
 	<div class="l-wrapper">
 		<h2>Special Contents</h2>
 		<ul class="c-thumb04">
-			<li><a href="<?php echo home_url('/digital'); ?>"><figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/sp01.jpg">
+			<li><a href="<?php echo home_url('/events/events-1001/'); ?>"><figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/sp01.jpg">
 				<figcaption>
 					<h3>デジタル博物館</h3>
 					<p>川中島の戦いにまつわる文化財を紹介。ここでしか見られない貴重なモノも！？</p>

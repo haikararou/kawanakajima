@@ -4,6 +4,8 @@
 	<h1 class="c-herohead__heading"><?php echo esc_html(get_post_type_object(get_post_type())->label); ?></h1>
 </div>
 
+</div>
+
 <?php
 $tax_name = 'character_cat';
 $terms = get_terms( $tax_name, array('parent' => 0));
@@ -18,6 +20,9 @@ $post_count = -1;
 <?php endforeach; ?>
 	</ul>
 </nav>
+
+
+<div class="l-wrapper">
 
 <?php
 $terms = get_terms('character_cat', 'hide_empty=0&parent=' . get_queried_object_id()); // タクソノミー・現在のタームIDを指定

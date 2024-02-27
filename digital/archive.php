@@ -7,10 +7,10 @@
 <section class="c-section">
 	<p class="c-heading__s">長野市立博物館と真田宝物館の収蔵品のうち、川中島の戦いに関する文化財を掲載しております。</p>
 	<br>
-	<ul class="c-anchor__txt">
+	<!--ul class="c-anchor__txt">
 		<li><a target="_blank" rel="nofllow" href="https://jmapps.ne.jp/nagamuse/">長野市立博物館　収蔵品データベース</a></li>
 		<li><a target="_blank" rel="nofllow" href="https://www.sanadahoumotsukan.com/">真田宝物館</a></li>
-	</ul>
+	</ul-->
 </section>
 
 <section class="c-section">
@@ -21,7 +21,7 @@
 				echo '<dd><a href="'.get_term_link($term).'">'.$term->name.'</a></dd>';
 			} ?>
 	</dl>
-	<ul class="c-thumb04">
+	<ul class="c-thumb04 -sp2">
 <?php if(have_posts()): while (have_posts()) : the_post(); ?>
 		<li><?php if(get_field('digital_link')): ?><a href="<?php the_field('digital_link'); ?>" target="_blank" rel="nofllow"><?php else: ?><a href="<?php the_permalink(); ?>"><?php endif; ?>
 			<figure><span><?php if (has_post_thumbnail()) : ?><?php the_post_thumbnail('full'); ?><?php else: ?><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/noimage.png" alt="該当画像はありません"><?php endif; ?></span>

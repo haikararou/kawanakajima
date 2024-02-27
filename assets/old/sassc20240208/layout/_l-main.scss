@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+@use "../inc/" as inc;
+/*
+l-main
+-----------------------------------------------------*/
+.l-main {
+	@include inc.sizing(margin-bottom, tab, 224px, sp, 112px);
+}
+
+body.home,
+body.page-tour,
+body.single-tour,
+body.single-walk {
+	.l-main {
+		margin-bottom: 0;
+	}
+}

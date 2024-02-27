@@ -39,6 +39,7 @@ body.page-template-ar {
 			margin: 0 auto 29px;
 			@include inc.mq(tabs) {
 				width: 44%;
+				margin: 0 0 29px;
 			}
 			img {
 				@include inc.sizing(padding-right, tab, 5px, sp, 7px);
@@ -210,6 +211,11 @@ body.page-template-ar {
 				&:before {
 					content: "※";
 				}
+			}
+		}
+		img {
+			@include inc.mq(tabs) {
+				width: 40%;
 			}
 		}
 	}

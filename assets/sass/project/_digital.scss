@@ -54,6 +54,7 @@ p-digital
 		@include inc.sizing(margin-bottom, tab, 70px, sp, 40px);
 		@include inc.mq(tabs) {
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: space-between;
 			margin-bottom: 4.5rem;
 		}
@@ -98,6 +99,11 @@ p-digital
 		a {
 			text-decoration: underline;
 			text-underline-offset: 0.4em;
+		}
+		&__link {
+			margin-top: 3em;
+			width: 100%;
+			order: 3;
 		}
 		&__note {
 			@include inc.sizing(margin-bottom, tab, 30px, sp, 20px);

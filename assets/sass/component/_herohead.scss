@@ -11,6 +11,7 @@ c-herohead
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		//align-items: flex-end;
 	}
 	&__heading {
 		@include inc.sizing(font-size, tab, 45px, sp, 19px);
@@ -62,6 +63,9 @@ c-herohead
 			font-size: .75em;
 		}
 	}
+}
 
 
+body.single-walk .c-herohead {
+	align-items: flex-end;
 }

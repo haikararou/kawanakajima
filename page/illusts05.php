@@ -4,7 +4,7 @@
 <?php get_header(); ?>
 
 <div class="c-herohead">
-	<h1 class="c-herohead__heading"><span><?php the_title(); ?></span>塩崎の対陣</h1>
+	<h1 class="c-herohead__heading"><span><?php the_title(); ?></span>塩崎の対陣<span>上杉謙信、川中島へ最後の出兵も勝敗は決せず</span></h1>
 </div>
 
 <section class="c-section">
@@ -13,7 +13,7 @@
 	</div>
 	<article class="c-article c-single p-illusts__post">
 		<div class="c-single__block">
-			<h2 class="wp-block-heading">上杉謙信、川中島へ最後の出兵も勝敗は決せず</h2>
+			<!--h2 class="wp-block-heading">上杉謙信、川中島へ最後の出兵も勝敗は決せず</h2-->
 			<h3 class="wp-block-heading">武田信玄、越後への出兵をはかり、野尻城を攻める</h3>
 			<ul>
 				<li>永禄6年(1563)4月初旬、武田信玄は、野尻·越後方面進出のための軍用道路を飯縄山麓に開かせ、①長沼城を修築して北信濃の上杉方の城を攻めた。<br>永禄7年(1564)3月18日、武田軍は、上洛した上杉謙信(当時は上杉輝虎と名のる)の留守を狙って越後へ侵入。水内郡の野尻城を攻め落とすが、即座に上杉軍に奪回されるといった攻防が続いていた。</li>
@@ -31,7 +31,7 @@
 			</ul>
 		</div>
 	</article>
-	<div class="c-single__back"><a class="c-anchor__back" href="<?php echo home_url('/illusts'); ?>"><span>川中島の戦い一覧へ戻る</span></a></div>
+	
 </section>
 
 <!--?php get_template_part('inc/tour'); ?-->
@@ -40,5 +40,5 @@
 	<div class="c-nav__footnav__prev"><a href="<?php echo home_url('/illusts/4th'); ?>"><span><i>第4次川中島の戦い</i></span></a></div>
 	<!--div class="c-nav__footnav__next"><a href="<?php echo home_url('/illusts/1st'); ?>"><span><i>第1次川中島の戦い</i></span></a></div-->
 </div>
-
+<div class="c-single__back"><a class="c-anchor__back" href="<?php echo home_url('/illusts'); ?>"><span>川中島の戦い一覧へ戻る</span></a></div>
 <?php get_footer(); ?>

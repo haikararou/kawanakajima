@@ -23,6 +23,16 @@ endforeach; ?>
 			<div class="p-digital__post__note">
 				<?php the_field('digital_note'); ?>
 			</div>
+
+			<div class="p-digital__post__link l-pc">
+				<p>収蔵品に関するお問い合わせは各施設へお願いいたいます。</p>
+				<br>
+				<ul class="c-anchor__txt">
+					<li><a target="_blank" rel="nofllow" href="https://jmapps.ne.jp/nagamuse/">長野市立博物館　収蔵品データベース</a></li>
+					<li><a target="_blank" rel="nofllow" href="https://www.sanadahoumotsukan.com/">真田宝物館</a></li>
+				</ul>
+			</div>
+
 		</div>
 		<div class="p-digital__post__img">
 			<div class="slider" id="js-slick">
@@ -34,7 +44,18 @@ endforeach; ?>
 <?php endif; ?>
 			</div>
 		</div>
+
+		<div class="p-digital__post__link l-sp">
+			<p>収蔵品に関するお問い合わせは各施設へお願いいたいます。</p>
+			<br>
+			<ul class="c-anchor__txt">
+				<li><a target="_blank" rel="nofllow" href="https://jmapps.ne.jp/nagamuse/">長野市立博物館　収蔵品データベース</a></li>
+				<li><a target="_blank" rel="nofllow" href="https://www.sanadahoumotsukan.com/">真田宝物館</a></li>
+			</ul>
+		</div>
+
 	</article>
+
 
 	<div class="wp-pagenavi" role="navigation">
 		<?php previous_post_link('%link', '前へ'); ?>

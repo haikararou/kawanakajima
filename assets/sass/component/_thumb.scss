@@ -19,15 +19,30 @@
 	&04 {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 2vw 2%;
+		gap: 3rem 2%;
+		@include inc.mq(tabs) {
+			gap: 2vw 2% !important;
+		}
 		li {
 			width: 100%;
 			@include inc.mq(tabs) {
-				width: 23.5%;
+				width: 23.5% !important;
 			}
 			img {
 				aspect-ratio: 4 / 3;
 				object-fit: cover;
+			}
+		}
+		&.-sp2 {
+			gap: 1rem 2% !important;
+			@include inc.mq(tabs) {
+				gap: 2vw 2% !important;
+			}
+			li {
+				width: 49% !important;
+				@include inc.mq(tabs) {
+					width: 23.5% !important;
+				}
 			}
 		}
 	}
@@ -47,7 +62,7 @@
 		}
 		img {
 			aspect-ratio: 4 / 3;
-			object-fit: cover;
+			object-fit: contain;
 		}
 		figcaption {
 			@include inc.sizing(margin-top, tab, 24px, sp, 10px);

@@ -140,6 +140,28 @@ c-single
 						width: calc(100% - 12em);
 					}
 				}
+				&.-block {
+					display: block;
+					@include inc.mq(tabs) {
+						display: flex;
+					}
+					dt {
+						width: 100%;
+						// text-align: center;
+						margin-bottom: 1em;
+						@include inc.mq(tabs) {
+							width: 12em;
+							// text-align: left;
+							margin-bottom: 0;
+						}
+					}
+					dd {
+						width: 100%;
+						@include inc.mq(tabs) {
+							width: calc(100% - 12em);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -182,7 +204,10 @@ c-single
 
 	&__coursemap {
 		background: url("../img/common/bg.jpg");
-		padding: 5%;
+		padding: 5% 0 0;
+		@include inc.mq(tabs) {
+			padding: 5%;
+		}
 		h2 {
 			text-align: center;
 		}

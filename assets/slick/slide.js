@@ -1,6 +1,32 @@
 const $ = jQuery.noConflict();
 
 $(function () {
+	$('.p-home__special__slide').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		centerMode: false,
+		centerPadding: "0",
+		autoplay: false,
+		autoplaySpeed: 800,
+		infinite: false,
+		// loop: false,
+		dots: false,
+		//speed: 5000,
+		arrows: false,
+		responsive: [{
+			breakpoint: 800,
+				settings: {
+					slidesToShow: 2.5,
+				}
+			},
+			{
+			breakpoint: 600,
+				settings: {
+					slidesToShow: 1.5,
+			}
+		}]
+	});
+
 	$('.c-related__slide').slick({
 		slidesToShow: 4,
 		slidesToScroll: 1,
@@ -9,14 +35,14 @@ $(function () {
 		autoplay: false,
 		autoplaySpeed: 800,
 		infinite: false,
-		loop: false,
+		// loop: false,
 		dots: false,
-		speed: 5000,
+		//speed: 5000,
 		arrows: false,
 		responsive: [{
 			breakpoint: 800,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 2.5,
 				}
 			},
 			{

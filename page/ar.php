@@ -27,7 +27,24 @@
 			<p>甲州市恵林寺にある、武田信玄が生前、自身をモデルに作らせたとされる武田不動尊。<br>時代を代表する最高のクオリティと言われており、普段見ることができない角度から不動尊を見ることができる。</p>
 			<div class="p-ar__article__host">
 				<h4 class="c-heading__ss">AR設置場所</h4>
-				<a target="_blank" rel="nofllow" href="https://www.city.nagano.nagano.jp/museum/"><figure>
+				<!--a target="_blank" rel="nofllow" href="https://www.city.nagano.nagano.jp/museum/"--><a target="_blank" rel="nofllow" href="https://maps.app.goo.gl/k8V4oBb4gTGadi356"><figure>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ar/naganocity-museum.jpg">
+					<figcaption><span>長野市立博物館</span></figcaption>
+				</figure></a>
+			</div>
+		</div>
+	</article>
+
+	<article class="p-ar__article">
+		<div class="p-ar__article__img">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ar/bishamon.png">
+		</div>
+		<div class="p-ar__article__txt">
+			<h3 class="c-heading__m">毘沙門天像</h3>
+			<p>上杉謙信が出陣前に必ずこもって策を練り、勝利を祈願したといわれている毘沙門堂にあったと云われる、普段見ることができない毘沙門天像</p>
+			<div class="p-ar__article__host">
+				<h4 class="c-heading__ss">AR設置場所</h4>
+				<!--a target="_blank" rel="nofllow" href="https://www.city.nagano.nagano.jp/museum/"--><a target="_blank" rel="nofllow" href="https://maps.app.goo.gl/k8V4oBb4gTGadi356"><figure>
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ar/naganocity-museum.jpg">
 					<figcaption><span>長野市立博物館</span></figcaption>
 				</figure></a>
@@ -45,26 +62,9 @@
 			<p>典厩寺の閻魔堂にある、高さ5mの巨大な閻魔大王像。8代藩主・真田幸貫が1860年に造らせ、その大きさは日本一と云われている。</p>
 			<div class="p-ar__article__host">
 				<h4 class="c-heading__ss">AR設置場所</h4>
-				<a target="_blank" rel="nofllow" href="https://db.go-nagano.net/topics_detail6/id=12075"><figure>
+				<!--a target="_blank" rel="nofllow" href="https://db.go-nagano.net/topics_detail6/id=12075"--><a target="_blank" rel="nofllow" href="https://maps.app.goo.gl/RintfdQhrXGFtNQG7"><figure>
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ar/ncv.jpg">
 					<figcaption><span>長野市観光情報センター</span></figcaption>
-				</figure></a>
-			</div>
-		</div>
-	</article>
-
-	<article class="p-ar__article">
-		<div class="p-ar__article__img">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ar/bishamon.png">
-		</div>
-		<div class="p-ar__article__txt">
-			<h3 class="c-heading__m">毘沙門天像</h3>
-			<p>上杉謙信が出陣前に必ずこもって策を練り、勝利を祈願したといわれている毘沙門堂にあったと云われる、普段見ることができない毘沙門天像</p>
-			<div class="p-ar__article__host">
-				<h4 class="c-heading__ss">AR設置場所</h4>
-				<a target="_blank" rel="nofllow" href="https://www.city.nagano.nagano.jp/museum/"><figure>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ar/naganocity-museum.jpg">
-					<figcaption><span>長野市立博物館</span></figcaption>
 				</figure></a>
 			</div>
 		</div>
@@ -80,7 +80,7 @@
 			<p>上杉謙信が出陣前に必ずこもって策を練り、勝利を祈願したといわれている毘沙門堂にあったと云われる、普段見ることができない毘沙門天像。</p>
 			<div class="p-ar__article__host">
 				<h4 class="c-heading__ss">AR設置場所</h4>
-				<a target="_blank" rel="nofllow" href="https://www.sanadahoumotsukan.com/facility_detail.php?n=7"><figure>
+				<!--a target="_blank" rel="nofllow" href="https://www.sanadahoumotsukan.com/facility_detail.php?n=7"--><a target="_blank" rel="nofllow" href="https://maps.app.goo.gl/EH2Lrx6qFrZiW5Mr6"><figure>
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ar/matsushirojo.jpg">
 					<figcaption><span>松代城（海津城）跡</span></figcaption>
 				</figure></a>
@@ -97,7 +97,7 @@
 			<p>武田信玄に仕えてた軍師であり、出陣の吉日を占うなど陰陽師だったという説もある山本勘助に、運勢を占ってもらうことができるARおみくじ。</p>
 			<div class="p-ar__article__host">
 				<h4 class="c-heading__ss">AR設置場所</h4>
-				<a target="_blank" rel="nofllow" href="https://www.sanadahoumotsukan.com/facility_detail.php?n=7"><figure>
+				<!--a target="_blank" rel="nofllow" href="https://www.sanadahoumotsukan.com/facility_detail.php?n=7"--><a target="_blank" rel="nofllow" href="https://maps.app.goo.gl/EH2Lrx6qFrZiW5Mr6"><figure>
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ar/matsushirojo.jpg">
 					<figcaption><span>松代城（海津城）跡</span></figcaption>
 				</figure></a>
@@ -115,7 +115,7 @@
 			<p>典厩寺にある「首きよめ井戸」（討死した武田信繁の首を敵から奪い返して清めた井戸）からは今日も武田典厩信繫の亡霊が現れるかも、、、？？</p>
 			<div class="p-ar__article__host">
 				<h4 class="c-heading__ss">AR設置場所</h4>
-				<a target="_blank" rel="nofllow" href="https://www.nagano-cvb.or.jp/modules/sightseeing/page/58"><figure>
+				<!--a target="_blank" rel="nofllow" href="https://www.nagano-cvb.or.jp/modules/sightseeing/page/58"--><a target="_blank" rel="nofllow" href="https://maps.app.goo.gl/UKX4w6DAiJHmCs4m7"><figure>
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ar/tenkyuji.jpg">
 					<figcaption><span>典厩寺</span></figcaption>
 				</figure></a>
@@ -154,15 +154,15 @@
 		</div>
 		<div class="p-ar__article__host">
 			<h4 class="c-heading__ss">AR設置場所</h4>
-			<a target="_blank" rel="nofllow" href="https://www.matsushiro-kankou.com/spot/spot-021/"><figure>
+			<!--a target="_blank" rel="nofllow" href="https://www.matsushiro-kankou.com/spot/spot-021/"--><a target="_blank" rel="nofllow" href="https://maps.app.goo.gl/VXbaawrxfVUV9s5u9"><figure>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ar/saijozan.jpg">
 				<figcaption><span>妻女山</span></figcaption>
 			</figure></a>
-			<a target="_blank" rel="nofllow" href="https://www.city.nagano.nagano.jp/n202500/contents/p001012.html"><figure>
+			<!--a target="_blank" rel="nofllow" href="https://www.city.nagano.nagano.jp/n202500/contents/p001012.html"--><a target="_blank" rel="nofllow" href="https://www.city.nagano.nagano.jp/n202500/contents/p001012.html"><figure>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ar/kosenjo.jpg">
 				<figcaption><span>川中島古戦場史跡公園</span></figcaption>
 			</figure></a>
-			<a target="_blank" rel="nofllow" href="https://daikanjin.jp/"><figure>
+			<!--a target="_blank" rel="nofllow" href="https://daikanjin.jp/"--><a target="_blank" rel="nofllow" href="https://maps.app.goo.gl/qXwayvCCGfNTuS4U6"><figure>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ar/daikanjin.jpg">
 				<figcaption><span>善光寺大勧進</span></figcaption>
 			</figure></a>
@@ -203,6 +203,10 @@
 			<dd>ブラウザ：GoogleChrome 最新版</dd>
 			<dd class="-astarisk">Android端末搭載の標準ブラウザは未対応です</dd>
 		</dl>
+	</div>
+	<div class="p-ar__notice">
+		<p>【AR操作説明】</p>
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ar/operation.jpg">
 	</div>
 </section>
 

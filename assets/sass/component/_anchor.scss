@@ -13,11 +13,14 @@
 }
 
 %line {
-	line-height: 2;
+	line-height: 1.8;
 	font-weight: inc.$Bold;
 	text-decoration: underline;
 	text-decoration-skip-ink: none;
 	text-underline-offset: .4em;
+	@include inc.mq(tabs) {
+		line-height: 2;
+	}
 }
 
 /*----------

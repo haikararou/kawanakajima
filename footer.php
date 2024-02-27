@@ -15,7 +15,7 @@
 	<div class="l-footer__inner">
 		<nav class="l-footer__nav">
 			<ul>
-				<li><a href="<?php echo home_url('/battles'); ?>">戦いを知る</a></li>
+				<li><a href="<?php echo home_url('/top#battles'); ?>">戦いを知る</a></li>
 				<li><a href="<?php echo home_url('/tour'); ?>">史跡をめぐる</a></li>
 				<li><a href="<?php echo home_url('/digital'); ?>">デジタル博物館</a></li>
 				<li><a href="<?php echo home_url('/events'); ?>">イベント情報</a></li>
@@ -27,9 +27,9 @@
 		<address>長野市（法人番号3000020202011）<br>〒380-8512　長野市大字鶴賀緑町1613番地電話（代表）026-226-4911<br>業務時間 午前8時30分から午後5時15分まで<br>休日 土曜日、日曜日、祝休日、年末年始（12月29日から1月3日）</address>
 		<nav class="l-footer__naganonav">
 			<ul>
-				<li><a href="https://www.city.nagano.nagano.jp/n042000/contents/p004764.html" target="_blank" rel="nofllow">個人情報の保護</a></li>
-				<li><a href="https://www.city.nagano.nagano.jp/n042000/contents/p004765.html" target="_blank" rel="nofllow">免責事項</a></li>
-				<li><a href="https://www.city.nagano.nagano.jp/site_policy.html" target="_blank" rel="nofllow">著作権等</a></li>
+				<li><a href="<?php echo home_url('/privacypolicy'); ?>">プライバシーポリシー・サイトポリシー</a></li>
+				<li><a href="<?php echo home_url('/disclaimer'); ?>">免責事項</a></li>
+				<li><a href="<?php echo home_url('/copyright'); ?>">著作権等</a></li>
 				<li><a href="<?php echo home_url('/website'); ?>">このサイトについて</a></li>
 			</ul>
 		</nav>

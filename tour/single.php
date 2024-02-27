@@ -45,7 +45,7 @@ endforeach; ?>
 					</div>
 <?php endwhile; ?>
 <?php endif; ?>
-					<div>
+					<div class="-block">
 						<dt>アクセス</dt>
 						<dd><?php if(get_field('tour_info_access')): ?><?php the_field('tour_info_access'); ?><?php endif; ?>
 							<?php if(get_field('tour_info_map')): ?><div class="c-map"><?php the_field('tour_info_map'); ?></div><?php endif; ?>
@@ -55,7 +55,7 @@ endforeach; ?>
 			</div>
 		</div>
 	</article>
-	<div class="c-single__back"><a class="c-anchor__back" href="<?php echo home_url('/tour'); ?>"><span>史跡ガイドへ戻る</span></a></div>
+	<div class="c-single__back"><a class="c-anchor__back" href="<?php echo home_url('/tour'); ?>"><span>史跡をめぐるへ戻る</span></a></div>
 </section>
 
 <?php // 現在表示されている投稿と同じタームに分類された投稿を取得

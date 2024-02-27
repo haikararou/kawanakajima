@@ -5,7 +5,7 @@
 get_header(); ?>
 
 <div class="c-herohead">
-	<h1 class="c-herohead__heading"><?php the_title(); ?></h1>
+	<h1 class="c-herohead__heading"><span>歩いてめぐる</span><?php the_title(); ?></h1>
 	<!--span class="km"><em><?php the_field('walk_km'); ?></em>km</span-->
 	<span class="hours"><span>目安時間</span><em><?php the_field('walk_hours'); ?></em>時間</span>
 </div>
@@ -42,7 +42,7 @@ get_header(); ?>
 
 		</div>
 	</article>
-	<div class="c-single__back"><a class="c-anchor__back" href="<?php echo home_url('/tour#walk'); ?>"><span>史跡ガイドへ戻る</span></a></div>
+	<div class="c-single__back"><a class="c-anchor__back" href="<?php echo home_url('/tour#walk'); ?>"><span>史跡をめぐるへ戻る</span></a></div>
 </section>
 
 <!--?php get_template_part('inc/tour'); ?-->

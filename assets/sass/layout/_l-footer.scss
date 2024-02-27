@@ -59,8 +59,8 @@ l-footer
 		// text-align: center;
 	}
 	&__nav {
-		width: 19.2em;
-
+		// width: 19.2em;
+		width: 23em;
 		margin: 0 auto;
 		@include inc.sizingRem(margin-bottom, tab, 150px, sp, 50px);
 		@include inc.sizingRem(font-size, tab, 16px, sp, 12px);
@@ -73,15 +73,18 @@ l-footer
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: flex-start;
-			margin: 0 auto;
+			//margin: 0 auto;
+			margin-left: 4em;
 			padding: 0;
 			@include inc.mq(tabs) {
 				flex-wrap: nowrap;
 				justify-content: center;
+				margin-left: 0;
 			}
 			li {
 				margin: 0 0 1.41em;
-				width: 9.6em;
+				//width: 9.6em;
+				width: 9em;
 				@include inc.mq(tabs) {
 					margin: 0 1em;
 					width: auto;

@@ -1,0 +1,203 @@
+@charset 'UTF-8';
+@use "../inc/" as inc;
+/*
+p-timeline
+-----------------------------------------------------*/
+.p-timeline {
+	&__body {
+		position: relative;
+		padding-bottom: 10%;
+		margin-bottom: 10%;
+		clear: both;
+		z-index: -3;
+	}
+	&__inner {
+		// position: absolute;
+		// top: 0;
+		// left: 0;
+		// width: 100%;
+		// height: 100%;
+		clip-path: inset(0);
+
+	}
+	&__bg {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100vh;
+		background-size: contain;
+		//background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-image: url("../img/common/timeline.svg");
+		//opacity: 0;
+		transition: all 0.5s ease 0s;
+		z-index: -3;
+		@include inc.mq(tabs) {
+			//position: absolute;
+			height: 100%;
+		}
+	}
+	&__box {
+		position: relative;
+		z-index: -2;
+		background: linear-gradient(180deg, rgba(235, 223, 188, 1) 10%, rgba(235, 223, 188, 0) 20% 90%, rgba(235, 223, 188, 1) 100%);
+		@include inc.mq(tabs) {
+			background: linear-gradient(180deg, rgba(235, 223, 188, 1) 20%, rgba(235, 223, 188, 0) 30% 90%, rgba(235, 223, 188, 1) 100%);
+		}
+		&:before {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 50%;
+			right: 50%;
+			width: 3px;
+			height: 100%;
+			margin-left: -1.5px;
+			background-image: linear-gradient(0deg, transparent, inc.$color-line2 5% 95%, transparent);
+			z-index: -1;
+			@include inc.mq(tabs) {
+				width: 8px;
+				margin-left: -4px;
+			}
+		}
+	}
+	&__head {
+		//background-color: inc.$color-bg;
+		&::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		&__takeda {
+			float: left;
+		}
+		&__uesugi {
+			float: right;
+		}
+		&__takeda,
+		&__uesugi {
+			width: 50%;
+			text-align: center;
+			@include inc.sizing(font-size, tab, 40px, sp, 18px);
+			font-weight: inc.$Bold;
+			// margin-bottom: 1em;
+			padding-top: 1em;
+			img {
+				height: 80px;
+				margin: 0 auto .5em;
+			}
+		}
+	}
+	&__lst {
+		@include inc.sizing(padding-bottom, tab, 85px, sp, 24px);
+		background-image : linear-gradient(to right, inc.$color-line2 4px, transparent 4px);
+		background-size: 8px 2px;
+		background-repeat: repeat-x;
+		background-position: left 30px;
+		clear: both;
+		&::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		@include inc.mq(tabs) {
+			background-image : linear-gradient(to right, inc.$color-line2 8px, transparent 8px);
+			background-size: 16px 4px;
+			background-position: left 70px;
+		}
+		&__year {
+			color: inc.$color-blk;
+			margin: 0 auto;
+			@include inc.sizing(width, tab, 136px, sp, 64px);
+			@include inc.sizing(height, tab, 136px, sp, 64px);
+			@include inc.sizing(margin-bottom, tab, 20px, sp, 10px);
+			@include inc.sizing(padding-top, tab, 45px, sp, 21px);
+			background: inc.$color-line2;
+			text-align: center;
+			@include inc.sizing(font-size, tab, 14px, sp, 7px);
+			font-weight: inc.$Bold;
+			border-radius: 136px;
+			& > span {
+				&:first-of-type {
+					font-family: inc.$font-Vollkorn;
+					@include inc.sizing(font-size, tab, 32px, sp, 17px);
+					font-weight: inc.$Regular;
+					padding-right: .1em;
+					line-height: 1;
+				}
+				&:last-of-type {
+					display: block;
+					@include inc.sizing(font-size, tab, 12px, sp, 7px);
+					font-weight: inc.$Bold;
+				}
+
+			}
+		}
+		&__takeda {
+			float: left;
+		}
+		&__uesugi {
+			float: right;
+		}
+		&__takeda,
+		&__uesugi {
+			width: 40%;
+			span {
+				display: none;
+			}
+			dl {
+				line-height: 2;
+				dt {
+					@include inc.sizing(font-size, tab, 18px, sp, 10px);
+					font-weight: inc.$Bold;
+				}
+				dd {
+					@include inc.sizing(font-size, tab, 16px, sp, 11px);
+				}
+			}
+		}
+	}
+	&__cmn {
+		background: #F1E8D0;
+		@include inc.sizing(padding-top, tab, 40px, sp, 21px);
+		@include inc.sizing(padding-right, tab, 65px, sp, 20px);
+		@include inc.sizing(padding-bottom, tab, 40px, sp, 21px);
+		@include inc.sizing(padding-left, tab, 65px, sp, 20px);
+		@include inc.sizing(margin-bottom, tab, 160px, sp, 20px);
+		&__head {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			@include inc.sizing(margin-bottom, tab, 50px, sp, 24px);
+			h3 {
+				color: inc.$color-red;
+				@include inc.sizing(font-size, tab, 25px, sp, 14px);
+				font-weight: inc.$Bold;
+			}
+			a {
+				span {
+					@include inc.sizing(font-size, tab, 16px, sp, 10px);
+				}
+			}
+		}
+		dl {
+			line-height: 2;
+			dt {
+				@include inc.sizing(font-size, tab, 18px, sp, 10px);
+				font-weight: inc.$Bold;
+			}
+			dd {
+				@include inc.sizing(font-size, tab, 16px, sp, 11px);
+				margin-bottom: 1em;
+			}
+		}
+	}
+	&__note {
+		@include inc.mq(tabs) {
+			margin-left: 28%;
+		}
+	}
+}
