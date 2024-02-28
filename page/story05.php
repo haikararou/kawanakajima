@@ -5,17 +5,10 @@
 
 <div class="c-herohead">
 	<h1 class="c-herohead__heading"><?php the_title(); ?></h1>
-	<!--nav class="c-nav__anchor">
-		<ul class="">
-			<li><a href="#about">甲越信戦録とは？</a></li>
-			<li><a href="#aramashi">現代語で読む「甲越信戦録」あらまし</a></li>
-		</ul>
-	</nav-->
 </div>
 
 </div>
 
-<!-- <h2 id="aramashi" class="c-heading__l">現代語で読む「甲越信戦録」あらまし</h2> -->
 <nav class="c-nav__local">
 	<ul class="">
 		<li class="c-nav__local__vol01"><a href="/story#aramashi">巻の一</a></li>

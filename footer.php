@@ -19,7 +19,6 @@
 				<li><a href="<?php echo home_url('/tour'); ?>">史跡をめぐる</a></li>
 				<li><a href="<?php echo home_url('/digital'); ?>">デジタル博物館</a></li>
 				<li><a href="<?php echo home_url('/events'); ?>">イベント情報</a></li>
-				<!--li><a href="<?php echo home_url('/tourism'); ?>">周辺観光情報</a></li-->
 			</ul>
 		</nav>
 		<div class="l-footer__logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo.svg" alt="<?php bloginfo('name'); ?>"></a></div>
@@ -28,8 +27,6 @@
 		<nav class="l-footer__naganonav">
 			<ul>
 				<li><a href="<?php echo home_url('/privacypolicy'); ?>">プライバシーポリシー・サイトポリシー</a></li>
-				<!--li><a href="<?php echo home_url('/disclaimer'); ?>">免責事項</a></li-->
-				<!--li><a href="<?php echo home_url('/copyright'); ?>">著作権等</a></li-->
 				<li><a href="<?php echo home_url('/website'); ?>">このサイトについて</a></li>
 			</ul>
 		</nav>

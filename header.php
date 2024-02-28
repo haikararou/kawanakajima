@@ -50,7 +50,6 @@
 		<span class="l-hamburger__line l-hamburger__line__top"></span>
 		<span class="l-hamburger__line l-hamburger__line__cnt"></span>
 		<span class="l-hamburger__line l-hamburger__line__btm"></span>
-		<!--p class="l-hamburger__title">MENU</p-->
 	</a>
 	<nav class="l-nav">
 		<div class="l-nav__wrap">
@@ -66,7 +65,6 @@
 				<li><a href="<?php echo home_url('/tour'); ?>">史跡をめぐる</a></li>
 				<li><a href="<?php echo home_url('/digital'); ?>">デジタル博物館</a></li>
 				<li><a href="<?php echo home_url('/events'); ?>">イベント情報</a></li>
-				<!--li><a href="<?php echo home_url('/tourism'); ?>">周辺観光情報</a></li-->
 			</ul>
 		</div>
 	</nav>

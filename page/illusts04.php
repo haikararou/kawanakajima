@@ -173,8 +173,6 @@
 	</article>
 </section>
 
-<!--?php get_template_part('inc/tour'); ?-->
-
 <div class="c-nav__footnav">
 	<div class="c-nav__footnav__prev"><a href="<?php echo home_url('/illusts/3rd'); ?>"><span><i>第3次川中島の戦い</i></span></a></div>
 	<div class="c-nav__footnav__next"><a href="<?php echo home_url('/illusts/5th'); ?>"><span><i>第5次川中島の戦い</i></span></a></div>

@@ -2363,11 +2363,12 @@ p-home
   overflow: hidden;
   width: 100vw;
   min-height: 100vw;
-  top: 0;
+  top: 80px;
   padding: 0;
 }
 @media screen and (min-width: 1025px) {
   .p-home__kv {
+    top: 0;
     min-height: 64vw;
   }
 }
@@ -2393,7 +2394,7 @@ p-home
 @media screen and (min-width: 1025px) {
   .p-home__kv__logo {
     width: 44.451%;
-    top: 32%;
+    top: 50%;
     margin-top: -8vw;
   }
 }
@@ -2583,7 +2584,7 @@ p-home
 @media screen and (min-width: 1025px) {
   .p-home__kv__movie {
     width: 27.423%;
-    top: 32%;
+    top: 50%;
     margin-top: 8vw;
   }
 }
@@ -2694,7 +2695,7 @@ p-home
   }
 }
 .p-home__battles {
-  padding-top: clamp(40px, 37.34vw - 131.8px, 155px);
+  padding-top: clamp(120px, 11.36vw + 67.8px, 155px);
 }
 @media screen and (min-width: 768px) {
   .p-home__battles {

@@ -24,9 +24,10 @@ p-home
 		//height: 100svh;
 		//min-height: 100vw;
 		min-height: 100vw;
-		top: 0;
+		top: 80px;
 		padding: 0;
 		@include inc.mq(lap) {
+			top: 0;
 			min-height: 64vw;
 			//height: 113.63svh;
 		}
@@ -44,7 +45,7 @@ p-home
 			@include inc.mq(lap) {
 				width: 44.451%;
 				//top: 20svh;
-				top: 32%;
+				top: 50%;
 				margin-top: -8vw;
 			}
 			// アニメーション
@@ -204,7 +205,7 @@ p-home
 			//transform: translateX(-50%);
 			@include inc.mq(lap) {
 				width: 27.423%;
-				top: 32%;
+				top: 50%;
 				margin-top: 8vw;
 				//top: 48.18svh;
 			}
@@ -299,7 +300,7 @@ p-home
 	}
 }
 	&__battles {
-		@include inc.sizing(padding-top, tab, 155px, sp, 40px);
+		@include inc.sizing(padding-top, tab, 155px, sp, 120px);
 		@include inc.mq(tab) {
 			padding-top: 155px;
 		}

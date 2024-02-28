@@ -13,7 +13,7 @@
 	</div>
 	<article class="c-article c-single p-illusts__post">
 		<div class="c-single__block">
-			<h2 class="wp-block-heading">第1次川中島の戦い （壱）<!--<br>信玄と謙信の初めての戦いは、 互いの力のさぐり合い--></h2>
+			<h2 class="wp-block-heading">第1次川中島の戦い （壱）</h2>
 			<h3 class="wp-block-heading">武田軍と上杉軍、最初の衝突！更級郡八幡で、上杉方の越後·北信濃連合軍が勝利</h3>
 			<ul>
 				<li>天文22年(1553)4月9日、武田信玄(当時は武田晴信と名のる)の北信濃侵攻により、村上義清は葛尾城を追われ、北信濃の豪族、高梨·井上·島津·須田·栗田氏らとともに越後の上杉謙信(当時は長尾景虎と名のる)を頼る。</li>
@@ -25,7 +25,7 @@
 	</div>
 	<article class="c-article c-single p-illusts__post">
 		<div class="c-single__block">
-			<h2 class="wp-block-heading">第1次川中島の戦い （弐）<!--<br>信玄と謙信の初めての戦いは、 互いの力のさぐり合い--></h2>
+			<h2 class="wp-block-heading">第1次川中島の戦い （弐）</h2>
 			<h3 class="wp-block-heading">武田軍、東信濃の諸城を次々と攻略し、怒濤の進撃を開始<br>村上義清は旧領回復もつかの間、越後へと敗走する</h3>
 			<ul>
 				<li>武田信玄は一旦甲斐に兵を引き上げたが、7月に、再軍備をもって再び佐久に侵攻し、次々と城を攻略し、東信濃を制圧していく。</li>
@@ -43,10 +43,7 @@
 	</article>
 </section>
 
-<!--?php get_template_part('inc/tour'); ?-->
-
 <div class="c-nav__footnav">
-	<!--div class="c-nav__footnav__prev"><a href="<?php echo home_url('/illusts/5th'); ?>"><span><i>第6次川中島の戦い</i></span></a></div-->
 	<div class="c-nav__footnav__next"><a href="<?php echo home_url('/illusts/2nd'); ?>"><span><i>第2次川中島の戦い</i></span></a></div>
 </div>
 <div class="c-single__back"><a class="c-anchor__back" href="<?php echo home_url('/illusts'); ?>"><span>川中島の戦い一覧へ戻る</span></a></div>

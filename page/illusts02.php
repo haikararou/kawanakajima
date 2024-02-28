@@ -13,7 +13,6 @@
 	</div>
 	<article class="c-article c-single p-illusts__post">
 		<div class="c-single__block">
-			<!--h2 class="wp-block-heading">第2次川中島の戦い<br>犀川をはさみ200日におよんだ対陣</h2-->
 			<h3 class="wp-block-heading">信玄、川中島平の掌握に向け、対上杉軍の準備<br>知謀戦略で諸豪族たちを取り込んでいく</h3>
 			<ul>
 				<li>第1次川中島の戦いの翌天文23年(1554)3月、武田信玄(当時は武田晴信と名のる)は駿河の今川氏、相模の北条氏と婚姻関係を通じて三国同盟を結び、甲斐背後の諸勢力を牽制。信濃全域の掌握に向けて力を傾注していく。</li>
@@ -36,8 +35,6 @@
 		</div>
 	</article>
 </section>
-
-<!--?php get_template_part('inc/tour'); ?-->
 
 <div class="c-nav__footnav">
 	<div class="c-nav__footnav__prev"><a href="<?php echo home_url('/illusts/1st'); ?>"><span><i>第1次川中島の戦い</i></span></a></div>

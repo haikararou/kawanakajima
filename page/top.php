@@ -80,32 +80,6 @@ foreach($terms as $term):
 <section class="p-home__special p-home__section">
 	<div class="l-wrapper">
 		<h2>Special Contents</h2>
-		<!--ul class="c-thumb04">
-			<li><a href="<?php echo home_url('/digital'); ?>"><figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/sp01.jpg">
-				<figcaption>
-					<h3>デジタル博物館</h3>
-					<p>川中島の戦いにまつわる文化財を紹介。ここでしか見られない貴重なモノも！？</p>
-				</figcaption>
-			</figure></a></li>
-			<li><a target="_blank" rel="nofllow" href="https://www.nagano-cvb.or.jp/kawanakajimakassen/"><figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/sp02.jpg">
-				<figcaption>
-					<h3><span>川中島古戦場専用サイト</span></h3>
-					<p>川中島古戦場史跡公園のデジタルマップを見たり、ドローン映像や360度画像を楽しむことができるスマホ専用サイトです。</p>
-				</figcaption>
-			</figure></a></li>
-			<li><a href="<?php echo home_url('/vr'); ?>"><figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/sp03.jpg">
-				<figcaption>
-					<h3>VRコンテンツ</h3>
-					<p>長野市立博物館で体験できる「川中島の戦いVR」のご紹介</p>
-				</figcaption>
-			</figure></a></li>
-			<li><a href="<?php echo home_url('/ar'); ?>"><figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/sp04.jpg">
-				<figcaption>
-					<h3>ARコンテンツ</h3>
-					<p>川中島古戦場やその周辺でしか体験することができない、楽しいARコンテンツをご紹介</p>
-				</figcaption>
-			</figure></a></li>
-		</ul-->
 		<div class="p-home__special__slide">
 			<div class="image"><a target="_blank" href="https://www.nagano-cvb.or.jp/kawanakajimakassen/guide/index.html"><figure><?php if (date('Y-m-d') < '2024-06-23') { ?>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/sp02-2.jpg">
@@ -124,7 +98,7 @@ foreach($terms as $term):
 			<div class="image"><a href="<?php echo home_url('/ar'); ?>"><figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/sp04.jpg">
 				<figcaption>
 					<h3>ARコンテンツ</h3>
-					<p>川中島古戦場やその周辺で<!--しか-->体験することができ<!--ない-->る、楽しいARコンテンツをご紹介</p>
+					<p>川中島古戦場やその周辺で体験することができる、楽しいARコンテンツをご紹介</p>
 				</figcaption>
 			</figure></a></div>
 			<div class="image"><a href="<?php echo home_url('/digital'); ?>"><figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/sp01.jpg">
