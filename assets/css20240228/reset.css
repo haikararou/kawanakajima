@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+RESET CSS
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Box sizing rules */
+/* Box sizingの定義 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+/* デフォルトのpaddingを削除 */
+/*ul[class],
+ol[class] {
+  padding: 0;
+}*/
+
+/* Remove default margin */
+/* デフォルトのmarginを削除 */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+table,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+/* ul,
+ol {
+  padding-left: 1rem;
+}
+li {
+  margin-bottom: .5rem;
+}
+li:last-child {
+  margin-bottom: 0;
+} */
+
+/* Set core body defaults */
+/* bodyのデフォルトを定義 */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+/* class属性を持つul、ol要素のリストスタイルを削除 */
+/*ul[class],
+ol[class] {
+  list-style: none;
+}*/
+
+/* A elements that don't have a class get default styles */
+/* classを持たない要素はデフォルトのスタイルを取得 */
+/*a:not([class]) {
+  text-decoration-skip-ink: auto;
+}*/
+
+/* Make images easier to work with */
+/* img要素の扱いを簡単にする */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+/* article要素内の要素に自然な流れとリズムを定義 */
+/* article > * + * {
+  margin-top: 1em;
+} */
+
+/* Inherit fonts for inputs and buttons */
+/* inputやbuttonなどのフォントは継承を定義 */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+/* 見たくない人用に、すべてのアニメーションとトランジションを削除 */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+common
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+h1, h2, h3, h4, h5 {font-weight: normal;}
+p { margin: 0; padding: 0;}
+img {border: 0; line-height: 0; max-width:100%; margin:0; padding:0; vertical-align: middle; height: auto; flex-shrink: 0;}
+hr { display: none; }
+table { margin: 0; padding: 0; border-collapse: collapse;}
+/*tr { display:block;}*/
+th { margin: 0; vertical-align:top;}
+td { margin: 0; vertical-align:top; }
+em { font-weight: bold; font-style: normal;}
+form { margin: 0; padding: 0; }
+label { margin: 0; padding: 0; cursor: pointer;}
+ul,ol { list-style: none; }
+
+@media screen and (min-width:768px){
+    a[href^="tel:"] {
+        pointer-events: none;
+    }
+}
+
+/* iOSでのデフォルトスタイルをリセット */
+
+input[type="submit"],
+input[type="button"] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  background: none;
+}
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
+input[type="submit"]::focus,
+input[type="button"]::focus {
+  outline-offset: -2px;
+}
+
+select { -webkit-appearance: none; appearance: none; /* デフォルトのスタイルを無効 */ background: url(../img/svg/selectB.svg) no-repeat calc(100% - 10px) 50% #fff; background-size: 10px;}
+select::-ms-expand { display: none; /* デフォルトのスタイルを無効(IE用) */ }
+button { border: none; cursor: pointer;}
+::placeholder { color: #aaa; font-weight: 500;}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    background: #fff;
+    color: #333;
+}
+
+button,
+input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #333;
+}

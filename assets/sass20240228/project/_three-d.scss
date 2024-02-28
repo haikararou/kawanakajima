@@ -1,0 +1,10 @@
+@charset 'UTF-8';
+@use "../inc/" as inc;
+/*
+p-three-d
+-----------------------------------------------------*/
+.p-three-d {
+	margin: 0 auto 3em;
+	padding: 5%;
+	background: url(../img/common/bg.jpg);
+}
