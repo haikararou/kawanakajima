@@ -15,7 +15,7 @@
 <section class="c-section p-vr__movie">
 	<article class="p-vr__article">
 		<h2 class="c-heading__m">プロモーション用動画</h2>
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/vr/movie.jpg">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/vr/movie_soon.jpg">
 	</article>
 </section>
 

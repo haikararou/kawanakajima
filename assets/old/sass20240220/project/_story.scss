@@ -1,0 +1,38 @@
+@charset 'UTF-8';
+@use "../inc/" as inc;
+/*
+p-story
+-----------------------------------------------------*/
+// .p-story {
+// 	figure {
+// 		margin: 1em 0;
+// 		@include inc.mq(tabs) {
+// 			max-width: 190px;
+// 			float: right;
+// 			margin: 0 0 2em 2em;
+// 		}
+// 	}
+// 	p {
+// 		@include inc.sizing(font-size, tab, 16px, sp, 13px);
+// 	}
+// }
+
+.p-story {
+    p {
+        @include inc.sizing(font-size, tab, 16px, sp, 13px);
+    }
+    &_box {
+        figure {
+            margin: 1em 0;
+            @include inc.mq(tabs) {
+                max-width: 190px;
+                float: right;
+                margin: 0 0 2em 2em;
+            }
+        }
+        a {
+            text-decoration: underline;
+            text-underline-offset: 0.4em;
+        }
+    }
+}

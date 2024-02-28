@@ -1,0 +1,22 @@
+@charset 'UTF-8';
+@use "../inc/" as inc;
+/*
+l-wrapper
+-----------------------------------------------------*/
+
+.l-wrapper {
+	max-width: inc.$content-width;
+	width: 90%;
+	margin: 0 auto;
+	// @include inc.mq(vr) {
+	// 	padding: 0 2rem;
+	// }
+	// @include inc.mq(wide) {
+	// 	max-width: 86%;
+	// }
+}
+
+.l-mx992 {
+	max-width: 992px;
+	margin: auto;
+}

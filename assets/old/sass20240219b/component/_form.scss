@@ -1,0 +1,416 @@
+@charset 'UTF-8';
+@use '../../global' as *;
+
+/*----------
+form
+----------*/
+.c-form {
+	&__remaining {
+		display: none;
+		@include mq(lap) {
+			display: block;
+			position: fixed;
+			top: 223px;
+			right: 32px;
+			padding: .5em;
+			border: 1px solid #FF4E00;
+			background: $color-white;
+			border-radius: 20px;
+			text-align: center;
+		}
+		p {
+			font-size: rem(13) !important;
+			em {
+				display: inline-block;
+				color: $color-white;
+				background: $color-black;
+				font-size: rem(11);
+				line-height: 1.2;
+				font-weight: 400;
+				margin-right: 1em;
+				padding: .2em;
+			}
+		}
+	}
+	&__number {
+		font-size: rem(24);
+		line-height: 1.2;
+		padding: 0 .2em;
+		font-weight: 700;
+		color: #EF8618;
+	}
+	dl {
+		div {
+			padding: .5em 0;
+			@include mq(lap) {
+				display: flex;
+				justify-content: space-between;
+			}
+			dt {
+				font-size: rem(16);
+				font-weight: 700;
+				@include mq(lap) {
+					width: 13em !important;
+					margin-right: 2em;
+				}
+				em {
+					display: inline-block;
+					color: $color-white;
+					background: $color-black;
+					font-size: rem(11);
+					line-height: 1.2;
+					font-weight: 400;
+					margin: 0 1em;
+					padding: .2em;
+				}
+				span {
+					display: inline-block;
+					font-size: rem(14);
+				}
+			}
+			dd {
+				font-size: rem(16);
+				@include mq(lap) {
+					width: 90% !important;
+				}
+
+			}
+			a {
+				text-decoration: underline;
+				display: inline-block;
+			}
+		}
+	}
+
+	ul {
+		margin: 0;
+		font-size: rem(16);
+		li {
+			display: inline-block;
+			margin-right: 1em;
+			//display: flex;
+			//flex-wrap: wrap;
+			label {
+				width: auto;
+			}
+			span {
+				display: inline-block;
+				position: relative;
+				padding-left: 1.5em;
+				line-height: 2.2;
+				&::before,
+				&::after {
+					position: absolute;
+					content: "";
+					transition: all 0.3s;
+					left: 0;
+				}
+			}
+			input[type="radio"],
+			input[type="checkbox"] {
+				opacity: 0;
+				appearance: none;
+				position: absolute;
+			}
+			input[type="radio"] + span::after {
+				background-color: $color-black;
+			}
+			input[type="radio"] + span.c-form__blue::after {
+				background-color: $color-blue;
+			}
+			input[type="radio"] + span.c-form__red::after {
+				background-color: red;
+			}
+			input[type="radio"]:focus + span::before,
+			input[type="checkbox"]:focus + span::before {
+				box-shadow: 0 0 4px #ddd;
+			}
+			input[type="radio"]:checked + span::after,
+			input[type="checkbox"]:checked + span::after {
+				opacity: 1;
+			}
+		}
+		&.c-form__radio {
+			span {
+				&::before {
+					top: .6em;
+					width: 1.2em;
+					height: 1.2em;
+					border: 2px solid #ddd;
+					background: $color-white;
+					border-radius: 50%;
+				}
+				&::after {
+					top: .8em;
+					left: .2em;
+					width: .8em;
+					height: .8em;
+					border-radius: 50%;
+					background-color: $color-black;
+					opacity: 0;
+				}
+			}
+		}
+		&.c-form__checkbox {
+			span {
+				&::before {
+					top: .5em;
+					width: 1.2em;
+					height: 1.2em;
+					border: 2px solid #ddd;
+					background: $color-white;
+					border-radius: 3px;
+				}
+				&::after {
+					top: .3em;
+					width: 1.2em;
+					height: 1.2em;
+					color: $color-black;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					content: "✔";
+					opacity: 0;
+					transition: all 0.3s;
+				}
+			}
+		}
+	}
+	&__labelfirst {
+		column-count: 2;
+		li {
+			display: block !important;
+		}
+	}
+	&__select {
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+		@include mq(lap) {
+			width: 12em;
+		}
+		select {
+			width: 100%;
+			padding: 1em;
+			padding-right: 2em;
+			cursor: pointer;
+			text-overflow: ellipsis;
+			border: none;
+			outline: none;
+			background: transparent;
+			background-image: none;
+			box-shadow: none;
+			-webkit-appearance: none;
+			appearance: none;
+			position: relative;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			background: $color-white;
+			font-size: rem(16);
+			@include mq(lap) {
+				width: 12em;
+			}
+			&::-ms-expand {
+				display: none;
+			}
+		}
+
+		&:after {
+			position: absolute;
+			content: "";
+			transition: all 0.3s;
+			right: 0;
+
+			top: 50%;
+			right: 1.5em;
+			width: .5em;
+			height: .5em;
+			border-right: 2px solid $color-black;
+			border-bottom: 2px solid $color-black;
+			 transform: translateY(-50%) rotate(45deg);
+			pointer-events: none;
+		}
+	}
+
+	p {
+		padding-bottom: 3.125rem;
+	}
+
+	&__catalog {
+		padding: 1rem;
+		margin-top: 5rem;
+		margin-bottom: 3.125rem;
+		border: 3px solid $color-gray;
+		@include mq(lap) {
+			padding: 2.5rem;
+		}
+		h2 {
+			font-size: rem(16);
+			font-weight: 700;
+			margin-bottom: 1em;
+			@include mq(lap) {
+				font-size: rem(20);
+			}
+		}
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			
+			gap: 0 2em;
+			li {
+				display: block !important;
+				width: calc(calc(100% - 2em) / 2);
+				margin: 0 0 1em !important;
+				@include mq(lap) {
+					width: calc(calc(100% - 4em) / 3);
+				}
+				label {
+					width: 100%;
+					@include mq(lap) {
+						display: flex !important;
+						justify-content: space-between;
+						align-items: flex-start;
+					}
+				}
+				span {
+					font-size: rem(16);
+					line-height: 1.5;
+					font-weight: 700;
+					@include mq(lap) {
+						width: calc(100% - 80px);
+					}
+				}
+
+			}
+		}
+		img {
+			width: 100%;
+			height: auto;
+			vertical-align: top;
+			padding: .5em 0 0 1.5em;
+			@include mq(lap) {
+				width: 65px;
+				padding: 0;
+			}
+		}
+	}
+
+	&__privacy {
+		margin: 2rem 0;
+		@include mq(lap) {
+			margin: 2rem 0 3.125rem;
+		}
+		&__box {
+			margin-bottom: 1.5rem;
+			border: 1px solid $color-gray;
+			div {
+				height: 9.5rem;
+				padding: 1rem 2rem 1rem 1rem;
+				overflow-y: scroll;
+				@include mq(lap) {
+					padding: 2.5rem 3.5rem 2.5rem 2.5rem;
+				}
+				h3 {
+					font-size: rem(16);
+					font-weight: 700;
+					margin-bottom: 1em;
+					@include mq(lap) {
+						font-size: rem(20);
+					}
+				}
+				p {
+					padding-bottom: 1.8em;
+				}
+			}
+		}
+	}
+	&__check {
+		ul {
+			border: 1px solid $color-gray;
+			padding: 1rem;
+			text-align: center;
+		}
+
+	}
+	&__btn {
+		text-align: center;
+		margin-top: 3rem;
+	}
+
+
+	input {
+		&[type='text'],
+		&[type='email'],
+		&[type='tel'],
+		&[type='datetime'],
+		&[type='date'],
+		&[type='month'],
+		&[type='week'],
+		&[type='time'],
+		&[type='datetime-local'],
+		&[type='tel'],
+		&[type='serch'],
+		&[type='url'],
+		&[type='password'],
+		&[type='number'],
+		&[type='range'],
+		&[type='color'],
+		&[type='file'], 
+		&[type='image'] {
+			width: 100%;
+			font-size: rem(16);
+			padding: 1em;
+			border: transparent;
+			box-sizing: border-box;
+			background: #F2F2F2;
+			border: 0;
+		}
+		&[type='radio'],
+		&[type='checkbox'] {
+			vertical-align:middle;
+			position: relative;
+			top: -2px;
+			margin-right: .3em;
+		}
+		&.zipcode {
+			width: calc(100% - 2em);
+			margin-left: 1em;
+			display: inline-block;
+			@include mq(lap) {
+				width: 8em;
+				margin-right: 1em;
+			}
+		}
+	}
+
+	textarea {
+		width: 100%;
+		font-size: rem(16);
+		padding: .8em;
+		border: transparent;
+		box-sizing: border-box;
+		height: 10em;
+		background: #F2F2F2;
+		border: 0;
+	}
+
+	input,
+	button {
+		&[type='submit'] {
+			width: 100%;
+			color: $color-white;
+			font-size: rem(16);
+			font-weight: 700;
+			background: $color-blue;
+			border-radius: 50px;
+			padding: 2em 0;
+			display: block;
+			cursor: pointer;
+			border: 0;
+			@include mq(lap) {
+				font-size: rem(18);
+				padding: 1em 0;
+			}
+		}
+	}
+}

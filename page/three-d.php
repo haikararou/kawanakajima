@@ -8,7 +8,7 @@
 </div>
 
 <section class="p-three-d">
-	<!-- a href="https://youtu.be/Y_3vLOVbQkk" class="video-open"--><img src="<?php echo get_template_directory_uri(); ?>/assets/img/three-d/movie.jpg"><!-- /a -->
+<a href="https://www.youtube.com/embed/Y_3vLOVbQkk?si=09qlNYk24EHxkMpK" class="video-open"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/three-d/movie.png"></a>
 </section>
 
 <section class="c-section">

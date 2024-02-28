@@ -185,6 +185,19 @@ body.single-tour .l-main,
 body.single-walk .l-main {
   margin-bottom: 0;
 }
+body.home .l-main p,
+body.page-tour .l-main p,
+body.single-tour .l-main p,
+body.single-walk .l-main p {
+  line-height: 1.8;
+  margin-bottom: 1.8em;
+}
+body.home .l-main p:last-of-type,
+body.page-tour .l-main p:last-of-type,
+body.single-tour .l-main p:last-of-type,
+body.single-walk .l-main p:last-of-type {
+  margin-bottom: 0;
+}
 
 /*
 l-breadcrumb
@@ -1251,7 +1264,6 @@ body.single-walk .c-herohead {
   padding-left: clamp(20px, 2.6vw + 8px, 28px);
   margin-bottom: clamp(20px, 4.55vw - 0.9px, 34px);
   scrollbar-width: none;
-  margin-left: 5%;
 }
 @media screen and (min-width: 768px) {
   .c-nav__local {
@@ -1270,16 +1282,27 @@ body.single-walk .c-herohead {
   z-index: 0;
 }
 .c-nav__local:before {
-  left: clamp(6px, 0.65vw + 3px, 8px);
   width: clamp(8px, 1.3vw + 2px, 12px);
   height: clamp(68px, 9.09vw + 26.2px, 96px);
   background: #A39469;
+  left: 24.75px;
+}
+@media screen and (min-width: 768px) {
+  .c-nav__local:before {
+    left: 8px;
+  }
 }
 .c-nav__local:after {
   top: clamp(4px, 0.32vw + 2.5px, 5px);
   width: clamp(20px, 2.6vw + 8px, 28px);
   height: clamp(60px, 8.44vw + 21.2px, 86px);
   background: #2A3454;
+  left: 18.75px;
+}
+@media screen and (min-width: 768px) {
+  .c-nav__local:after {
+    left: 0;
+  }
 }
 .c-nav__local ul {
   -ms-flex-negative: 0;
@@ -2877,6 +2900,11 @@ p-home
 .p-home__special__slide .image figcaption p {
   margin-bottom: 0;
 }
+.p-home__special__slide .image a[target=_blank] h3 span {
+  display: inline-block;
+  padding-right: 1.3em;
+  background: url("../img/common/icn_link.svg") no-repeat 100% 0.3em;
+}
 .p-home__special__slide .image h3 {
   min-height: 2.3em;
   font-size: 1.529rem;
@@ -2890,12 +2918,6 @@ p-home
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.p-home__special__slide .image h3 span {
-  display: block;
-  width: 100%;
-  font-size: 1.058rem;
-  line-height: 1.1;
 }
 .p-home__special__slide .image img {
   margin-bottom: 0.882rem;
@@ -3328,7 +3350,7 @@ p-illusts
 p-character
 -----------------------------------------------------*/
 .p-character__box {
-  margin-bottom: clamp(80px, 25.97vw - 39.4px, 160px);
+  margin-bottom: clamp(100px, 19.48vw + 10.4px, 160px);
 }
 @media screen and (min-width: 768px) {
   .p-character__box__img {

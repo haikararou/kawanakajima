@@ -500,6 +500,13 @@ p-home
 						margin-bottom: 0;
 					}
 				}
+				a[target="_blank"] {
+					h3 span {
+						display: inline-block;
+						padding-right: 1.3em;
+						background: url("../img/common/icn_link.svg") no-repeat 100% .3em;
+					}
+				}
 				h3 {
 					min-height: 2.3em;
 					font-size: 1.529rem;
@@ -510,10 +517,10 @@ p-home
 					// flex-direction: column;
 					align-items: center;
 					span {
-						display: block;
-						width: 100%;
-						font-size: 1.058rem;
-						line-height: 1.1;
+						// display: block;
+						// width: 100%;
+						// font-size: 1.058rem;
+						// line-height: 1.1;
 					}
 				}
 				img {

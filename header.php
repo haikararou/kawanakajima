@@ -8,6 +8,25 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
+
+<?php if(is_tax('character_cat')): ?>
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:site_name" content="川中島の戦い・主要人物 - 川中島の戦い | Battle of Kawanakajima [総合サイト] -" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="川中島の戦い・主要人物 - 川中島の戦い | Battle of Kawanakajima [総合サイト]" />
+<meta property="og:url" content="https://kawanakajima.nagano.jp/character/category/main/" />
+<meta property="og:image" content="https://kawanakajima.nagano.jp/wp-content/uploads/2024/02/OGP.png" />
+<meta property="og:image:secure_url" content="https://kawanakajima.nagano.jp/wp-content/uploads/2024/02/OGP.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="川中島の戦い・主要人物 - 川中島の戦い | Battle of Kawanakajima [総合サイト]" />
+<meta name="twitter:image" content="https://kawanakajima.nagano.jp/wp-content/uploads/2024/02/OGP.png" />
+<script type="application/ld+json" class="aioseo-schema">
+{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/kawanakajima.nagano.jp\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/kawanakajima.nagano.jp\/#listItem","position":1,"name":"\u5bb6"}]},{"@type":"Organization","@id":"https:\/\/kawanakajima.nagano.jp\/#organization","name":"\u5ddd\u4e2d\u5cf6\u306e\u6226\u3044\u7dcf\u5408\u30b5\u30a4\u30c8","url":"https:\/\/kawanakajima.nagano.jp\/"},{"@type":"WebPage","@id":"https:\/\/kawanakajima.nagano.jp\/#webpage","url":"https:\/\/kawanakajima.nagano.jp\/","name":"\u5ddd\u4e2d\u5cf6\u306e\u6226\u3044 | Battle of Kawanakajima [\u7dcf\u5408\u30b5\u30a4\u30c8]","inLanguage":"ja","isPartOf":{"@id":"https:\/\/kawanakajima.nagano.jp\/#website"},"breadcrumb":{"@id":"https:\/\/kawanakajima.nagano.jp\/#breadcrumblist"},"datePublished":"2024-02-08T09:15:05+09:00","dateModified":"2024-02-28T09:24:27+09:00"},{"@type":"WebSite","@id":"https:\/\/kawanakajima.nagano.jp\/#website","url":"https:\/\/kawanakajima.nagano.jp\/","name":"\u5ddd\u4e2d\u5cf6\u306e\u6226\u3044\u7dcf\u5408\u30b5\u30a4\u30c8","inLanguage":"ja","publisher":{"@id":"https:\/\/kawanakajima.nagano.jp\/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/kawanakajima.nagano.jp\/?s={search_term_string}"},"query-input":"required name=search_term_string"}}]}
+</script>
+<?php endif; ?>
+
 	<?php wp_head(); ?>
 
 <?php if ( is_page('three-d') ) : ?>

@@ -33,7 +33,7 @@ get_header(); ?>
 	<div class="p-home__kv__takeda"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/takeda.png" alt=""></div>
 	<div class="p-home__kv__uesugi"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/uesugi.png" alt=""></div>
 	<div class="p-home__kv__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/logo.png" alt="<?php bloginfo('name'); ?>"></div>
-	<div class="p-home__kv__movie"><!--a href="https://youtu.be/Y_3vLOVbQkk" class="video-open"--><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/movie.jpg" alt=""><!--/a--></div>
+	<div class="p-home__kv__movie"><a href="https://www.youtube.com/embed/Y_3vLOVbQkk?si=09qlNYk24EHxkMpK" class="video-open"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/movie.jpg" alt=""></a></div>
 </section>
 
 <section id="battles" class="p-home__battles p-home__section">
@@ -107,11 +107,11 @@ foreach($terms as $term):
 			</figure></a></li>
 		</ul-->
 		<div class="p-home__special__slide">
-			<div class="image"><a href="<?php echo home_url('/events/events-1001/'); ?>"><figure><?php if (date('Y-m-d') < '2024-06-23') { ?>
+			<div class="image"><a target="_blank" href="https://www.nagano-cvb.or.jp/kawanakajimakassen/guide/index.html"><figure><?php if (date('Y-m-d') < '2024-06-23') { ?>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/sp02-2.jpg">
 				<?php } else { ?><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/sp02.jpg"><?php } ?>
 				<figcaption>
-					<h3>川中島古戦場専用サイト</h3>
+					<h3><span>川中島古戦場専用サイト</span></h3>
 					<p>川中島古戦場史跡公園のデジタルマップを見たり、ドローン映像や360度画像を楽しむことができるスマホ専用サイトです。</p>
 				</figcaption>
 			</figure></a></div>

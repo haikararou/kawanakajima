@@ -28,8 +28,8 @@
 		<nav class="l-footer__naganonav">
 			<ul>
 				<li><a href="<?php echo home_url('/privacypolicy'); ?>">プライバシーポリシー・サイトポリシー</a></li>
-				<li><a href="<?php echo home_url('/disclaimer'); ?>">免責事項</a></li>
-				<li><a href="<?php echo home_url('/copyright'); ?>">著作権等</a></li>
+				<!--li><a href="<?php echo home_url('/disclaimer'); ?>">免責事項</a></li-->
+				<!--li><a href="<?php echo home_url('/copyright'); ?>">著作権等</a></li-->
 				<li><a href="<?php echo home_url('/website'); ?>">このサイトについて</a></li>
 			</ul>
 		</nav>

@@ -1,0 +1,93 @@
+@charset 'UTF-8';
+@use "../inc/" as inc;
+
+/*----------
+	tab
+----------*/
+.c-tab {
+	&__list {
+		border-bottom: 1px solid inc.$color-line;
+		display: flex;
+		//justify-content: space-around;
+		gap: 2em;
+		overflow-x: scroll;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		@include inc.mq(tabs) {
+			justify-content: space-around;
+		}
+		li {
+			a {
+				position: relative;
+				display: block;
+				// display: flex;
+				// justify-content: flex-start;
+				// align-items: center;
+				white-space: nowrap;
+				@include inc.sizing(font-size, tab, 20px, sp, 14px);
+				font-weight: inc.$Bold;
+				padding: 1em .2em 2em;
+				@extend %easing;
+				&.active {
+					cursor: text;
+					&:after {
+						content: "";
+						position: absolute;
+						left: 0;
+						bottom: 0;
+						@include inc.sizing(height, tab, 5px, sp, 4px);
+						width: 100%;
+						background: inc.$color-main;
+					}
+				}
+				@include inc.mq(tabs) {
+				}
+			}
+		}
+	}
+	&__content {
+		& > div {
+			background-color: #F1E8D0;
+			padding: 0 5%;
+			display: none;
+			&.active {
+				display: block;
+			}
+		}
+	}
+	&__vowels {
+		@include inc.sizing(font-size, tab, 16px, sp, 13px);
+		font-weight: inc.$Bold;
+	}
+	&__vowel {
+		display: flex;
+		padding: 1.9em 0;
+		&:not(:last-of-type) {
+			border-bottom: 1px solid inc.$color-line2;
+			//margin-bottom: 1.9em;
+		}
+		dt {
+			width: 5em;
+		}
+		dd {
+			width: calc(100% - 5em);
+			ul {
+				margin: 0;
+				padding: 0;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: flex-start;
+				gap: .8em 2em;
+				li {
+					//display: inline-block;
+					//@include inc.sizing(margin-right, tab, 48px, sp, 26px);
+					//@include inc.sizing(margin-bottom, tab, 20px, sp, 13px);
+				}
+			}
+		}
+	}
+
+}

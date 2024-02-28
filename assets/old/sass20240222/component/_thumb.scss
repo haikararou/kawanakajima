@@ -1,0 +1,103 @@
+@charset 'UTF-8';
+@use "../inc/" as inc;
+
+/*----------
+	c-thumb
+----------*/
+.c-thumb {
+	&03 {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2vw 2%;
+		li {
+			width: 100%;
+			@include inc.mq(tabs) {
+				width: 32%;
+			}
+		}
+	}
+	&04 {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 3rem 2%;
+		@include inc.mq(tabs) {
+			gap: 2vw 2% !important;
+		}
+		li {
+			width: 100%;
+			@include inc.mq(tabs) {
+				width: 23.5% !important;
+			}
+			img {
+				aspect-ratio: 4 / 3;
+				object-fit: cover;
+			}
+		}
+		&.-sp2 {
+			gap: 1rem 2% !important;
+			li {
+				width: 49% !important;
+			}
+		}
+	}
+
+
+	&__events {
+		//background: inc.$color-back;
+		@include inc.sizing(padding-top, tab, 90px, sp, 50px);
+		@include inc.sizing(padding-bottom, tab, 90px, sp, 50px);
+		.l-wrapper {
+			max-width: 1344px;
+		}
+		a,
+		figure,
+		img {
+			display: block;
+		}
+		img {
+			aspect-ratio: 4 / 3;
+			object-fit: contain;
+		}
+		figcaption {
+			@include inc.sizing(margin-top, tab, 24px, sp, 10px);
+			h3 {
+				@include inc.sizing(margin-bottom, tab, 19px, sp, 21px);
+				date {
+					display: block;
+					font-family: inc.$font-Cochin;
+					@include inc.sizing(font-size, tab, 25px, sp, 18px);
+				}
+				span {
+					display: block;
+					@include inc.sizing(font-size, tab, 20px, sp, 16px);
+					font-weight: inc.$Extrabold;
+				}
+			}
+			p {
+				margin: 0;
+				@include inc.sizing(font-size, tab, 16px, sp, 13px);
+				line-height: 1.4375;
+				color: inc.$color-blk;
+				@include inc.mq(tab) {
+					line-height: 1.4375;
+				}
+			}
+		}
+		aside {
+			text-align: center;
+			@include inc.sizing(margin-top, tab, 41px, sp, 38px);
+			a {
+				display: inline-block;
+			}
+		}
+	}
+}
+body.post-type-archive-events {
+	.c-thumb__events {
+		background: transparent;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+	
+
+}

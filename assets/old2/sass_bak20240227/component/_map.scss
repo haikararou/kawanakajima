@@ -1,0 +1,37 @@
+@charset 'UTF-8';
+@use "../inc/" as inc;
+
+/*----------
+	c-map
+----------*/
+.c-map {
+	display: block;
+	border: 0 !important;
+	margin: 1em 0 0 !important;
+	padding: 0 !important;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 150% !important;
+	position: relative;
+	@include inc.mq(tabs) {
+		padding-bottom: 75% !important;
+	}
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+}
+
+body.post-type-archive-tour,
+body.single-walk {
+	.c-map {
+		padding-bottom: 150% !important;
+		@include inc.mq(tabs) {
+			padding-bottom: 85% !important;
+		}
+	}
+}

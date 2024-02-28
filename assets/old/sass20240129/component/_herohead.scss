@@ -1,0 +1,58 @@
+@charset 'UTF-8';
+@use "../inc/" as inc;
+
+/*
+c-herohead
+-----------------------------------------------------*/
+.c-herohead {
+	@include inc.sizing(padding-top, tab, 96px, sp, 30px);
+	@include inc.sizing(padding-bottom, tab, 96px, sp, 30px);
+	@include inc.mq(tabs) {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__heading {
+		@include inc.sizing(font-size, tab, 45px, sp, 19px);
+		font-weight: inc.$Bold;
+	}
+	.c-nav__anchor {
+		margin: 0;
+		margin-top: 1em;
+		padding: 0;
+	}
+	span.km,
+	span.hours {
+		display: block;
+		@include inc.sizing(font-size, tab, 24px, sp, 14px);
+		font-weight: inc.$Bold;
+		line-height: 2;
+		font-family: inc.$font-Vollkorn;
+		span {
+			font-size: 12px;
+			margin-right: 1.5em;
+		}
+		em {
+			@include inc.sizing(font-size, tab, 35px, sp, 32px);
+			font-family: inc.$font-Cochin;
+			margin-right: .2em;
+		}
+	}
+	p,
+	date {
+		display: block;
+		width: 100%;
+		@include inc.sizing(font-size, tab, 16px, sp, 14px);
+		margin-top: 1em;
+		font-weight: inc.$Bold;
+	}
+	date {
+		font-family: inc.$font-Cochin;
+		@include inc.sizing(font-size, tab, 25px, sp, 18px);
+		span {
+			font-size: .75em;
+		}
+	}
+
+
+}

@@ -6,7 +6,8 @@ p-character
 .p-character {
 	&__box {
 		// @include inc.sizing(margin-bottom, tab, 160px, sp, 50px);
-		@include inc.sizing(margin-bottom, tab, 160px, sp, 80px);
+		// @include inc.sizing(margin-bottom, tab, 160px, sp, 80px);
+		@include inc.sizing(margin-bottom, tab, 160px, sp, 100px);
 		@include inc.mq(tabs) {
 			//display: flex;
 			//justify-content: space-between;

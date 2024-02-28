@@ -1,0 +1,113 @@
+@charset 'UTF-8';
+@use "../inc/" as inc;
+/*
+p-digital
+-----------------------------------------------------*/
+.single-digital,
+.post-type-archive-digital,
+.tax-digital_cat,
+.p-digital {
+	.c-thumb04 {
+		@include inc.sizing(margin-top, tab, 43px, sp, 40px);
+		a {
+			display: block;
+			&:hover {
+				opacity: .75;
+			}
+			figure {
+			& > span {
+				display: block;
+					width: 100%;
+					padding: 18px;
+					@include inc.sizing(margin-bottom, tab, 15px, sp, 10px);
+					background: inc.$color-wht;
+					img {
+						display: block;
+						width: 100%;
+						height: 100%;
+						aspect-ratio: 1;
+						object-fit: contain;
+						object-position: 50% 50%;
+					}
+				}
+				figcaption {
+					h2 {
+						flex: 1;
+						height: 100%;
+						min-height: 0%;
+						line-height: 1.2;
+						font-weight: inc.$Bold;
+						margin-bottom: 4px;
+					}
+					span {
+						flex: 2;
+						height: 100%;
+						min-height: 0%;
+						display: block;
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+	&__post {
+		@include inc.sizing(margin-bottom, tab, 70px, sp, 40px);
+		@include inc.mq(tabs) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-bottom: 4.5rem;
+		}
+		&__text {
+			@include inc.mq(tabs) {
+				width: 42.857%;
+				order: 2;
+			}
+		}
+		h3 {
+			@include inc.sizing(margin-bottom, tab, 20px, sp, 15px);
+			@include inc.sizing(font-size, tab, 30px, sp, 22px);
+			font-weight: inc.$Bold;
+		}
+		&__cat {
+			@include inc.sizing(margin-bottom, tab, 20px, sp, 15px);
+			@include inc.sizing(font-size, tab, 12px, sp, 12px);
+		}
+		&__img {
+			@include inc.mq(tabs) {
+				width: 48.571%;
+				order: 1;
+			}
+			figure {
+				span {
+					display: block;
+					width: 100%;
+					padding: 18px;
+					@include inc.sizing(margin-bottom, tab, 0px, sp, 10px);
+					background: inc.$color-wht;
+					img {
+						display: block;
+						width: 100%;
+						height: 100%;
+						aspect-ratio: 1;
+						object-fit: contain;
+						object-position: 50% 50%;
+					}
+				}
+			}
+		}
+		a {
+			text-decoration: underline;
+			text-underline-offset: 0.4em;
+		}
+		&__link {
+			margin-top: 3em;
+			width: 100%;
+			order: 3;
+		}
+		&__note {
+			@include inc.sizing(margin-bottom, tab, 30px, sp, 20px);
+		}
+	}
+}
+

@@ -18,7 +18,7 @@
 		@include inc.sizing(padding-left, tab, 28px, sp, 20px);
 		@include inc.sizing(margin-bottom, tab, 34px, sp, 20px);
 		scrollbar-width: none;
-		margin-left: 5%;
+		// margin-left: 5%;
 		@include inc.mq(tabs) {
 			max-width: inc.$content-width;
 			margin: 0 auto 34px;
@@ -36,16 +36,25 @@
 			z-index: 0;
 		}
 		&:before {
-			@include inc.sizing(left, tab, 8px, sp, 6px);
+			// @include inc.sizing(left, tab, 8px, sp, 6px);
+			// @include inc.sizing(left, tab, 8px, sp, 24.75px);
 			@include inc.sizing(width, tab, 12px, sp, 8px);
 			@include inc.sizing(height, tab, 96px, sp, 68px);
 			background: #A39469;
+			left: 24.75px;
+			@include inc.mq(tabs) {
+				left: 8px;
+			}
 		}
 		&:after {
 			@include inc.sizing(top, tab, 5px, sp, 4px);
 			@include inc.sizing(width, tab, 28px, sp, 20px);
 			@include inc.sizing(height, tab, 86px, sp, 60px);
 			background: #2A3454;
+			left: 18.75px;
+			@include inc.mq(tabs) {
+				left: 0;
+			}
 		}
 		ul {
 			// position: absolute;

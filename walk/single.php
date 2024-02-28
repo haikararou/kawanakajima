@@ -5,7 +5,7 @@
 get_header(); ?>
 
 <div class="c-herohead">
-	<h1 class="c-herohead__heading"><span>歩いてめぐる</span><?php the_title(); ?></h1>
+	<h1 class="c-herohead__heading"><!--span>歩いてめぐる</span--><?php the_title(); ?></h1>
 	<!--span class="km"><em><?php the_field('walk_km'); ?></em>km</span-->
 	<span class="hours"><span>目安時間</span><em><?php the_field('walk_hours'); ?></em>時間</span>
 </div>
