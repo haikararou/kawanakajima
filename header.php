@@ -2,9 +2,6 @@
 /**
  * ヘッダーテンプレート
  */
-if(!is_user_logged_in()){
-	wp_redirect('https://kawanakajima.nagano.jp/');
-}
 ?>
 <!DOCTYPE html>
 <html dir="ltr" lang="ja" prefix="og: https://ogp.me/ns#" class="no-js">
@@ -28,7 +25,7 @@ if(!is_user_logged_in()){
 <?php endif; ?>
 
 <header class="l-header">
-	<div class="l-header__logo"><a href="/top"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo.svg" alt="<?php bloginfo('name'); ?>"></a></div>
+	<div class="l-header__logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo.svg" alt="<?php bloginfo('name'); ?>"></a></div>
 
 	<a class="l-hamburger">
 		<span class="l-hamburger__line l-hamburger__line__top"></span>
@@ -39,7 +36,7 @@ if(!is_user_logged_in()){
 	<nav class="l-nav">
 		<div class="l-nav__wrap">
 			<ul>
-				<li><a href="/top">ホーム</a></li>
+				<li><a href="/">ホーム</a></li>
 				<li class="has-child"><a href="#">戦いを知る</a><dl>
 					<a href="<?php echo home_url('/three-d'); ?>"><dt><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/nav01.jpg" alt=""></dt><dd>川中島の戦い 3D絵巻</dd></a>
 					<a href="<?php echo home_url('/timeline'); ?>"><dt><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/nav02.jpg" alt=""></dt><dd>年表で見る川中島の戦い</dd></a>
@@ -61,7 +58,7 @@ if(!is_user_logged_in()){
 <nav class="l-breadcrumb">
 	<ul>
 <?php if ( is_singular('walk') ): ?>
-		<li><a href="/top">川中島の戦いトップ</a></li>
+		<li><a href="/">川中島の戦いトップ</a></li>
 		<li><a href="<?php echo home_url('/tour'); ?>">史跡をめぐる</a></li>
 		<li><?php the_title(); ?></li>
 <?php else: ?>

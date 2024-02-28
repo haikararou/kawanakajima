@@ -111,3 +111,21 @@ p-digital
 	}
 }
 
+
+.slick-prev {
+	display: none;
+	@include inc.mq(tabs) {
+		display: block;
+		left: -35px;
+	}
+}
+
+.slick-next {
+	display: none;
+	@include inc.mq(tabs) {
+		display: block;
+		right: -33px;
+	}
+}
+
+

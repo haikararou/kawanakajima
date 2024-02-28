@@ -115,6 +115,8 @@ l-footer
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			max-width: 140px;
+			margin: 0 auto;
 			@include inc.sizingRem(font-size, tab, 27px, sp, 17px);
 			img {
 				@include inc.sizingRem(width, tab, 42px, sp, 29px);
@@ -138,11 +140,22 @@ l-footer
 		@include inc.sizingRem(margin-bottom, tab, 30px, sp, 20px);
 		ul {
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: center;
 			margin: 0 auto;
 			padding: 0;
+			gap: 0.2rem 0.8rem;
+			max-width: 90%;
 			li {
-				margin: 0 1em;
+				&:nth-child(1) {
+					width: 100%;
+				}
+				//margin: 0 1em;
+				display: block;
+				width: 30%;
+				@include inc.mq(tabs) {
+					width: auto!important;
+				}
 				a {
 					@include inc.sizingRem(font-size, tab, 11px, sp, 10px);
 					font-weight: inc.$Medium;

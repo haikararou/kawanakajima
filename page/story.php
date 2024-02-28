@@ -17,9 +17,11 @@
 	<h2 class="c-heading__l">甲越信戦録とは？</h2>
 	<div class="c-section__column2">
 		<div class="c-section__column2__w28">
-		<dd><img src="<?php echo get_template_directory_uri(); ?>/assets/img/story/about.png" alt=""></dd>
-		<dd><img src="<?php echo get_template_directory_uri(); ?>/assets/img/story/about2.jpg" alt="" width="648"></dd>
-		<dd><img src="<?php echo get_template_directory_uri(); ?>/assets/img/story/about3.jpg" alt="" width="648"></dd>
+			<div class="img_list">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/story/about.png" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/story/about2.jpg" alt="" width="648">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/story/about3.jpg" alt="" width="648">
+			</div>
 		</div>
 		<div class="c-section__column2__w65">
 			<dl class="c-accordion">

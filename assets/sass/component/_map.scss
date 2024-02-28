@@ -29,9 +29,9 @@
 body.post-type-archive-tour,
 body.single-walk {
 	.c-map {
-		padding-bottom: 150% !important;
+		padding-bottom: 140% !important;
 		@include inc.mq(tabs) {
-			padding-bottom: 85% !important;
+			padding-bottom: 70% !important;
 		}
 	}
 }

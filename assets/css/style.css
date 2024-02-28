@@ -1,5 +1,9 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&family=Vollkorn&family=Cochin&display=swap"); /*
+/* =====================================================
+  1.0 - Foundation
+===================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&family=Vollkorn&family=Cochin&display=swap");
+/*
 i-functions
 -----------------------------------------------------*/
 /*
@@ -39,9 +43,16 @@ a:hover {
 /*
 i-mixin
 -----------------------------------------------------*/
+/* =====================================================
+  2.0 - Layout
+===================================================== */
+/* =====================================================
+  1.0 - Foundation
+===================================================== */
 /*
 index
------------------------------------------------------*/ /*
+-----------------------------------------------------*/
+/*
 loading
 -----------------------------------------------------*/
 /* Loading背景画面設定　*/
@@ -755,6 +766,8 @@ l-footer
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 140px;
+  margin: 0 auto;
   font-size: clamp(1.0625rem, 3.25vw + 0.125rem, 1.6875rem);
 }
 .l-footer__nagano a img {
@@ -782,14 +795,27 @@ l-footer
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
   padding: 0;
+  gap: 0.2rem 0.8rem;
+  max-width: 90%;
 }
 .l-footer__naganonav ul li {
-  margin: 0 1em;
+  display: block;
+  width: 30%;
+}
+.l-footer__naganonav ul li:nth-child(1) {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .l-footer__naganonav ul li {
+    width: auto !important;
+  }
 }
 .l-footer__naganonav ul li a {
   font-size: clamp(0.625rem, 0.32vw + 0.53125rem, 0.6875rem);
@@ -886,6 +912,12 @@ l-body
   }
 }
 
+/* =====================================================
+  3.0 - Object
+===================================================== */
+/*
+  3.1 - Component
+-----------------------------------------------------*/
 /*
 c-herohead
 -----------------------------------------------------*/
@@ -1741,12 +1773,12 @@ body.term-other .c-nav__local__other a {
 
 body.post-type-archive-tour .c-map,
 body.single-walk .c-map {
-  padding-bottom: 150% !important;
+  padding-bottom: 140% !important;
 }
 @media screen and (min-width: 768px) {
   body.post-type-archive-tour .c-map,
   body.single-walk .c-map {
-    padding-bottom: 85% !important;
+    padding-bottom: 70% !important;
   }
 }
 
@@ -2289,6 +2321,9 @@ c-single
   color: #2A3454 !important;
 }
 
+/*
+  3.2 - Project
+-----------------------------------------------------*/
 body.page-template-top .l-breadcrumb {
   display: none;
 }
@@ -3302,7 +3337,7 @@ p-character
 }
 @media screen and (min-width: 768px) {
   .p-character__box__txt {
-    width: 60%;
+    width: 100%;
   }
 }
 .p-character__box h3 {
@@ -3363,6 +3398,10 @@ p-story
 .p-story_box a {
   text-decoration: underline;
   text-underline-offset: 0.4em;
+}
+
+.img_list img + img {
+  margin-top: 0.8rem;
 }
 
 /*
@@ -3538,6 +3577,26 @@ p-digital
 .tax-digital_cat__post__note,
 .p-digital__post__note {
   margin-bottom: clamp(20px, 3.25vw + 5px, 30px);
+}
+
+.slick-prev {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .slick-prev {
+    display: block;
+    left: -35px;
+  }
+}
+
+.slick-next {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .slick-next {
+    display: block;
+    right: -33px;
+  }
 }
 
 /*
@@ -4100,21 +4159,6 @@ p-tour
   padding-bottom: clamp(23px, 9.74vw - 21.8px, 53px);
 }
 
-/* =====================================================
-  1.0 - Foundation
-===================================================== */
-/* =====================================================
-  2.0 - Layout
-===================================================== */
-/* =====================================================
-  3.0 - Object
-===================================================== */
-/*
-  3.1 - Component
------------------------------------------------------*/
-/*
-  3.2 - Project
------------------------------------------------------*/
 /*
   3.3 - Utility
 -----------------------------------------------------*/

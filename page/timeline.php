@@ -504,7 +504,7 @@
 						<dt>8月16日</dt>
 						<dd><a href="<?php echo home_url('/character/category/main#uesugi-kenshin'); ?>">長尾政虎（上杉謙信）</a>、<a href="<?php echo home_url('/tour/tour-453'); ?>">善光寺横山城</a>から<a href="<?php echo home_url('/tour/tour-304'); ?>">妻女山</a>［さいじょさん、さいじょざん］へ着陣。</dd>
 						<dt>9月9日</dt>
-						<dd><a href="<?php echo home_url('/character/category/main#uesugi-kenshin'); ?>">長尾政虎（上杉謙信）</a>、「啄木鳥の戦法」を見破り、午後11時頃、<a href="<?php echo home_url('/tour/tour-304'); ?>">妻女山</a>を発つ。<a href="../siseki/entry/000163.html">雨宮渡</a>［あめみやのわたし］から千曲川左岸へ向かう。</dd>
+						<dd><a href="<?php echo home_url('/character/category/main#uesugi-kenshin'); ?>">長尾政虎（上杉謙信）</a>、「啄木鳥の戦法」を見破り、午後11時頃、<a href="<?php echo home_url('/tour/tour-304'); ?>">妻女山</a>を発つ。<a href="<?php echo home_url('/tour/tour-176'); ?>">雨宮渡</a>［あめみやのわたし］から千曲川左岸へ向かう。</dd>
 						<dt>9月10日</dt>
 						<dd><a href="<?php echo home_url('/character/category/main#takeda-shingen'); ?>">武田信玄</a>本陣を急襲。</dd>
 					</dl>

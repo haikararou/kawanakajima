@@ -251,7 +251,6 @@
 
 <div class="c-nav__footnav">
 	<div class="c-nav__footnav__prev"><a href="/story/vol07"><span><i>巻の七へ戻る</i></span></a></div>
-	<div class="c-nav__footnav__next"><a href="./"><span><i>巻の一へ進む</i></span></a></div>
 </div>
 
 <?php get_footer(); ?>

@@ -55,7 +55,7 @@
 			<ul class="list_arw">
 				<li>Apple、Appleロゴ、iPhone、iPad、Mac OS、Safariは米国および他の国で登録されたApple Inc.の商標です。iPhoneの商標は、アイホン株式会社のライセンスにもとづき使用されています。</li>
 				<li>Android、Androidロゴ、 Google、Google Play、Google Playロゴ、Google Chrome、YouTube、YouTubeロゴはGoogle LLCの商標または登録商標です。</li>
-				<!-- <li>Adobe Readerは、Adobe社の登録商標です。</li> -->
+				<li>Adobe Readerは、Adobe社の登録商標です。</li>
 				<li>QRコードは、株式会社デンソーウェーブの登録商標です。</li>
 			</ul>
 		</li>

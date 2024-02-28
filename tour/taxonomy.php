@@ -6,7 +6,7 @@
 
 <section class="c-section">
 	<h2 class="c-heading__m"><?php single_term_title(); ?> 一覧</h2>
-	<ul class="c-thumb04">
+	<ul class="c-thumb04 -sp2">
 <?php if(have_posts()): while (have_posts()) : the_post(); ?>
 		<li><a href="<?php the_permalink(); ?>"><figure><span><?php if (has_post_thumbnail()) : ?><?php the_post_thumbnail(); ?><?php else: ?><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/noimage.png" alt="該当画像はありません"><?php endif; ?></span>
 			<figcaption>

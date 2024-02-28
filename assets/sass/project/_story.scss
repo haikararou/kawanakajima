@@ -36,3 +36,9 @@ p-story
         }
     }
 }
+
+.img_list {
+    img + img {
+        margin-top: .8rem;
+    }
+}
