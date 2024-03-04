@@ -31,9 +31,10 @@ get_header(); ?>
 <?php if(get_field('walk_map')): ?>
 			<div class="c-single__coursemap">
 				<h2 class="c-heading__m">コースマップ</h2>
-				<div class="c-map"><?php the_field('walk_map'); ?></div>
+				<div class="c-map"><iframe src="<?php the_field('walk_map'); ?>" width="640" height="480"></iframe></div>
 			</div>
 <?php endif; ?>
+
 
 			<div class="c-single__block">
 				<h2 class="c-heading__m">みどころ</h2>

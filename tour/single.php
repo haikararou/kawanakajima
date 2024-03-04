@@ -48,7 +48,7 @@ endforeach; ?>
 					<div class="-block">
 						<dt>アクセス</dt>
 						<dd><?php if(get_field('tour_info_access')): ?><?php the_field('tour_info_access'); ?><?php endif; ?>
-							<?php if(get_field('tour_info_map')): ?><div class="c-map"><?php the_field('tour_info_map'); ?></div><?php endif; ?>
+							<?php if(get_field('tour_info_map')): ?><div class="c-map"><iframe src="<?php the_field('tour_info_map'); ?>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div><?php endif; ?>
 						</dd>
 					</div>
 				</dl>

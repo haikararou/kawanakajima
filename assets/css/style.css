@@ -1612,6 +1612,7 @@ body.term-other .c-nav__local__other a {
 }
 .c-accordion__item {
   padding-bottom: clamp(16px, 2.92vw + 2.6px, 25px);
+  margin-top: 0 !important;
 }
 .c-accordion__item dt {
   position: relative;

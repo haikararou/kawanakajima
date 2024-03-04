@@ -81,7 +81,7 @@ foreach($terms as $term):
 	<div class="l-wrapper">
 		<h2>Special Contents</h2>
 		<div class="p-home__special__slide">
-			<div class="image"><a target="_blank" href="https://www.nagano-cvb.or.jp/kawanakajimakassen/guide/index.html"><figure><?php if (date('Y-m-d') < '2024-06-23') { ?>
+			<div class="image"><a target="_blank" href="https://www.nagano-cvb.or.jp/kawanakajimakassen/"><figure><?php if (date('Y-m-d') < '2024-06-23') { ?>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/sp02-2.jpg">
 				<?php } else { ?><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/sp02.jpg"><?php } ?>
 				<figcaption>
@@ -98,7 +98,7 @@ foreach($terms as $term):
 			<div class="image"><a href="<?php echo home_url('/ar'); ?>"><figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/sp04.jpg">
 				<figcaption>
 					<h3>ARコンテンツ</h3>
-					<p>川中島古戦場やその周辺で体験することができる、楽しいARコンテンツをご紹介</p>
+					<p>川中島古戦場やその周辺で体験できる、楽しいARコンテンツをご紹介</p>
 				</figcaption>
 			</figure></a></div>
 			<div class="image"><a href="<?php echo home_url('/digital'); ?>"><figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/sp01.jpg">

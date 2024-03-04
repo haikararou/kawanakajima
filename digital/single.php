@@ -25,7 +25,7 @@ endforeach; ?>
 			</div>
 
 			<div class="p-digital__post__link l-pc">
-				<p>収蔵品に関するお問い合わせは各施設へお願いいたいます。</p>
+				<p>収蔵品に関するお問い合わせは各施設へお願いいたします。</p>
 				<br>
 				<ul class="c-anchor__txt">
 					<li><a target="_blank" rel="nofllow" href="https://jmapps.ne.jp/nagamuse/">長野市立博物館　収蔵品データベース</a></li>
@@ -46,7 +46,7 @@ endforeach; ?>
 		</div>
 
 		<div class="p-digital__post__link l-sp">
-			<p>収蔵品に関するお問い合わせは各施設へお願いいたいます。</p>
+			<p>収蔵品に関するお問い合わせは各施設へお願いいたします。</p>
 			<br>
 			<ul class="c-anchor__txt">
 				<li><a target="_blank" rel="nofllow" href="https://jmapps.ne.jp/nagamuse/">長野市立博物館　収蔵品データベース</a></li>

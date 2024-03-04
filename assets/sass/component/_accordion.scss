@@ -10,6 +10,7 @@
 	padding: 0;
 	&__item {
 		@include inc.sizing(padding-bottom, tab, 25px, sp, 16px);
+		margin-top: 0!important;
 		dt {
 			position: relative;
 			cursor: pointer;
