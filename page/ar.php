@@ -158,7 +158,7 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ar/saijozan.jpg">
 				<figcaption><span>妻女山</span></figcaption>
 			</figure></a>
-			<a target="_blank" rel="nofllow" href="https://www.city.nagano.nagano.jp/n202500/contents/p001012.html"><figure>
+			<a target="_blank" rel="nofllow" href="https://maps.app.goo.gl/YQq73HUc6vvFVNjz9"><figure>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ar/kosenjo.jpg">
 				<figcaption><span>川中島古戦場史跡公園</span></figcaption>
 			</figure></a>

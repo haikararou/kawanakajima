@@ -55,7 +55,51 @@ endforeach; ?>
 			</div>
 		</div>
 	</article>
-	<div class="c-single__back"><a class="c-anchor__back" href="<?php echo home_url('/tour'); ?>"><span>史跡をめぐるへ戻る</span></a></div>
+
+	<?php
+	function get_tour_name_kana_row_number($post_id) {
+		$tour_name_kana = get_post_meta($post_id, 'tour_name_kana', true);
+		if ($tour_name_kana) {
+			$first_character = mb_substr($tour_name_kana, 0, 1, 'UTF-8');
+			switch ($first_character) {
+				case 'あ': case 'い': case 'う': case 'え': case 'お':
+					return 1;
+				case 'か': case 'き': case 'く': case 'け': case 'こ':
+					return 2;
+				case 'さ': case 'し': case 'す': case 'せ': case 'そ':
+					return 3;
+				case 'た': case 'ち': case 'つ': case 'て': case 'と':
+					return 4;
+				case 'な': case 'に': case 'ぬ': case 'ね': case 'の':
+					return 5;
+				case 'は': case 'ひ': case 'ふ': case 'へ': case 'ほ':
+					return 6;
+				case 'ま': case 'み': case 'む': case 'め': case 'も':
+					return 7;
+				case 'や': case 'ゆ': case 'よ':
+					return 8;
+				case 'ら': case 'り': case 'る': case 'れ': case 'ろ':
+					return 9;
+				case 'わ': case 'を':
+					return 10;
+				default:
+					return 0;
+			}
+		}
+		return 0;
+	}
+	?>
+	<?php
+	// 投稿ループの開始
+	while (have_posts()) {
+		the_post();
+		$post_id = get_the_ID();
+		// カスタムフィールド「tour_name_kana」の値に基づいて数字を取得
+		$row_number = get_tour_name_kana_row_number($post_id);
+	}
+	// 投稿ループの終了
+	?>
+	<div class="c-single__back"><a class="c-anchor__back" href="<?php echo home_url('/tour'); ?>?active-tab=tab-<?php echo $row_number; ?>"><span>史跡をめぐるへ戻る</span></a></div>
 </section>
 
 <?php // 現在表示されている投稿と同じタームに分類された投稿を取得
