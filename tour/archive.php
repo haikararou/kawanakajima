@@ -43,7 +43,7 @@ foreach ($rows2 as $row) :
             if($count==1) {
                 echo " active";
             }
-            echo "' data-tab='tab-";
+            echo "' data-tab='";
 			echo $count;
 			echo "'>$section 行</a></li>"; // セクションの見出しを表示
             wp_reset_postdata();
@@ -80,7 +80,7 @@ foreach ($rows as $row) :
 		if($count==1) {
 			echo " active";
 		}
-		echo "' data-tab='tab-";
+		echo "' data-tab='";
 		echo $count;
 		
 	echo "'><dl class='c-tab__vowels'>"; // 行ごとのコンテナ開始
@@ -204,68 +204,63 @@ $terms = get_terms( $tax_name, array('parent' => 0));
 
 <script>
 $(function() {
-  // パラメータ取得
-  function getParam(name, url) {
-    if (!url) url = window.location.href;
-    name = name.replace(/[\[\]]/g, "\\$&");
-    let regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-      results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, " "));
-  }
- 
-  // URL更新
-  function updateURLParam(name, value) {
-    let url = new URL(window.location.href);
-    url.searchParams.set(name, value);
-    window.history.replaceState({}, '', url);
-  }
+	// パラメータ取得
+	function getParam(name, url) {
+		if (!url) url = window.location.href;
+		name = name.replace(/[\[\]]/g, "\\$&");
+		let regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+			results = regex.exec(url);
+		if (!results) return null;
+		if (!results[2]) return '';
+		return decodeURIComponent(results[2].replace(/\+/g, " "));
+	}
+	// URL更新
+	function updateURLParam(name, value) {
+		let url = new URL(window.location.href);
+		url.searchParams.set(name, value);
+		window.history.replaceState({}, '', url);
+	}
+	// ページ読み込み時のタブ切り替え
+	let tabPram = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+	let pram = getParam('active');
+	if (pram && $.inArray(pram, tabPram) !== -1) {
+		$('.tab-cts,.tab-switch').removeClass('active');
+		$('[data-tab="' + pram + '"]').addClass('active');
+	}
+	// ロード後のタブ切り替え
+	$('.tab-switch').on('click', function() {
+		let dataPram = $(this).data('tab');
+		$('.tab-cts,.tab-switch').removeClass('active');
+		$('[data-tab="' + dataPram + '"]').addClass('active');
+		updateURLParam('active', dataPram); // クリックしたタブのdata-tabをURLに追加
+	});
 
-  // ページ読み込み時のタブ切り替え
-  let tabPram = ['tab-1', 'tab-2', 'tab-3', 'tab-4', 'tab-5', 'tab-6', 'tab-7', 'tab-8', 'tab-9', 'tab-10'];
-  let pram = getParam('active-tab');
-  if (pram && $.inArray(pram, tabPram) !== -1) {
-    $('.tab-cts,.tab-switch').removeClass('active');
-    $('[data-tab="' + pram + '"]').addClass('active');
-  }
- 
-  // ロード後のタブ切り替え
-  $('.tab-switch').on('click', function() {
-    let dataPram = $(this).data('tab');
-    $('.tab-cts,.tab-switch').removeClass('active');
-    $('[data-tab="' + dataPram + '"]').addClass('active');
-	updateURLParam('active-tab', dataPram); // クリックしたタブのdata-tabをURLに追加
-  });
-});
-</script>
-
-<script>
-$(document).ready(function() {
-    // URLからパラメーターを取得する関数
-    function getParameterByName(name, url) {
-        if (!url) url = window.location.href;
-        name = name.replace(/[\[\]]/g, "\\$&");
-        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-            results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, " "));
-    }
-    // URLからactive-tabパラメーターの値を取得
-    var activeTab = getParameterByName('active-tab');
-	switch(activeTab) {
-        case 'tab-5': case 'tab-6':
-            $('#scroll-tab').scrollLeft(150);
-            break;
-        case 'tab-7': case 'tab-8':
-			$('#scroll-tab').scrollLeft(200);
-            break;
-        case 'tab-9': case 'tab-10':
-            $('#scroll-tab').scrollLeft(250);
-            break;
-        default:
-    }
+	$(document).ready(function() {
+		// URLからパラメーターを取得する関数
+		function getParameterByName(name, url) {
+			if (!url) url = window.location.href;
+			name = name.replace(/[\[\]]/g, "\\$&");
+			var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+				results = regex.exec(url);
+			if (!results) return null;
+			if (!results[2]) return '';
+			return decodeURIComponent(results[2].replace(/\+/g, " "));
+		}
+		// URLからactiveパラメーターの値を取得
+		var activeTab = getParameterByName('active');
+		switch(activeTab) {
+			case '5': case '6':
+				$('#scroll-tab').scrollLeft(150);
+				break;
+			case '7': case '8':
+				$('#scroll-tab').scrollLeft(220);
+				break;
+			case '9': case '10':
+				$('#scroll-tab').scrollLeft(250);
+				break;
+			default:
+		}
+	});
 
 });
 </script>

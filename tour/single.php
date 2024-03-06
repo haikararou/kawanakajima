@@ -99,7 +99,7 @@ endforeach; ?>
 	}
 	// 投稿ループの終了
 	?>
-	<div class="c-single__back"><a class="c-anchor__back" href="<?php echo home_url('/tour'); ?>?active-tab=tab-<?php echo $row_number; ?>"><span>史跡をめぐるへ戻る</span></a></div>
+	<div class="c-single__back"><a class="c-anchor__back" href="<?php echo home_url('/tour'); ?>?active=<?php echo $row_number; ?>"><span>史跡をめぐるへ戻る</span></a></div>
 </section>
 
 <?php // 現在表示されている投稿と同じタームに分類された投稿を取得
