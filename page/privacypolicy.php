@@ -42,7 +42,18 @@
 		<li>サイトのアドレスや内容を予告なく変更する場合があります。</li>
 		<li>長野市以外の自治体、団体、施設等のホームページへリンクを設定している場合があります。リンク先の団体、施設及びページの内容について、長野市はいかなる場合でも一切の責任を負いませんのでご了承ください。</li>
 		<li>本サイトへのリンクが設置された第三者のホームページに対して、長野市はいかなる関与もしていません。また、リンクにより発生した問題・損害に対して、市はいかなる責任も負いません。</li>
-	</ul><br>
+	</ul>
+	<br>
+
+	<h3 class="c-heading__s">アクセス情報の収集について</h3>
+	<ul class="c-section__ul">
+		<li>当サイトでは、サイトの分析と改善のためにGoogleによるアクセス解析ツール「Googleアナリティクス」を使用しています。<br>
+		Googleアナリティクスはデータの収集のためにCookieを使用しています。<br>
+		このデータは匿名で収集されており、個人を特定するものではありません。<br>
+		Googleアナリティクスの詳細は、<a href="https://marketingplatform.google.com/about/analytics/terms/jp/" target="_blank">Googleアナリティクスサービス利用規約</a>や<a href="https://policies.google.com/technologies/ads?hl=ja" target="_blank">Googleポリシーと規約</a>をご覧ください。<br>
+		この機能を停止する場合は、Googleが提供する<a href="https://support.google.com/analytics/answer/181881?hl=ja" target="_blank">オプトアウトアドオン</a>をご利用ください。</li>
+	</ul>
+	<br>
 
 	<h3 class="c-heading__s">リンクについて</h3>
 	<ul class="c-section__ul">
@@ -50,7 +61,8 @@
 		<li>リンクの設置する場所には、本事業のサイトであることを明記して下さい。</li>
 		<li>本サイトの内容及びアドレスは、予告なく変更・削除することがあります。</li>
 		<li>本サイトへのリンクにより発生した問題・損害については、市はいかなる責任も負いません。</li>
-	</ul><br>
+	</ul>
+	<br>
 
 	<h3 class="c-heading__s">著作権について</h3>
 	<ul class="c-section__ul">

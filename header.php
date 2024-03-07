@@ -26,6 +26,27 @@
 {"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/kawanakajima.nagano.jp\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/kawanakajima.nagano.jp\/#listItem","position":1,"name":"\u5bb6"}]},{"@type":"Organization","@id":"https:\/\/kawanakajima.nagano.jp\/#organization","name":"\u5ddd\u4e2d\u5cf6\u306e\u6226\u3044\u7dcf\u5408\u30b5\u30a4\u30c8","url":"https:\/\/kawanakajima.nagano.jp\/"},{"@type":"WebPage","@id":"https:\/\/kawanakajima.nagano.jp\/#webpage","url":"https:\/\/kawanakajima.nagano.jp\/","name":"\u5ddd\u4e2d\u5cf6\u306e\u6226\u3044 | Battle of Kawanakajima [\u7dcf\u5408\u30b5\u30a4\u30c8]","inLanguage":"ja","isPartOf":{"@id":"https:\/\/kawanakajima.nagano.jp\/#website"},"breadcrumb":{"@id":"https:\/\/kawanakajima.nagano.jp\/#breadcrumblist"},"datePublished":"2024-02-08T09:15:05+09:00","dateModified":"2024-02-28T09:24:27+09:00"},{"@type":"WebSite","@id":"https:\/\/kawanakajima.nagano.jp\/#website","url":"https:\/\/kawanakajima.nagano.jp\/","name":"\u5ddd\u4e2d\u5cf6\u306e\u6226\u3044\u7dcf\u5408\u30b5\u30a4\u30c8","inLanguage":"ja","publisher":{"@id":"https:\/\/kawanakajima.nagano.jp\/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/kawanakajima.nagano.jp\/?s={search_term_string}"},"query-input":"required name=search_term_string"}}]}
 </script>
 <?php endif; ?>
+<?php if(is_tax('digital_cat') || is_tax('tour_cat')): ?>
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:site_name" content="【川中島の戦い】総合サイト | Battle of Kawanakajima - 長野市 - 武田信玄と上杉謙信が繰り広げた「川中島の戦い」に関する総合サイトです。VR・AR・デジタル博物館・戦いを知る・史跡を巡る・イベント情報" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="【川中島の戦い】総合サイト | Battle of Kawanakajima - 長野市" />
+<meta property="og:description" content="武田信玄と上杉謙信が繰り広げた「川中島の戦い」に関する総合サイトです。VR・AR・デジタル博物館・戦いを知る・史跡を巡る・イベント情報" />
+<meta property="og:url" content="https://kawanakajima.nagano.jp/" />
+<meta property="og:image" content="https://kawanakajima.nagano.jp/wp-content/uploads/2024/02/OGP.png" />
+<meta property="og:image:secure_url" content="https://kawanakajima.nagano.jp/wp-content/uploads/2024/02/OGP.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="article:published_time" content="2024-02-08T00:15:05+00:00" />
+<meta property="article:modified_time" content="2024-03-07T01:02:38+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="【川中島の戦い】総合サイト | Battle of Kawanakajima - 長野市" />
+<meta name="twitter:description" content="武田信玄と上杉謙信が繰り広げた「川中島の戦い」に関する総合サイトです。VR・AR・デジタル博物館・戦いを知る・史跡を巡る・イベント情報" />
+<meta name="twitter:image" content="https://kawanakajima.nagano.jp/wp-content/uploads/2024/02/OGP.png" />
+<script type="application/ld+json" class="aioseo-schema">
+	{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/kawanakajima.nagano.jp\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/kawanakajima.nagano.jp\/#listItem","position":1,"name":"\u5bb6"}]},{"@type":"Organization","@id":"https:\/\/kawanakajima.nagano.jp\/#organization","name":"\u5ddd\u4e2d\u5cf6\u306e\u6226\u3044\u7dcf\u5408\u30b5\u30a4\u30c8","url":"https:\/\/kawanakajima.nagano.jp\/"},{"@type":"WebPage","@id":"https:\/\/kawanakajima.nagano.jp\/#webpage","url":"https:\/\/kawanakajima.nagano.jp\/","name":"\u3010\u5ddd\u4e2d\u5cf6\u306e\u6226\u3044\u3011\u7dcf\u5408\u30b5\u30a4\u30c8 | Battle of Kawanakajima - \u9577\u91ce\u5e02","description":"\u6b66\u7530\u4fe1\u7384\u3068\u4e0a\u6749\u8b19\u4fe1\u304c\u7e70\u308a\u5e83\u3052\u305f\u300c\u5ddd\u4e2d\u5cf6\u306e\u6226\u3044\u300d\u306b\u95a2\u3059\u308b\u7dcf\u5408\u30b5\u30a4\u30c8\u3067\u3059\u3002VR\u30fbAR\u30fb\u30c7\u30b8\u30bf\u30eb\u535a\u7269\u9928\u30fb\u6226\u3044\u3092\u77e5\u308b\u30fb\u53f2\u8de1\u3092\u5de1\u308b\u30fb\u30a4\u30d9\u30f3\u30c8\u60c5\u5831","inLanguage":"ja","isPartOf":{"@id":"https:\/\/kawanakajima.nagano.jp\/#website"},"breadcrumb":{"@id":"https:\/\/kawanakajima.nagano.jp\/#breadcrumblist"},"datePublished":"2024-02-08T09:15:05+09:00","dateModified":"2024-03-07T10:02:38+09:00"},{"@type":"WebSite","@id":"https:\/\/kawanakajima.nagano.jp\/#website","url":"https:\/\/kawanakajima.nagano.jp\/","name":"\u5ddd\u4e2d\u5cf6\u306e\u6226\u3044\u7dcf\u5408\u30b5\u30a4\u30c8","description":"\u6b66\u7530\u4fe1\u7384\u3068\u4e0a\u6749\u8b19\u4fe1\u304c\u7e70\u308a\u5e83\u3052\u305f\u300c\u5ddd\u4e2d\u5cf6\u306e\u6226\u3044\u300d\u306b\u95a2\u3059\u308b\u7dcf\u5408\u30b5\u30a4\u30c8\u3067\u3059\u3002VR\u30fbAR\u30fb\u30c7\u30b8\u30bf\u30eb\u535a\u7269\u9928\u30fb\u6226\u3044\u3092\u77e5\u308b\u30fb\u53f2\u8de1\u3092\u5de1\u308b\u30fb\u30a4\u30d9\u30f3\u30c8\u60c5\u5831","inLanguage":"ja","publisher":{"@id":"https:\/\/kawanakajima.nagano.jp\/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/kawanakajima.nagano.jp\/?s={search_term_string}"},"query-input":"required name=search_term_string"}}]}
+</script>
+<?php endif; ?>
 
 	<?php wp_head(); ?>
 
