@@ -15,7 +15,7 @@
 <section class="c-section p-vr__movie">
 	<article class="p-vr__article">
 		<h2 class="c-heading__m">プロモーション用動画</h2>
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/vr/movie_soon.jpg">
+		<a href="https://www.youtube.com/embed/y-v0Z-WnNJM?si=jBc6jhZQZ4-b4wvq" class="video-open"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/vr/movie.png"></a>
 	</article>
 </section>
 

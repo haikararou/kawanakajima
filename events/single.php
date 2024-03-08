@@ -32,7 +32,7 @@ get_header(); ?>
 					<div>
 						<dt>アクセス</dt>
 						<dd><?php if(get_field('event_info_access')): ?><?php the_field('event_info_access'); ?><?php endif; ?>
-							<?php if(get_field('event_info_map')): ?><div class="c-map"><?php the_field('event_info_map'); ?></div><?php endif; ?></dd>
+							<?php if(get_field('event_info_map')): ?><div class="c-map"><iframe src="<?php the_field('event_info_map'); ?>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div><?php endif; ?></dd>
 					</div>
 				</dl>
 			</div>
